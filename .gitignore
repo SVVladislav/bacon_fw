@@ -4,8 +4,8 @@
 *.str
 
 # Ignore trash in bd directory except .BD files
-/bd/**/*
-!/bd/**/*.bd
+/**/bd/
+!/**/*.bd
 
 # Ignore editor's temporary files
 *~
