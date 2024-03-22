@@ -1,0 +1,21 @@
+# Always ignore journal and log files
+*.log
+*.jou
+*.str
+
+# Ignore trash in bd directory except .BD files
+/bd/**/*
+!/bd/**/*.bd
+
+# Ignore editor's temporary files
+*~
+*#
+
+# Ignore Vivado temporary files
+.Xil/
+bacon_fw.cache/
+bacon_fw.gen/
+bacon_fw.hw/
+bacon_fw.ip_user_files/
+bacon_fw.runs/
+bacon_fw.sim/
