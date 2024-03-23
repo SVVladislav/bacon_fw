@@ -1,0 +1,24 @@
+# Ignore Vivado temporary files
+.Xil/
+/**/*.cache/
+/**/*.gen/
+/**/*.hw/
+/**/*.ip_user_files/
+/**/*.runs/
+/**/*.sim/
+
+# Always ignore journal and log files
+*.log
+*.jou
+*.str
+
+# Ignore trash in bd directory except .BD files
+#/**/bd/**/*
+#!/**/*.bd
+#!/**/*.xci
+
+# Ignore editor's temporary files
+#*~
+#*#
+
+
