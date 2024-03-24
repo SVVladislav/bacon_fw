@@ -3,7 +3,7 @@
   <spirit:vendor>eliars.ru</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>DDS_CTRL</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.1</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>s00_axi</spirit:name>
@@ -235,6 +235,112 @@
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>AD9915</spirit:name>
+      <spirit:displayName>ad9915</spirit:displayName>
+      <spirit:description>AD9915 Control Interface</spirit:description>
+      <spirit:busType spirit:vendor="eliars" spirit:library="user" spirit:name="DDS_AD9915_CTRL" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="eliars" spirit:library="user" spirit:name="DDS_AD9915_CTRL_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>drhold</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>drhold_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>PS</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>PS</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>D</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>D</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>F</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>F</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>io_update</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>io_upd_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>osk</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>osk_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>pwr_dwn</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>pwdwn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>drctl</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>drctrl_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>drover</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>drover_in</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>sync</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>sinc_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>dir</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>dir</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:memoryMaps>
     <spirit:memoryMap>
@@ -262,7 +368,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>561247ee</spirit:value>
+            <spirit:value>38b714a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -278,7 +384,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>561247ee</spirit:value>
+            <spirit:value>38b714a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -314,7 +420,7 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
-        <spirit:name>NXT_PROF</spirit:name>
+        <spirit:name>CUR_PROF</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -331,7 +437,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>CUR_PROF</spirit:name>
+        <spirit:name>NXT_PROF</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -1018,7 +1124,7 @@
       <spirit:file>
         <spirit:name>DDS_CTRL_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4c66a9e0</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_5efa34ff</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1049,28 +1155,42 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/DDS_CTRL_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/DDS_CTRL_v1_1.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_717f911e</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>DDS_CTRL_v1_0</spirit:description>
+  <spirit:description>DDS_CTRL_v1_1</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">DDS_CTRL_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">DDS_CTRL_v1_1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C S00 Axi Data Width</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
       <spirit:displayName>C S00 Axi Addr Width</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH">6</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -1095,10 +1215,10 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>DDS_CTRL_v1_0</xilinx:displayName>
+      <xilinx:displayName>DDS_CTRL_v1_1</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>277</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-03-24T06:42:31Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>281</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-03-24T09:44:07Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="niikulon.local:user:DDS_CTRL_v1_0:1.0_ARCHIVE_LOCATION">d:/ad_hdl_2018/library/_bfos/project_dds_ctrl</xilinx:tag>
         <xilinx:tag xilinx:name="eliars.ru:user:DDS_CTRL_v1_0:1.0_ARCHIVE_LOCATION">d:/ad_hdl_2018/library/_bfos/project_dds_ctrl</xilinx:tag>
@@ -1107,12 +1227,12 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="57904613"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="21e131ec"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c9f0edaf"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0f2692e4"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="c5d09e21"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="35be3442"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="2c700f62"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e9c11669"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c8a34359"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="94535703"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

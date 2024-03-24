@@ -3,14 +3,14 @@
   "ip_inst": {
     "xci_name": "bacon_DDS_CTRL_0_0",
     "cell_name": "DDS_CTRL_0",
-    "component_reference": "eliars.ru:user:DDS_CTRL:1.0",
-    "ip_revision": "277",
+    "component_reference": "eliars.ru:user:DDS_CTRL:1.1",
+    "ip_revision": "281",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_DDS_CTRL_0_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "bacon_DDS_CTRL_0_0", "resolve_type": "user", "usage": "all" } ],
-        "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "C_S00_AXI_ADDR_WIDTH": [ { "value": "6", "resolve_type": "user", "format": "long", "usage": "all" } ]
+        "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "C_S00_AXI_ADDR_WIDTH": [ { "value": "6", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ]
       },
       "model_parameters": {
         "C_S00_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -31,7 +31,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "277" } ],
+        "IPREVISION": [ { "value": "281" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_DDS_CTRL_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -42,8 +42,8 @@
     },
     "boundary": {
       "ports": {
-        "NXT_PROF": [ { "direction": "in", "size_left": "1023", "size_right": "0" } ],
         "CUR_PROF": [ { "direction": "in", "size_left": "1023", "size_right": "0" } ],
+        "NXT_PROF": [ { "direction": "in", "size_left": "1023", "size_right": "0" } ],
         "en_zond": [ { "direction": "in" } ],
         "str_pn": [ { "direction": "in" } ],
         "str_prd": [ { "direction": "in" } ],
@@ -189,6 +189,25 @@
           },
           "port_maps": {
             "CLK": [ { "physical_name": "s00_axi_aclk" } ]
+          }
+        },
+        "AD9915": {
+          "vlnv": "eliars:user:DDS_AD9915_CTRL:1.0",
+          "abstraction_type": "eliars:user:DDS_AD9915_CTRL_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "drhold": [ { "physical_name": "drhold_out" } ],
+            "rst": [ { "physical_name": "rst" } ],
+            "PS": [ { "physical_name": "PS" } ],
+            "D": [ { "physical_name": "D" } ],
+            "F": [ { "physical_name": "F" } ],
+            "io_update": [ { "physical_name": "io_upd_out" } ],
+            "osk": [ { "physical_name": "osk_out" } ],
+            "pwr_dwn": [ { "physical_name": "pwdwn" } ],
+            "drctl": [ { "physical_name": "drctrl_out" } ],
+            "drover": [ { "physical_name": "drover_in" } ],
+            "sync": [ { "physical_name": "sinc_out" } ],
+            "dir": [ { "physical_name": "dir" } ]
           }
         }
       },

@@ -10,8 +10,8 @@ entity DDS_CTRL_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-		NXT_PROF        : in std_logic_vector(1023 downto 0);
 		CUR_PROF        : in std_logic_vector(1023 downto 0);
+		NXT_PROF        : in std_logic_vector(1023 downto 0);
         en_zond         : in std_logic;
         str_pn          : in std_logic;
         str_prd         : in std_logic;
@@ -70,11 +70,11 @@ architecture arch_imp of DDS_CTRL_v1_0 is
 
 	-- component declaration
 	component DDS_CTRL_v1_0_S00_AXI is
-		port (
+		port (		
 		
-		NXT_PROF        : in std_logic_vector(1023 downto 0);
 		CUR_PROF        : in std_logic_vector(1023 downto 0);
-		
+		NXT_PROF        : in std_logic_vector(1023 downto 0);
+
         en_zond         : in std_logic;
         str_pn          : in std_logic;
         str_prd         : in std_logic;
@@ -99,8 +99,6 @@ architecture arch_imp of DDS_CTRL_v1_0 is
         sinc_out        : out std_logic;
         sinc_in         : in std_logic;
         dir             : out std_logic;
-
-
 
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
@@ -130,9 +128,9 @@ begin
 
 -- Instantiation of Axi Bus Interface S00_AXI
 DDS_CTRL_v1_0_S00_AXI_inst : DDS_CTRL_v1_0_S00_AXI
-	port map (
-		NXT_PROF => NXT_PROF,
+	port map (		
 		CUR_PROF => CUR_PROF,
+		NXT_PROF => NXT_PROF,
         en_zond => en_zond,
         str_pn => str_pn,
         str_prd => str_prd,

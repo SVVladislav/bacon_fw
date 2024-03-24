@@ -15,9 +15,9 @@ entity DDS_CTRL_v1_0_S00_AXI is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 6
 	);
 	port (
-		-- Users to add ports here
-		NXT_PROF        : in std_logic_vector(1023 downto 0);
+		-- Users to add ports here		
 		CUR_PROF        : in std_logic_vector(1023 downto 0);
+		NXT_PROF        : in std_logic_vector(1023 downto 0);
         en_zond         : in std_logic;
         str_pn          : in std_logic;
         str_prd         : in std_logic;
