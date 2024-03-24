@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAFF9A29C173ED18A",
+      "boundary_crc": "0xB6EB90B32EDD291A",
       "device": "xc7k410tffg900-2",
       "gen_directory": "../../../../bacon_fw.gen/sources_1/bd/bacon",
       "name": "bacon",
@@ -42,7 +42,11 @@
       "DDS_CTRL_0": "",
       "axi_gpio_0": "",
       "xlslice_0": "",
-      "xlconstant_2": ""
+      "xlconstant_2": "",
+      "SERIAL_BUF_CONFIG_0": "",
+      "SERIAL_BUF_CONFIG_1": "",
+      "SERIAL_BUF_CONFIG_2": "",
+      "SERIAL_BUF_CONFIG_3": ""
     },
     "interface_ports": {
       "dds_ad9915": {
@@ -103,6 +107,98 @@
           "dir": {
             "physical_name": "dds_ad9915_dir",
             "direction": "O"
+          }
+        }
+      },
+      "STR4_PN": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR4_PN_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR4_PN_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR4_PN_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR4_PN_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR1_PN": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR1_PN_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR1_PN_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR1_PN_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR1_PN_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR2_PRD": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR2_PRD_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR2_PRD_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR2_PRD_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR2_PRD_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR3_PRM": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR3_PRM_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR3_PRM_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR3_PRM_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR3_PRM_ro",
+            "direction": "I"
           }
         }
       }
@@ -1299,6 +1395,54 @@
             "value": "0"
           }
         }
+      },
+      "SERIAL_BUF_CONFIG_0": {
+        "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+        "ip_revision": "7",
+        "xci_name": "bacon_SERIAL_BUF_CONFIG_0_1",
+        "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_0_1\\bacon_SERIAL_BUF_CONFIG_0_1.xci",
+        "inst_hier_path": "SERIAL_BUF_CONFIG_0",
+        "parameters": {
+          "MODE": {
+            "value": "Transmit Only"
+          }
+        }
+      },
+      "SERIAL_BUF_CONFIG_1": {
+        "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+        "ip_revision": "7",
+        "xci_name": "bacon_SERIAL_BUF_CONFIG_1_0",
+        "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_1_0\\bacon_SERIAL_BUF_CONFIG_1_0.xci",
+        "inst_hier_path": "SERIAL_BUF_CONFIG_1",
+        "parameters": {
+          "MODE": {
+            "value": "Transmit Only"
+          }
+        }
+      },
+      "SERIAL_BUF_CONFIG_2": {
+        "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+        "ip_revision": "7",
+        "xci_name": "bacon_SERIAL_BUF_CONFIG_2_0",
+        "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_2_0\\bacon_SERIAL_BUF_CONFIG_2_0.xci",
+        "inst_hier_path": "SERIAL_BUF_CONFIG_2",
+        "parameters": {
+          "MODE": {
+            "value": "Transmit Only"
+          }
+        }
+      },
+      "SERIAL_BUF_CONFIG_3": {
+        "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+        "ip_revision": "7",
+        "xci_name": "bacon_SERIAL_BUF_CONFIG_3_0",
+        "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_3_0\\bacon_SERIAL_BUF_CONFIG_3_0.xci",
+        "inst_hier_path": "SERIAL_BUF_CONFIG_3",
+        "parameters": {
+          "MODE": {
+            "value": "Transmit Only"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1306,6 +1450,30 @@
         "interface_ports": [
           "dds_ad9915",
           "DDS_CTRL_0/AD9915"
+        ]
+      },
+      "SERIAL_BUF_CONFIG_0_SER_TRANS": {
+        "interface_ports": [
+          "STR4_PN",
+          "SERIAL_BUF_CONFIG_0/SER_TRANS"
+        ]
+      },
+      "SERIAL_BUF_CONFIG_1_SER_TRANS": {
+        "interface_ports": [
+          "STR1_PN",
+          "SERIAL_BUF_CONFIG_1/SER_TRANS"
+        ]
+      },
+      "SERIAL_BUF_CONFIG_2_SER_TRANS": {
+        "interface_ports": [
+          "STR2_PRD",
+          "SERIAL_BUF_CONFIG_2/SER_TRANS"
+        ]
+      },
+      "SERIAL_BUF_CONFIG_3_SER_TRANS": {
+        "interface_ports": [
+          "STR3_PRM",
+          "SERIAL_BUF_CONFIG_3/SER_TRANS"
         ]
       },
       "microblaze_0_axi_dp": {
@@ -1398,6 +1566,25 @@
         "ports": [
           "BCO_PROFILE_0/str_pn",
           "DDS_CTRL_0/str_pn"
+        ]
+      },
+      "BCO_PROFILE_0_str_pn_out": {
+        "ports": [
+          "BCO_PROFILE_0/str_pn_out",
+          "SERIAL_BUF_CONFIG_0/in_DI",
+          "SERIAL_BUF_CONFIG_1/in_DI"
+        ]
+      },
+      "BCO_PROFILE_0_str_prd": {
+        "ports": [
+          "BCO_PROFILE_0/str_prd",
+          "SERIAL_BUF_CONFIG_2/in_DI"
+        ]
+      },
+      "BCO_PROFILE_0_str_prm": {
+        "ports": [
+          "BCO_PROFILE_0/str_prm",
+          "SERIAL_BUF_CONFIG_3/in_DI"
         ]
       },
       "axi_gpio_0_gpio_io_o": {

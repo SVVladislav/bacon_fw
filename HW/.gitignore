@@ -12,6 +12,7 @@
 *.log
 *.jou
 *.str
+*.dmp
 
 # Ignore trash in bd directory except .BD files
 #/**/bd/**/*

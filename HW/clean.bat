@@ -10,3 +10,4 @@ rd "bacon_v9/bacon_fw.tmp" /s /q
 del *.jou /s /q 
 del *.log /s /q
 del *.str /s /q
+del *.dmp /s /q 
