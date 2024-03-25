@@ -15,3 +15,22 @@ set_property -dict {PACKAGE_PIN J29 IOSTANDARD LVCMOS33} [get_ports STR4_PN_de]
 set_property -dict {PACKAGE_PIN K25 IOSTANDARD LVCMOS33} [get_ports STR4_PN_di]
 set_property -dict {PACKAGE_PIN K21 IOSTANDARD LVCMOS33} [get_ports STR4_PN_re]
 set_property -dict {PACKAGE_PIN K26 IOSTANDARD LVCMOS33} [get_ports STR4_PN_ro]
+
+# RS485 Transeivers - LTC2850
+set_property -dict {PACKAGE_PIN N20 IOSTANDARD LVCMOS33} [get_ports RS485_AFAR_de]
+set_property -dict {PACKAGE_PIN N19 IOSTANDARD LVCMOS33} [get_ports RS485_AFAR_di]
+set_property -dict {PACKAGE_PIN N21 IOSTANDARD LVCMOS33} [get_ports RS485_AFAR_re]
+set_property -dict {PACKAGE_PIN N22 IOSTANDARD LVCMOS33} [get_ports RS485_AFAR_ro]
+set_property -dict {PACKAGE_PIN M28 IOSTANDARD LVCMOS33} [get_ports RS485_PC_de]
+set_property -dict {PACKAGE_PIN M27 IOSTANDARD LVCMOS33} [get_ports RS485_PC_di]
+set_property -dict {PACKAGE_PIN M29 IOSTANDARD LVCMOS33} [get_ports RS485_PC_re]
+set_property -dict {PACKAGE_PIN M30 IOSTANDARD LVCMOS33} [get_ports RS485_PC_ro]
+set_property -dict {PACKAGE_PIN M23 IOSTANDARD LVCMOS33} [get_ports RS485_3_de]
+set_property -dict {PACKAGE_PIN M25 IOSTANDARD LVCMOS33} [get_ports RS485_3_ro]
+set_property -dict {PACKAGE_PIN M24 IOSTANDARD LVCMOS33} [get_ports RS485_3_re]
+set_property -dict {PACKAGE_PIN M22 IOSTANDARD LVCMOS33} [get_ports RS485_3_di]
+
+# UART <-> USB - FT232
+set_property -dict {PACKAGE_PIN H25 IOSTANDARD LVCMOS33} [get_ports SIN_USB1]
+set_property -dict {PACKAGE_PIN C26 IOSTANDARD LVCMOS33} [get_ports SOUT_USB1]
+

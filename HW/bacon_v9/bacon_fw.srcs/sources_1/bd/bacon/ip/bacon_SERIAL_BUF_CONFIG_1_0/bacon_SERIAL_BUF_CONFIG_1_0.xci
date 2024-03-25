@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "bacon_SERIAL_BUF_CONFIG_1_0",
-    "cell_name": "SERIAL_BUF_CONFIG_1",
+    "cell_name": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_1",
     "component_reference": "eliars:user:SERIAL_BUF_CONFIG:1.0",
     "ip_revision": "9",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_1_0",

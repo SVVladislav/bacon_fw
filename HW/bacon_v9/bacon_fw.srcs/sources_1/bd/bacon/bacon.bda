@@ -326,7 +326,61 @@
                 "MI": "M_AXI_DP",
                 "MS": "SEG_axi_uart16550_0_Reg",
                 "MV": "xilinx.com:ip:microblaze:11.0",
-                "SX": "/axi_uart16550_0",
+                "SX": "/UARTS_AND_STROBES/axi_uart16550_0",
+                "SI": "S_AXI",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_uart16550:2.0",
+                "TM": "data",
+                "TU": "register"
+            },
+            "V11": {
+                "VT": "AC",
+                "BA": "0x44A30000",
+                "HA": "0x44A3FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_axi_uart16550_1_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/UARTS_AND_STROBES/axi_uart16550_1",
+                "SI": "S_AXI",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_uart16550:2.0",
+                "TM": "data",
+                "TU": "register"
+            },
+            "V12": {
+                "VT": "AC",
+                "BA": "0x44A40000",
+                "HA": "0x44A4FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_axi_uart16550_2_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/UARTS_AND_STROBES/axi_uart16550_2",
+                "SI": "S_AXI",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_uart16550:2.0",
+                "TM": "data",
+                "TU": "register"
+            },
+            "V13": {
+                "VT": "AC",
+                "BA": "0x44A50000",
+                "HA": "0x44A5FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_axi_uart16550_3_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/UARTS_AND_STROBES/axi_uart16550_3",
                 "SI": "S_AXI",
                 "SS": "Reg",
                 "SV": "xilinx.com:ip:axi_uart16550:2.0",
@@ -380,6 +434,21 @@
             },
             {
                 "src": "V10",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V11",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V12",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V13",
                 "trg": "V2",
                 "EH": "2"
             }

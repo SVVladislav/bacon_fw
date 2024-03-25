@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Sun Mar 24 18:34:41 2024
+//Date        : Mon Mar 25 22:29:55 2024
 //Host        : Zen running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
@@ -11,7 +11,21 @@
 `timescale 1 ps / 1 ps
 
 module bacon_wrapper
-   (STR1_PN_de,
+   (RS485_3_de,
+    RS485_3_di,
+    RS485_3_re,
+    RS485_3_ro,
+    RS485_AFAR_de,
+    RS485_AFAR_di,
+    RS485_AFAR_re,
+    RS485_AFAR_ro,
+    RS485_PC_de,
+    RS485_PC_di,
+    RS485_PC_re,
+    RS485_PC_ro,
+    SIN_USB1,
+    SOUT_USB1,
+    STR1_PN_de,
     STR1_PN_di,
     STR1_PN_re,
     STR1_PN_ro,
@@ -41,6 +55,20 @@ module bacon_wrapper
     dds_ad9915_pwr_dwn,
     dds_ad9915_rst,
     dds_ad9915_sync);
+  output RS485_3_de;
+  output RS485_3_di;
+  output RS485_3_re;
+  input RS485_3_ro;
+  output RS485_AFAR_de;
+  output RS485_AFAR_di;
+  output RS485_AFAR_re;
+  input RS485_AFAR_ro;
+  output RS485_PC_de;
+  output RS485_PC_di;
+  output RS485_PC_re;
+  input RS485_PC_ro;
+  input SIN_USB1;
+  output SOUT_USB1;
   output STR1_PN_de;
   output STR1_PN_di;
   output STR1_PN_re;
@@ -72,6 +100,20 @@ module bacon_wrapper
   output dds_ad9915_rst;
   output dds_ad9915_sync;
 
+  wire RS485_3_de;
+  wire RS485_3_di;
+  wire RS485_3_re;
+  wire RS485_3_ro;
+  wire RS485_AFAR_de;
+  wire RS485_AFAR_di;
+  wire RS485_AFAR_re;
+  wire RS485_AFAR_ro;
+  wire RS485_PC_de;
+  wire RS485_PC_di;
+  wire RS485_PC_re;
+  wire RS485_PC_ro;
+  wire SIN_USB1;
+  wire SOUT_USB1;
   wire STR1_PN_de;
   wire STR1_PN_di;
   wire STR1_PN_re;
@@ -104,7 +146,21 @@ module bacon_wrapper
   wire dds_ad9915_sync;
 
   bacon bacon_i
-       (.STR1_PN_de(STR1_PN_de),
+       (.RS485_3_de(RS485_3_de),
+        .RS485_3_di(RS485_3_di),
+        .RS485_3_re(RS485_3_re),
+        .RS485_3_ro(RS485_3_ro),
+        .RS485_AFAR_de(RS485_AFAR_de),
+        .RS485_AFAR_di(RS485_AFAR_di),
+        .RS485_AFAR_re(RS485_AFAR_re),
+        .RS485_AFAR_ro(RS485_AFAR_ro),
+        .RS485_PC_de(RS485_PC_de),
+        .RS485_PC_di(RS485_PC_di),
+        .RS485_PC_re(RS485_PC_re),
+        .RS485_PC_ro(RS485_PC_ro),
+        .SIN_USB1(SIN_USB1),
+        .SOUT_USB1(SOUT_USB1),
+        .STR1_PN_de(STR1_PN_de),
         .STR1_PN_di(STR1_PN_di),
         .STR1_PN_re(STR1_PN_re),
         .STR1_PN_ro(STR1_PN_ro),
