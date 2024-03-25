@@ -8,7 +8,7 @@
   <spirit:isAddressable>false</spirit:isAddressable>
   <spirit:maxMasters>1</spirit:maxMasters>
   <spirit:maxSlaves>1</spirit:maxSlaves>
-  <spirit:description>Serial transeiver Connection</spirit:description>
+  <spirit:description>Serial transсeiver Connection</spirit:description>
   <spirit:vendorExtensions>
     <xilinx:busDefinitionInfo>
       <xilinx:displayName>SER_TRANS</xilinx:displayName>

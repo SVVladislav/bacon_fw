@@ -1,21 +1,22 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.310734",
-   "Default View_TopLeft":"-528,-862",
+   "Default View_ScaleFactor":"2.53351",
+   "Default View_TopLeft":"3865,148",
    "ExpandedHierarchyInLayout":"",
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port dds_ad9915 -pg 1 -lvl 13 -x 4830 -y 500 -defaultsOSRD
-preplace port STR4_PN -pg 1 -lvl 13 -x 4830 -y 220 -defaultsOSRD
-preplace port STR1_PN -pg 1 -lvl 13 -x 4830 -y 120 -defaultsOSRD
-preplace port STR2_PRD -pg 1 -lvl 13 -x 4830 -y 320 -defaultsOSRD
-preplace port STR3_PRM -pg 1 -lvl 13 -x 4830 -y 420 -defaultsOSRD
+preplace port dds_ad9915 -pg 1 -lvl 13 -x 4690 -y 500 -defaultsOSRD
+preplace port STR4_PN -pg 1 -lvl 13 -x 4690 -y 240 -defaultsOSRD
+preplace port STR1_PN -pg 1 -lvl 13 -x 4690 -y 140 -defaultsOSRD
+preplace port STR2_PRD -pg 1 -lvl 13 -x 4690 -y 340 -defaultsOSRD
+preplace port STR3_PRM -pg 1 -lvl 13 -x 4690 -y 440 -defaultsOSRD
+preplace port RS485_PC -pg 1 -lvl 13 -x 4690 -y -10 -defaultsOSRD
 preplace port port-id_clk_in1 -pg 1 -lvl 0 -x -380 -y 390 -defaultsOSRD
 preplace port port-id_clk_out_156M25 -pg 1 -lvl 0 -x -380 -y 530 -defaultsOSRD -left
 preplace inst microblaze_0 -pg 1 -lvl 4 -x 1650 -y -90 -defaultsOSRD
 preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 2000 -y -80 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -x 2270 -y 560 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 6 -x 2280 -y 560 -defaultsOSRD
 preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 960 -y -240 -defaultsOSRD
 preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -x 590 -y -230 -defaultsOSRD
 preplace inst mdm_0 -pg 1 -lvl 3 -x 960 -y -70 -defaultsOSRD
@@ -26,61 +27,69 @@ preplace inst xlconstant_reset -pg 1 -lvl 1 -x 70 -y 190 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -x 70 -y -160 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 2 -x 590 -y 530 -defaultsOSRD -orient R180
 preplace inst rst_clk_wiz_0_200M -pg 1 -lvl 3 -x 960 -y 90 -defaultsOSRD
-preplace inst BCO_PROFILE_0 -pg 1 -lvl 9 -x 3380 -y 480 -defaultsOSRD
-preplace inst DDS_CTRL_0 -pg 1 -lvl 11 -x 3980 -y 510 -defaultsOSRD
+preplace inst BCO_PROFILE_0 -pg 1 -lvl 9 -x 3380 -y 460 -defaultsOSRD
+preplace inst DDS_CTRL_0 -pg 1 -lvl 11 -x 4040 -y 770 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 2680 -y -70 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 8 -x 3000 -y -60 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 10 -x 3690 -y 550 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_0 -pg 1 -lvl 12 -x 4510 -y 220 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_1 -pg 1 -lvl 12 -x 4510 -y 120 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_2 -pg 1 -lvl 12 -x 4510 -y 320 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_3 -pg 1 -lvl 12 -x 4510 -y 420 -defaultsOSRD
-preplace netloc BCO_PROFILE_0_clk_adc_div_16 1 9 2 3580J 490 3780
-preplace netloc BCO_PROFILE_0_cur_prof 1 9 2 N 400 N
-preplace netloc BCO_PROFILE_0_nxt_prof 1 9 2 N 420 N
-preplace netloc BCO_PROFILE_0_str_dds 1 9 2 3560 480 N
-preplace netloc BCO_PROFILE_0_str_pn 1 9 2 N 460 N
-preplace netloc BCO_PROFILE_0_str_pn_out 1 9 3 3520J 330 3770 300 4410
-preplace netloc BCO_PROFILE_0_str_prd 1 9 3 3540J 350 3780J 310 4120J
-preplace netloc BCO_PROFILE_0_str_prm 1 9 3 3570J 370 3790J 320 4110
-preplace netloc axi_gpio_0_gpio_io_o 1 7 1 N -60
+preplace inst xlslice_0 -pg 1 -lvl 8 -x 3000 -y -10 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 10 -x 3700 -y 550 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_0 -pg 1 -lvl 12 -x 4570 -y 240 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_1 -pg 1 -lvl 12 -x 4570 -y 140 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_2 -pg 1 -lvl 12 -x 4570 -y 340 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_3 -pg 1 -lvl 12 -x 4570 -y 440 -defaultsOSRD
+preplace inst clk_wiz_2 -pg 1 -lvl 3 -x 960 -y 530 -defaultsOSRD
+preplace inst axi_uart16550_0 -pg 1 -lvl 11 -x 4040 -y 230 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_4 -pg 1 -lvl 12 -x 4570 -y 0 -defaultsOSRD
+preplace netloc BCO_PROFILE_0_clk_adc_div_16 1 9 2 3570J 490 3790
+preplace netloc BCO_PROFILE_0_cur_prof 1 9 2 3540 400 3830
+preplace netloc BCO_PROFILE_0_nxt_prof 1 9 2 3520 410 3820
+preplace netloc BCO_PROFILE_0_str_dds 1 9 2 N 480 3800
+preplace netloc BCO_PROFILE_0_str_pn 1 9 2 N 440 3810
+preplace netloc BCO_PROFILE_0_str_pn_out 1 9 3 3530J 340 3900 560 4440
+preplace netloc BCO_PROFILE_0_str_prd 1 9 3 3550J 380 3890J 570 4450J
+preplace netloc BCO_PROFILE_0_str_prm 1 9 3 3560J 390 3870J 580 4460
+preplace netloc axi_gpio_0_gpio_io_o 1 7 1 2820 -60n
 preplace netloc clk_in1_1 1 0 2 NJ 390 N
-preplace netloc clk_wiz_0_clk_out_100M 1 2 9 730 -380 1420 0 1890 10 2130 10 2530 10 N 10 3220 300 3560 380 3790
-preplace netloc clk_wiz_0_clk_out_200M 1 2 7 NJ 390 1130J 360 NJ 360 NJ 360 NJ 360 NJ 360 3100
-preplace netloc clk_wiz_0_locked 1 2 1 740 130n
+preplace netloc clk_wiz_0_clk_out_100M 1 2 9 740 -380 1420 0 1890 50 2120 50 2530 50 N 50 3220 130 N 130 3840
+preplace netloc clk_wiz_0_clk_out_200M 1 2 7 NJ 390 1190J 320 NJ 320 NJ 320 NJ 320 NJ 320 3100
+preplace netloc clk_wiz_0_locked 1 2 1 750 130n
 preplace netloc clk_wiz_1_clk_out_156M25 1 0 2 NJ 530 NJ
-preplace netloc mdm_0_Interrupt 1 1 3 480 -400 NJ -400 1130
-preplace netloc mdm_1_debug_sys_rst 1 2 2 760 -390 1140
+preplace netloc mdm_0_Interrupt 1 1 3 480 -390 NJ -390 1140
+preplace netloc mdm_1_debug_sys_rst 1 2 2 790 -350 1130
 preplace netloc microblaze_0_xlconcat_dout 1 2 1 N -230
 preplace netloc rst_clk_in1_100M_bus_struct_reset 1 3 2 N 250 1900
-preplace netloc rst_clk_in1_100M_mb_reset 1 2 2 770 -370 1150
-preplace netloc rst_clk_in1_100M_peripheral_aresetn 1 2 9 790 -350 1160 320 N 320 2110 320 2540 320 N 320 3230 320 3530 390 3770
+preplace netloc rst_clk_in1_100M_mb_reset 1 2 2 760 -370 1150
+preplace netloc rst_clk_in1_100M_peripheral_aresetn 1 2 9 770 -360 1170 310 N 310 2130 300 2540 300 N 300 3230 300 3540 370 3850
 preplace netloc xlconstant_0_dout 1 1 1 150J -210n
 preplace netloc xlconstant_1_dout 1 1 1 150 -280n
-preplace netloc xlconstant_2_dout 1 10 1 3850 520n
-preplace netloc xlconstant_reset_dout 1 1 2 480 190 750
-preplace netloc xlslice_0_Dout 1 8 3 3240 310 3550 360 3800
-preplace netloc DDS_CTRL_0_AD9915 1 11 2 N 500 N
-preplace netloc SERIAL_BUF_CONFIG_0_SER_TRANS 1 12 1 N 220
-preplace netloc SERIAL_BUF_CONFIG_1_SER_TRANS 1 12 1 N 120
-preplace netloc SERIAL_BUF_CONFIG_2_SER_TRANS 1 12 1 N 320
-preplace netloc SERIAL_BUF_CONFIG_3_SER_TRANS 1 12 1 N 420
-preplace netloc microblaze_0_axi_dp 1 4 2 1880 0 2120
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 5 740 -410 NJ -410 NJ -410 N -410 2420
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 3 2450 440 N 440 N
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 6 5 2440 290 N 290 N 290 3570 340 3810
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 6 1 2430 -90n
-preplace netloc microblaze_0_debug 1 3 1 1170 -100n
+preplace netloc xlconstant_2_dout 1 10 1 3780 550n
+preplace netloc xlconstant_reset_dout 1 1 2 480 190 770
+preplace netloc xlslice_0_Dout 1 8 3 3240 280 3560 350 3860
+preplace netloc axi_uart16550_0_sout 1 11 1 4170J -20n
+preplace netloc SERIAL_BUF_CONFIG_4_out_RO 1 11 2 4180J 80 4670
+preplace netloc clk_wiz_2_clk_out_29M4912 1 3 9 1180 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 N 270 3910 530 4170
+preplace netloc DDS_CTRL_0_AD9915 1 11 2 4470 500 N
+preplace netloc SERIAL_BUF_CONFIG_0_SER_TRANS 1 12 1 N 240
+preplace netloc SERIAL_BUF_CONFIG_1_SER_TRANS 1 12 1 N 140
+preplace netloc SERIAL_BUF_CONFIG_2_SER_TRANS 1 12 1 N 340
+preplace netloc SERIAL_BUF_CONFIG_3_SER_TRANS 1 12 1 N 440
+preplace netloc microblaze_0_axi_dp 1 4 2 1880 0 2110
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 5 760 380 1200J 360 NJ 360 2100 330 2430
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 6 3 2460 420 N 420 N
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 6 5 2450 290 N 290 N 290 3550 360 3880
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 6 1 2440 -90n
+preplace netloc microblaze_0_debug 1 3 1 1160 -100n
 preplace netloc microblaze_0_dlmb_1 1 4 1 N -110
 preplace netloc microblaze_0_ilmb_1 1 4 1 N -90
-preplace netloc microblaze_0_intc_axi 1 2 5 780 -360 N -360 N -360 N -360 2410
-preplace netloc microblaze_0_interrupt 1 3 1 1170 -240n
-levelinfo -pg 1 -380 70 590 960 1650 2000 2270 2680 3000 3380 3690 3980 4510 4830
+preplace netloc microblaze_0_intc_axi 1 2 5 780 370 N 370 N 370 2140 340 2420
+preplace netloc microblaze_0_interrupt 1 3 1 1180 -240n
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 6 5 2470 70 N 70 N 70 N 70 3910
+preplace netloc SERIAL_BUF_CONFIG_4_SER_TRANS 1 12 1 N -10
+levelinfo -pg 1 -380 70 590 960 1650 2000 2280 2680 3000 3380 3700 4040 4570 4690
 pagesize -pg 1 -db -bbox -sgen -540 -780 4960 1040
 "
 }
 {
-   "da_axi4_cnt":"11",
+   "da_axi4_cnt":"12",
    "da_board_cnt":"2",
    "da_clkrst_cnt":"7",
    "da_mb_cnt":"1"

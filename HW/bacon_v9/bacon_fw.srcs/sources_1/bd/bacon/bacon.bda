@@ -314,6 +314,24 @@
                 "SV": "eliars.ru:user:DDS_CTRL:1.1",
                 "TM": "data",
                 "TU": "register"
+            },
+            "V10": {
+                "VT": "AC",
+                "BA": "0x44A20000",
+                "HA": "0x44A2FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_0",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_axi_uart16550_0_Reg",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/axi_uart16550_0",
+                "SI": "S_AXI",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_uart16550:2.0",
+                "TM": "data",
+                "TU": "register"
             }
         },
         "edges": [
@@ -357,6 +375,11 @@
             },
             {
                 "src": "V9",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V10",
                 "trg": "V2",
                 "EH": "2"
             }

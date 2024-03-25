@@ -4,7 +4,7 @@
     "xci_name": "bacon_SERIAL_BUF_CONFIG_1_0",
     "cell_name": "SERIAL_BUF_CONFIG_1",
     "component_reference": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-    "ip_revision": "7",
+    "ip_revision": "9",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_1_0",
     "parameters": {
       "component_parameters": {
@@ -29,7 +29,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "7" } ],
+        "IPREVISION": [ { "value": "9" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
