@@ -1,6 +1,6 @@
-SET NAME=bacon_v9/bacon_fw
+SET NAME=bacon_v9\bacon_fw
 
-rd bacon_v9/.Xil /s /q
+rd bacon_v9\.Xil /s /q
 
 rd %NAME%.cache /s /q
 rd %NAME%.gen /s /q
