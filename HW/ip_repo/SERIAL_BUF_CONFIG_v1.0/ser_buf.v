@@ -16,6 +16,7 @@ module serial_buf_config_v1_0 #
   input wire RO
 );
 
+generate
   case (MODE)
     "Half Duplex" : begin 
                       assign DI = in_DI;
@@ -40,7 +41,14 @@ module serial_buf_config_v1_0 #
                         assign DE = 1'b0;
                         assign RE = 1'b0;
                         assign out_RO = RO;
-                      end                                
+                      end
+     "Unused" : begin 
+                  assign DI = in_DI;
+                  assign DE = 1'b0;
+                  assign RE = 1'b1;
+                  assign out_RO = RO;
+                end                                               
   endcase
+endgenerate
 
 endmodule

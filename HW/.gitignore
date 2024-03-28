@@ -3,24 +3,14 @@
 /**/*.cache/
 /**/*.gen/
 /**/*.hw/
+/**/*ioplanning/
 /**/*.ip_user_files/
 /**/*.runs/
 /**/*.sim/
-/libs/
+/libs_archive/
 
 # Always ignore journal and log files
 *.log
 *.jou
 *.str
 *.dmp
-
-# Ignore trash in bd directory except .BD files
-#/**/bd/**/*
-#!/**/*.bd
-#!/**/*.xci
-
-# Ignore editor's temporary files
-#*~
-#*#
-
-

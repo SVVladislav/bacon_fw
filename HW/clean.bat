@@ -1,12 +1,15 @@
-rd "bacon_v9/.Xil" /s /q
-rd "bacon_v9/bacon_fw.cache" /s /q
-rd "bacon_v9/bacon_fw.gen" /s /q
-rd "bacon_v9/bacon_fw.hw" /s /q
-rd "bacon_v9/bacon_fw.ioplanning" /s /q
-rd "bacon_v9/bacon_fw.ip_user_files" /s /q
-rd "bacon_v9/bacon_fw.runs" /s /q
-rd "bacon_v9/bacon_fw.sim" /s /q
-rd "bacon_v9/bacon_fw.tmp" /s /q
+SET NAME=bacon_v9/bacon_fw
+
+rd bacon_v9/.Xil /s /q
+
+rd %NAME%.cache /s /q
+rd %NAME%.gen /s /q
+rd %NAME%.hw /s /q
+rd %NAME%.ioplanning /s /q
+rd %NAME%.ip_user_files /s /q
+rd %NAME%.runs /s /q
+rd %NAME%.sim /s /q
+rd %NAME%.tmp /s /q
 
 del *.jou /s /q 
 del *.log /s /q

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC8B4D022D582106C",
+      "boundary_crc": "0x88DADBC4E06CCF20",
       "device": "xc7k410tffg900-2",
       "gen_directory": "../../../../bacon_fw.gen/sources_1/bd/bacon",
       "name": "bacon",
@@ -59,9 +59,14 @@
         "axi_uart16550_2": "",
         "SERIAL_BUF_CONFIG_6": "",
         "axi_uart16550_3": "",
-        "INVERTER_0": "",
-        "INVERTER_1": "",
-        "INVERTER_2": ""
+        "util_vector_logic_0": "",
+        "util_vector_logic_1": "",
+        "util_vector_logic_2": "",
+        "SERIAL_BUF_CONFIG_7": "",
+        "SERIAL_BUF_CONFIG_8": "",
+        "SERIAL_BUF_CONFIG_9": "",
+        "SERIAL_BUF_CONFIG_10": "",
+        "SERIAL_BUF_CONFIG_11": ""
       }
     },
     "interface_ports": {
@@ -218,48 +223,48 @@
           }
         }
       },
-      "RS485_PC": {
+      "RS485_2_PC": {
         "mode": "Master",
         "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
         "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
         "port_maps": {
           "DE": {
-            "physical_name": "RS485_PC_de",
+            "physical_name": "RS485_2_PC_de",
             "direction": "O"
           },
           "RE": {
-            "physical_name": "RS485_PC_re",
+            "physical_name": "RS485_2_PC_re",
             "direction": "O"
           },
           "DI": {
-            "physical_name": "RS485_PC_di",
+            "physical_name": "RS485_2_PC_di",
             "direction": "O"
           },
           "RO": {
-            "physical_name": "RS485_PC_ro",
+            "physical_name": "RS485_2_PC_ro",
             "direction": "I"
           }
         }
       },
-      "RS485_AFAR": {
+      "RS485_1_AFAR": {
         "mode": "Master",
         "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
         "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
         "port_maps": {
           "DE": {
-            "physical_name": "RS485_AFAR_de",
+            "physical_name": "RS485_1_AFAR_de",
             "direction": "O"
           },
           "RE": {
-            "physical_name": "RS485_AFAR_re",
+            "physical_name": "RS485_1_AFAR_re",
             "direction": "O"
           },
           "DI": {
-            "physical_name": "RS485_AFAR_di",
+            "physical_name": "RS485_1_AFAR_di",
             "direction": "O"
           },
           "RO": {
-            "physical_name": "RS485_AFAR_ro",
+            "physical_name": "RS485_1_AFAR_ro",
             "direction": "I"
           }
         }
@@ -283,6 +288,121 @@
           },
           "RO": {
             "physical_name": "RS485_3_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "RS485_4": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "RS485_4_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "RS485_4_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "RS485_4_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "RS485_4_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR5": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR5_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR5_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR5_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR5_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR6": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR6_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR6_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR6_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR6_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR7": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR7_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR7_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR7_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR7_ro",
+            "direction": "I"
+          }
+        }
+      },
+      "STR8": {
+        "mode": "Master",
+        "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+        "vlnv": "eliars:user:SER_TRANS_rtl:1.0",
+        "port_maps": {
+          "DE": {
+            "physical_name": "STR8_de",
+            "direction": "O"
+          },
+          "RE": {
+            "physical_name": "STR8_re",
+            "direction": "O"
+          },
+          "DI": {
+            "physical_name": "STR8_di",
+            "direction": "O"
+          },
+          "RO": {
+            "physical_name": "STR8_ro",
             "direction": "I"
           }
         }
@@ -1917,7 +2037,7 @@
             "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
             "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
           },
-          "RS485_PC": {
+          "RS485_2_PC": {
             "mode": "Master",
             "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
             "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
@@ -1927,7 +2047,7 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
-          "RS485_AFAR": {
+          "RS485_1_AFAR": {
             "mode": "Master",
             "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
             "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
@@ -1946,6 +2066,31 @@
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "RS485_4": {
+            "mode": "Master",
+            "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+            "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
+          },
+          "STR5": {
+            "mode": "Master",
+            "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+            "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
+          },
+          "STR6": {
+            "mode": "Master",
+            "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+            "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
+          },
+          "STR7": {
+            "mode": "Master",
+            "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+            "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
+          },
+          "STR8": {
+            "mode": "Master",
+            "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
+            "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
           }
         },
         "ports": {
@@ -1988,7 +2133,7 @@
         "components": {
           "SERIAL_BUF_CONFIG_0": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_0_1",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_0_1\\bacon_SERIAL_BUF_CONFIG_0_1.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_0",
@@ -2018,7 +2163,7 @@
           },
           "SERIAL_BUF_CONFIG_1": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_1_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_1_0\\bacon_SERIAL_BUF_CONFIG_1_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_1",
@@ -2030,7 +2175,7 @@
           },
           "SERIAL_BUF_CONFIG_2": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_2_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_2_0\\bacon_SERIAL_BUF_CONFIG_2_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_2",
@@ -2042,7 +2187,7 @@
           },
           "SERIAL_BUF_CONFIG_3": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_3_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_3_0\\bacon_SERIAL_BUF_CONFIG_3_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_3",
@@ -2054,7 +2199,7 @@
           },
           "SERIAL_BUF_CONFIG_4": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_4_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_4_0\\bacon_SERIAL_BUF_CONFIG_4_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_4"
@@ -2079,7 +2224,7 @@
           },
           "SERIAL_BUF_CONFIG_5": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_5_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_5_0\\bacon_SERIAL_BUF_CONFIG_5_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_5",
@@ -2145,7 +2290,7 @@
           },
           "SERIAL_BUF_CONFIG_6": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-            "ip_revision": "9",
+            "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_6_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_6_0\\bacon_SERIAL_BUF_CONFIG_6_0.xci",
             "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_6"
@@ -2168,75 +2313,105 @@
               }
             }
           },
-          "INVERTER_0": {
-            "vlnv": "xilinx.com:module_ref:INVERTER:1.0",
-            "ip_revision": "1711396093",
-            "xci_name": "bacon_INVERTER_0_0",
-            "xci_path": "ip\\bacon_INVERTER_0_0\\bacon_INVERTER_0_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/INVERTER_0",
-            "reference_info": {
-              "ref_type": "hdl",
-              "ref_name": "INVERTER",
-              "boundary_crc": "0x0"
-            },
-            "ports": {
-              "din": {
-                "direction": "I",
-                "left": "0",
-                "right": "0"
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "ip_revision": "3",
+            "xci_name": "bacon_util_vector_logic_0_0",
+            "xci_path": "ip\\bacon_util_vector_logic_0_0\\bacon_util_vector_logic_0_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/util_vector_logic_0",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
               },
-              "dout": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
+              "C_SIZE": {
+                "value": "1"
               }
             }
           },
-          "INVERTER_1": {
-            "vlnv": "xilinx.com:module_ref:INVERTER:1.0",
-            "ip_revision": "1711396093",
-            "xci_name": "bacon_INVERTER_1_0",
-            "xci_path": "ip\\bacon_INVERTER_1_0\\bacon_INVERTER_1_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/INVERTER_1",
-            "reference_info": {
-              "ref_type": "hdl",
-              "ref_name": "INVERTER",
-              "boundary_crc": "0x0"
-            },
-            "ports": {
-              "din": {
-                "direction": "I",
-                "left": "0",
-                "right": "0"
+          "util_vector_logic_1": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "ip_revision": "3",
+            "xci_name": "bacon_util_vector_logic_1_0",
+            "xci_path": "ip\\bacon_util_vector_logic_1_0\\bacon_util_vector_logic_1_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/util_vector_logic_1",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
               },
-              "dout": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
+              "C_SIZE": {
+                "value": "1"
               }
             }
           },
-          "INVERTER_2": {
-            "vlnv": "xilinx.com:module_ref:INVERTER:1.0",
-            "ip_revision": "1711396093",
-            "xci_name": "bacon_INVERTER_2_0",
-            "xci_path": "ip\\bacon_INVERTER_2_0\\bacon_INVERTER_2_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/INVERTER_2",
-            "reference_info": {
-              "ref_type": "hdl",
-              "ref_name": "INVERTER",
-              "boundary_crc": "0x0"
-            },
-            "ports": {
-              "din": {
-                "direction": "I",
-                "left": "0",
-                "right": "0"
-              },
-              "dout": {
-                "direction": "O",
-                "left": "0",
-                "right": "0"
+          "util_vector_logic_2": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "ip_revision": "3",
+            "xci_name": "bacon_util_vector_logic_2_0",
+            "xci_path": "ip\\bacon_util_vector_logic_2_0\\bacon_util_vector_logic_2_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/util_vector_logic_2",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
+              }
+            }
+          },
+          "SERIAL_BUF_CONFIG_7": {
+            "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+            "ip_revision": "10",
+            "xci_name": "bacon_SERIAL_BUF_CONFIG_7_0",
+            "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_7_0\\bacon_SERIAL_BUF_CONFIG_7_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_7",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
+              }
+            }
+          },
+          "SERIAL_BUF_CONFIG_8": {
+            "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+            "ip_revision": "10",
+            "xci_name": "bacon_SERIAL_BUF_CONFIG_8_0",
+            "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_8_0\\bacon_SERIAL_BUF_CONFIG_8_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_8",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
+              }
+            }
+          },
+          "SERIAL_BUF_CONFIG_9": {
+            "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+            "ip_revision": "10",
+            "xci_name": "bacon_SERIAL_BUF_CONFIG_9_0",
+            "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_9_0\\bacon_SERIAL_BUF_CONFIG_9_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_9",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
+              }
+            }
+          },
+          "SERIAL_BUF_CONFIG_10": {
+            "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+            "ip_revision": "10",
+            "xci_name": "bacon_SERIAL_BUF_CONFIG_10_0",
+            "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_10_0\\bacon_SERIAL_BUF_CONFIG_10_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_10",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
+              }
+            }
+          },
+          "SERIAL_BUF_CONFIG_11": {
+            "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
+            "ip_revision": "10",
+            "xci_name": "bacon_SERIAL_BUF_CONFIG_11_0",
+            "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_11_0\\bacon_SERIAL_BUF_CONFIG_11_0.xci",
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_11",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
               }
             }
           }
@@ -2260,6 +2435,18 @@
               "SERIAL_BUF_CONFIG_0/SER_TRANS"
             ]
           },
+          "SERIAL_BUF_CONFIG_10_SER_TRANS": {
+            "interface_ports": [
+              "STR7",
+              "SERIAL_BUF_CONFIG_10/SER_TRANS"
+            ]
+          },
+          "SERIAL_BUF_CONFIG_11_SER_TRANS": {
+            "interface_ports": [
+              "STR8",
+              "SERIAL_BUF_CONFIG_11/SER_TRANS"
+            ]
+          },
           "SERIAL_BUF_CONFIG_1_SER_TRANS": {
             "interface_ports": [
               "STR1_PN",
@@ -2280,13 +2467,13 @@
           },
           "SERIAL_BUF_CONFIG_4_SER_TRANS": {
             "interface_ports": [
-              "RS485_PC",
+              "RS485_2_PC",
               "SERIAL_BUF_CONFIG_4/SER_TRANS"
             ]
           },
           "SERIAL_BUF_CONFIG_5_SER_TRANS": {
             "interface_ports": [
-              "RS485_AFAR",
+              "RS485_1_AFAR",
               "SERIAL_BUF_CONFIG_5/SER_TRANS"
             ]
           },
@@ -2294,6 +2481,24 @@
             "interface_ports": [
               "RS485_3",
               "SERIAL_BUF_CONFIG_6/SER_TRANS"
+            ]
+          },
+          "SERIAL_BUF_CONFIG_7_SER_TRANS": {
+            "interface_ports": [
+              "RS485_4",
+              "SERIAL_BUF_CONFIG_7/SER_TRANS"
+            ]
+          },
+          "SERIAL_BUF_CONFIG_8_SER_TRANS": {
+            "interface_ports": [
+              "STR5",
+              "SERIAL_BUF_CONFIG_8/SER_TRANS"
+            ]
+          },
+          "SERIAL_BUF_CONFIG_9_SER_TRANS": {
+            "interface_ports": [
+              "STR6",
+              "SERIAL_BUF_CONFIG_9/SER_TRANS"
             ]
           },
           "microblaze_0_axi_periph_M05_AXI": {
@@ -2313,8 +2518,8 @@
           "BCO_PROFILE_0_str_pn_out": {
             "ports": [
               "STR_PN",
-              "SERIAL_BUF_CONFIG_1/in_DI",
-              "SERIAL_BUF_CONFIG_0/in_DI"
+              "SERIAL_BUF_CONFIG_0/in_DI",
+              "SERIAL_BUF_CONFIG_1/in_DI"
             ]
           },
           "BCO_PROFILE_0_str_prd": {
@@ -2331,21 +2536,21 @@
           },
           "INVERTER_0_dout": {
             "ports": [
-              "INVERTER_0/dout",
+              "util_vector_logic_0/Res",
               "SERIAL_BUF_CONFIG_6/in_DE",
               "SERIAL_BUF_CONFIG_6/in_RE"
             ]
           },
           "INVERTER_1_dout": {
             "ports": [
-              "INVERTER_1/dout",
+              "util_vector_logic_1/Res",
               "SERIAL_BUF_CONFIG_5/in_DE",
               "SERIAL_BUF_CONFIG_5/in_RE"
             ]
           },
           "INVERTER_2_dout": {
             "ports": [
-              "INVERTER_2/dout",
+              "util_vector_logic_2/Res",
               "SERIAL_BUF_CONFIG_4/in_DE",
               "SERIAL_BUF_CONFIG_4/in_RE"
             ]
@@ -2371,7 +2576,7 @@
           "axi_uart16550_0_dtrn": {
             "ports": [
               "axi_uart16550_0/dtrn",
-              "INVERTER_2/din"
+              "util_vector_logic_2/Op1"
             ]
           },
           "axi_uart16550_0_ip2intc_irpt": {
@@ -2389,7 +2594,7 @@
           "axi_uart16550_1_dtrn": {
             "ports": [
               "axi_uart16550_1/dtrn",
-              "INVERTER_1/din"
+              "util_vector_logic_1/Op1"
             ]
           },
           "axi_uart16550_1_ip2intc_irpt": {
@@ -2407,7 +2612,7 @@
           "axi_uart16550_2_dtrn": {
             "ports": [
               "axi_uart16550_2/dtrn",
-              "INVERTER_0/din"
+              "util_vector_logic_0/Op1"
             ]
           },
           "axi_uart16550_2_ip2intc_irpt": {
@@ -2503,20 +2708,50 @@
       },
       "SERIAL_BUF_CONFIG_4_SER_TRANS": {
         "interface_ports": [
-          "RS485_PC",
-          "UARTS_AND_STROBES/RS485_PC"
+          "RS485_2_PC",
+          "UARTS_AND_STROBES/RS485_2_PC"
         ]
       },
       "SERIAL_BUF_CONFIG_5_SER_TRANS": {
         "interface_ports": [
-          "RS485_AFAR",
-          "UARTS_AND_STROBES/RS485_AFAR"
+          "RS485_1_AFAR",
+          "UARTS_AND_STROBES/RS485_1_AFAR"
         ]
       },
       "UARTS_AND_STROBES_RS485_3": {
         "interface_ports": [
           "RS485_3",
           "UARTS_AND_STROBES/RS485_3"
+        ]
+      },
+      "UARTS_AND_STROBES_RS485_4": {
+        "interface_ports": [
+          "RS485_4",
+          "UARTS_AND_STROBES/RS485_4"
+        ]
+      },
+      "UARTS_AND_STROBES_STR5": {
+        "interface_ports": [
+          "STR5",
+          "UARTS_AND_STROBES/STR5"
+        ]
+      },
+      "UARTS_AND_STROBES_STR6": {
+        "interface_ports": [
+          "STR6",
+          "UARTS_AND_STROBES/STR6"
+        ]
+      },
+      "UARTS_AND_STROBES_STR7": {
+        "interface_ports": [
+          "STR7",
+          "UARTS_AND_STROBES/STR7"
+        ]
+      },
+      "UARTS_AND_STROBES_STR8": {
+        "interface_ports": [
+          "STR8",
+          "UARTS_AND_STROBES/STR8"
         ]
       },
       "microblaze_0_axi_dp": {

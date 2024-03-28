@@ -1,18 +1,18 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "bacon_SERIAL_BUF_CONFIG_6_0",
-    "cell_name": "SERIAL_BUF_CONFIG_6",
+    "xci_name": "bacon_SERIAL_BUF_CONFIG_7_0",
+    "cell_name": "SERIAL_BUF_CONFIG_7",
     "component_reference": "eliars:user:SERIAL_BUF_CONFIG:1.0",
     "ip_revision": "10",
-    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_6_0",
+    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_7_0",
     "parameters": {
       "component_parameters": {
-        "MODE": [ { "value": "Half Duplex", "resolve_type": "user", "usage": "all" } ],
-        "Component_Name": [ { "value": "bacon_SERIAL_BUF_CONFIG_6_0", "resolve_type": "user", "usage": "all" } ]
+        "MODE": [ { "value": "Unused", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "Component_Name": [ { "value": "bacon_SERIAL_BUF_CONFIG_7_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "MODE": [ { "value": "Half Duplex", "resolve_type": "generated", "usage": "all" } ]
+        "MODE": [ { "value": "Unused", "resolve_type": "generated", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "kintex7" } ],
@@ -31,7 +31,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "10" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_6_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_7_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2023.2.2" } ],
@@ -40,10 +40,6 @@
     },
     "boundary": {
       "ports": {
-        "in_DI": [ { "direction": "in", "driver_value": "0" } ],
-        "in_DE": [ { "direction": "in", "driver_value": "0" } ],
-        "in_RE": [ { "direction": "in", "driver_value": "0" } ],
-        "out_RO": [ { "direction": "out", "driver_value": "0" } ],
         "DI": [ { "direction": "out" } ],
         "DE": [ { "direction": "out" } ],
         "RE": [ { "direction": "out" } ],

@@ -62,7 +62,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>49c80901</spirit:value>
+            <spirit:value>b55a9e26</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -78,7 +78,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>49c80901</spirit:value>
+            <spirit:value>b55a9e26</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -116,7 +116,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.in_DI" xilinx:dependency="$MODE != &quot;Receive Only&quot;">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.in_DI" xilinx:dependency="($MODE != &quot;Receive Only&quot;) and ($MODE != &quot;Unused&quot;)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -185,7 +185,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.out_RO" xilinx:dependency="$MODE != &quot;Transmit Only&quot;">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.out_RO" xilinx:dependency="($MODE != &quot;Transmit Only&quot;) and ($MODE != &quot;Unused&quot;)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -253,11 +253,12 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_1cfb471c</spirit:name>
+      <spirit:name>choice_list_39dc9e96</spirit:name>
       <spirit:enumeration>Half Duplex</spirit:enumeration>
       <spirit:enumeration>Full Duplex</spirit:enumeration>
       <spirit:enumeration>Transmit Only</spirit:enumeration>
       <spirit:enumeration>Receive Only</spirit:enumeration>
+      <spirit:enumeration>Unused</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
@@ -266,7 +267,7 @@
       <spirit:file>
         <spirit:name>ser_buf.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_49c80901</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b55a9e26</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -291,7 +292,7 @@
     <spirit:parameter>
       <spirit:name>MODE</spirit:name>
       <spirit:displayName>Mode</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MODE" spirit:choiceRef="choice_list_1cfb471c">Half Duplex</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MODE" spirit:choiceRef="choice_list_39dc9e96">Half Duplex</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -322,10 +323,10 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>SERIAL_BUF</xilinx:displayName>
-      <xilinx:autoFamilySupportLevel>level_1</xilinx:autoFamilySupportLevel>
+      <xilinx:autoFamilySupportLevel>level_0</xilinx:autoFamilySupportLevel>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>9</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-03-25T05:58:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-03-28T06:37:07Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
       </xilinx:tags>
@@ -333,10 +334,10 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="acc17dfa"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cb1d1bfd"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="e826b6ea"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0c674b0f"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="5325ff3d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="500b39c6"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="73ed56e4"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4800179d"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

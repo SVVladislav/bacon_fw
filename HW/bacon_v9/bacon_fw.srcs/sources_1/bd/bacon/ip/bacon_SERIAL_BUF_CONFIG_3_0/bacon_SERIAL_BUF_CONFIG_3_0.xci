@@ -2,9 +2,9 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "bacon_SERIAL_BUF_CONFIG_3_0",
-    "cell_name": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_3",
+    "cell_name": "SERIAL_BUF_CONFIG_3",
     "component_reference": "eliars:user:SERIAL_BUF_CONFIG:1.0",
-    "ip_revision": "9",
+    "ip_revision": "10",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_3_0",
     "parameters": {
       "component_parameters": {
@@ -29,7 +29,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "9" } ],
+        "IPREVISION": [ { "value": "10" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SERIAL_BUF_CONFIG_3_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
