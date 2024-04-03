@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Wed Apr  3 16:11:12 2024
+//Date        : Wed Apr  3 17:33:11 2024
 //Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
@@ -13,6 +13,8 @@
 module bacon_wrapper
    (CLK0_JESD_N,
     CLK0_JESD_P,
+    CLK1_JESD_N,
+    CLK1_JESD_P,
     DDS_AD9915_d,
     DDS_AD9915_dir,
     DDS_AD9915_drctl,
@@ -79,6 +81,8 @@ module bacon_wrapper
     clk_out_156M25);
   input CLK0_JESD_N;
   input CLK0_JESD_P;
+  input CLK1_JESD_N;
+  input CLK1_JESD_P;
   output [31:0]DDS_AD9915_d;
   output DDS_AD9915_dir;
   output DDS_AD9915_drctl;
@@ -146,6 +150,8 @@ module bacon_wrapper
 
   wire CLK0_JESD_N;
   wire CLK0_JESD_P;
+  wire CLK1_JESD_N;
+  wire CLK1_JESD_P;
   wire [31:0]DDS_AD9915_d;
   wire DDS_AD9915_dir;
   wire DDS_AD9915_drctl;
@@ -214,6 +220,8 @@ module bacon_wrapper
   bacon bacon_i
        (.CLK0_JESD_N(CLK0_JESD_N),
         .CLK0_JESD_P(CLK0_JESD_P),
+        .CLK1_JESD_N(CLK1_JESD_N),
+        .CLK1_JESD_P(CLK1_JESD_P),
         .DDS_AD9915_d(DDS_AD9915_d),
         .DDS_AD9915_dir(DDS_AD9915_dir),
         .DDS_AD9915_drctl(DDS_AD9915_drctl),

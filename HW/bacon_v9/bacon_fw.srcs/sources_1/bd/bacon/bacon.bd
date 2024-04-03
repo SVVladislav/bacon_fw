@@ -66,8 +66,8 @@
         "SERIAL_BUF_CONFIG_10": "",
         "SERIAL_BUF_CONFIG_11": ""
       },
-      "SER7_IBUFDS_GTE2_0": "",
-      "SER7_IBUFDS_GTE2_1": ""
+      "SER7_IBUFDS_GTE2_v1_0_0": "",
+      "SER7_IBUFDS_GTE2_v1_0_1": ""
     },
     "interface_ports": {
       "DDS_AD9915": {
@@ -2611,19 +2611,19 @@
           }
         }
       },
-      "SER7_IBUFDS_GTE2_0": {
-        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
-        "ip_revision": "3",
-        "xci_name": "bacon_SER7_IBUFDS_GTE2_0_0",
-        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_0_0\\bacon_SER7_IBUFDS_GTE2_0_0.xci",
-        "inst_hier_path": "SER7_IBUFDS_GTE2_0"
+      "SER7_IBUFDS_GTE2_v1_0_0": {
+        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2_v1_0:1.0",
+        "ip_revision": "2",
+        "xci_name": "bacon_SER7_IBUFDS_GTE2_v1_0_0_0",
+        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_v1_0_0_0\\bacon_SER7_IBUFDS_GTE2_v1_0_0_0.xci",
+        "inst_hier_path": "SER7_IBUFDS_GTE2_v1_0_0"
       },
-      "SER7_IBUFDS_GTE2_1": {
-        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
-        "ip_revision": "3",
-        "xci_name": "bacon_SER7_IBUFDS_GTE2_1_0",
-        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_1_0\\bacon_SER7_IBUFDS_GTE2_1_0.xci",
-        "inst_hier_path": "SER7_IBUFDS_GTE2_1"
+      "SER7_IBUFDS_GTE2_v1_0_1": {
+        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2_v1_0:1.0",
+        "ip_revision": "2",
+        "xci_name": "bacon_SER7_IBUFDS_GTE2_v1_0_1_0",
+        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_v1_0_1_0\\bacon_SER7_IBUFDS_GTE2_v1_0_1_0.xci",
+        "inst_hier_path": "SER7_IBUFDS_GTE2_v1_0_1"
       }
     },
     "interface_nets": {
@@ -2836,25 +2836,25 @@
       "CLK0_JESD_N_1": {
         "ports": [
           "CLK0_JESD_N",
-          "SER7_IBUFDS_GTE2_0/IB"
+          "SER7_IBUFDS_GTE2_v1_0_0/IB"
         ]
       },
       "CLK0_JESD_P_1": {
         "ports": [
           "CLK0_JESD_P",
-          "SER7_IBUFDS_GTE2_0/I"
+          "SER7_IBUFDS_GTE2_v1_0_0/I"
         ]
       },
       "CLK1_JESD_N_1": {
         "ports": [
           "CLK1_JESD_N",
-          "SER7_IBUFDS_GTE2_1/IB"
+          "SER7_IBUFDS_GTE2_v1_0_1/IB"
         ]
       },
       "CLK1_JESD_P_1": {
         "ports": [
           "CLK1_JESD_P",
-          "SER7_IBUFDS_GTE2_1/I"
+          "SER7_IBUFDS_GTE2_v1_0_1/I"
         ]
       },
       "SIN_USB1_1": {

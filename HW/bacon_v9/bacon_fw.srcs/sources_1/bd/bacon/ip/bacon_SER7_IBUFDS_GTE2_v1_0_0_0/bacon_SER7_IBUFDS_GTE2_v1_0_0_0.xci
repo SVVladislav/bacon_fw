@@ -1,15 +1,15 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "bacon_SER7_IBUFDS_GTE2_1_0",
-    "cell_name": "SER7_IBUFDS_GTE2_1",
-    "component_reference": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
-    "ip_revision": "3",
-    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_1_0",
+    "xci_name": "bacon_SER7_IBUFDS_GTE2_v1_0_0_0",
+    "cell_name": "SER7_IBUFDS_GTE2_v1_0_0",
+    "component_reference": "xilinx.com:user:SER7_IBUFDS_GTE2_v1_0:1.0",
+    "ip_revision": "2",
+    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_v1_0_0_0",
     "parameters": {
       "component_parameters": {
         "MODE": [ { "value": "Always On", "resolve_type": "user", "usage": "all" } ],
-        "Component_Name": [ { "value": "bacon_SER7_IBUFDS_GTE2_1_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "bacon_SER7_IBUFDS_GTE2_v1_0_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "MODE": [ { "value": "Always On", "resolve_type": "generated", "usage": "all" } ]
@@ -29,9 +29,9 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "2" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_1_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_v1_0_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2023.2.2" } ],

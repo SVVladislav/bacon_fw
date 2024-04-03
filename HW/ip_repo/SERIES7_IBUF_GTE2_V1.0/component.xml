@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>SER7_IBUFDS_GTE2</spirit:name>
+  <spirit:name>SER7_IBUFDS_GTE2_v1_0</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:model>
     <spirit:views>
@@ -11,7 +11,7 @@
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>Verilog</spirit:language>
-        <spirit:modelName>SER7_IBUFDS_GTE2</spirit:modelName>
+        <spirit:modelName>SER7_IBUFDS_GTE2_v1_0</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -164,14 +164,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/SER7_IBUFDS_GTE2_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/SER7_IBUFDS_GTE2_v1_0_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_e066c6c9</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>SER7_IBUFDS_GTE2</spirit:description>
+  <spirit:description>Gigabit Inpit Differential GTE2 buffer Series7</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>MODE</spirit:name>
@@ -180,7 +180,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">SER7_IBUFDS_GTE2_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">SER7_IBUFDS_GTE2_v1_0_v1_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -212,15 +212,15 @@
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-04-03T13:33:22Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-04-03T14:31:48Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b062d9c5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8133ff62"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="57cb2555"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="acd17a4d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4a9caf0f"/>
