@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Thu Mar 28 21:32:56 2024
-//Host        : Zen running 64-bit major release  (build 9200)
+//Date        : Wed Apr  3 16:11:12 2024
+//Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
 //Purpose     : IP block netlist
@@ -11,7 +11,21 @@
 `timescale 1 ps / 1 ps
 
 module bacon_wrapper
-   (RS485_1_AFAR_de,
+   (CLK0_JESD_N,
+    CLK0_JESD_P,
+    DDS_AD9915_d,
+    DDS_AD9915_dir,
+    DDS_AD9915_drctl,
+    DDS_AD9915_drhold,
+    DDS_AD9915_drover,
+    DDS_AD9915_f,
+    DDS_AD9915_io_update,
+    DDS_AD9915_osk,
+    DDS_AD9915_ps,
+    DDS_AD9915_pwr_dwn,
+    DDS_AD9915_rst,
+    DDS_AD9915_sync,
+    RS485_1_AFAR_de,
     RS485_1_AFAR_di,
     RS485_1_AFAR_re,
     RS485_1_AFAR_ro,
@@ -62,19 +76,21 @@ module bacon_wrapper
     STR8_re,
     STR8_ro,
     clk_in1,
-    clk_out_156M25,
-    dds_ad9915_d,
-    dds_ad9915_dir,
-    dds_ad9915_drctl,
-    dds_ad9915_drhold,
-    dds_ad9915_drover,
-    dds_ad9915_f,
-    dds_ad9915_io_update,
-    dds_ad9915_osk,
-    dds_ad9915_ps,
-    dds_ad9915_pwr_dwn,
-    dds_ad9915_rst,
-    dds_ad9915_sync);
+    clk_out_156M25);
+  input CLK0_JESD_N;
+  input CLK0_JESD_P;
+  output [31:0]DDS_AD9915_d;
+  output DDS_AD9915_dir;
+  output DDS_AD9915_drctl;
+  output DDS_AD9915_drhold;
+  input DDS_AD9915_drover;
+  output [3:0]DDS_AD9915_f;
+  output DDS_AD9915_io_update;
+  output DDS_AD9915_osk;
+  output [2:0]DDS_AD9915_ps;
+  output DDS_AD9915_pwr_dwn;
+  output DDS_AD9915_rst;
+  output DDS_AD9915_sync;
   output RS485_1_AFAR_de;
   output RS485_1_AFAR_di;
   output RS485_1_AFAR_re;
@@ -127,19 +143,21 @@ module bacon_wrapper
   input STR8_ro;
   input clk_in1;
   output clk_out_156M25;
-  output [31:0]dds_ad9915_d;
-  output dds_ad9915_dir;
-  output dds_ad9915_drctl;
-  output dds_ad9915_drhold;
-  input dds_ad9915_drover;
-  output [3:0]dds_ad9915_f;
-  output dds_ad9915_io_update;
-  output dds_ad9915_osk;
-  output [2:0]dds_ad9915_ps;
-  output dds_ad9915_pwr_dwn;
-  output dds_ad9915_rst;
-  output dds_ad9915_sync;
 
+  wire CLK0_JESD_N;
+  wire CLK0_JESD_P;
+  wire [31:0]DDS_AD9915_d;
+  wire DDS_AD9915_dir;
+  wire DDS_AD9915_drctl;
+  wire DDS_AD9915_drhold;
+  wire DDS_AD9915_drover;
+  wire [3:0]DDS_AD9915_f;
+  wire DDS_AD9915_io_update;
+  wire DDS_AD9915_osk;
+  wire [2:0]DDS_AD9915_ps;
+  wire DDS_AD9915_pwr_dwn;
+  wire DDS_AD9915_rst;
+  wire DDS_AD9915_sync;
   wire RS485_1_AFAR_de;
   wire RS485_1_AFAR_di;
   wire RS485_1_AFAR_re;
@@ -192,21 +210,23 @@ module bacon_wrapper
   wire STR8_ro;
   wire clk_in1;
   wire clk_out_156M25;
-  wire [31:0]dds_ad9915_d;
-  wire dds_ad9915_dir;
-  wire dds_ad9915_drctl;
-  wire dds_ad9915_drhold;
-  wire dds_ad9915_drover;
-  wire [3:0]dds_ad9915_f;
-  wire dds_ad9915_io_update;
-  wire dds_ad9915_osk;
-  wire [2:0]dds_ad9915_ps;
-  wire dds_ad9915_pwr_dwn;
-  wire dds_ad9915_rst;
-  wire dds_ad9915_sync;
 
   bacon bacon_i
-       (.RS485_1_AFAR_de(RS485_1_AFAR_de),
+       (.CLK0_JESD_N(CLK0_JESD_N),
+        .CLK0_JESD_P(CLK0_JESD_P),
+        .DDS_AD9915_d(DDS_AD9915_d),
+        .DDS_AD9915_dir(DDS_AD9915_dir),
+        .DDS_AD9915_drctl(DDS_AD9915_drctl),
+        .DDS_AD9915_drhold(DDS_AD9915_drhold),
+        .DDS_AD9915_drover(DDS_AD9915_drover),
+        .DDS_AD9915_f(DDS_AD9915_f),
+        .DDS_AD9915_io_update(DDS_AD9915_io_update),
+        .DDS_AD9915_osk(DDS_AD9915_osk),
+        .DDS_AD9915_ps(DDS_AD9915_ps),
+        .DDS_AD9915_pwr_dwn(DDS_AD9915_pwr_dwn),
+        .DDS_AD9915_rst(DDS_AD9915_rst),
+        .DDS_AD9915_sync(DDS_AD9915_sync),
+        .RS485_1_AFAR_de(RS485_1_AFAR_de),
         .RS485_1_AFAR_di(RS485_1_AFAR_di),
         .RS485_1_AFAR_re(RS485_1_AFAR_re),
         .RS485_1_AFAR_ro(RS485_1_AFAR_ro),
@@ -257,17 +277,5 @@ module bacon_wrapper
         .STR8_re(STR8_re),
         .STR8_ro(STR8_ro),
         .clk_in1(clk_in1),
-        .clk_out_156M25(clk_out_156M25),
-        .dds_ad9915_d(dds_ad9915_d),
-        .dds_ad9915_dir(dds_ad9915_dir),
-        .dds_ad9915_drctl(dds_ad9915_drctl),
-        .dds_ad9915_drhold(dds_ad9915_drhold),
-        .dds_ad9915_drover(dds_ad9915_drover),
-        .dds_ad9915_f(dds_ad9915_f),
-        .dds_ad9915_io_update(dds_ad9915_io_update),
-        .dds_ad9915_osk(dds_ad9915_osk),
-        .dds_ad9915_ps(dds_ad9915_ps),
-        .dds_ad9915_pwr_dwn(dds_ad9915_pwr_dwn),
-        .dds_ad9915_rst(dds_ad9915_rst),
-        .dds_ad9915_sync(dds_ad9915_sync));
+        .clk_out_156M25(clk_out_156M25));
 endmodule

@@ -1,0 +1,50 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "bacon_SER7_IBUFDS_GTE2_1_0",
+    "cell_name": "SER7_IBUFDS_GTE2_1",
+    "component_reference": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
+    "ip_revision": "3",
+    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_1_0",
+    "parameters": {
+      "component_parameters": {
+        "MODE": [ { "value": "Always On", "resolve_type": "user", "usage": "all" } ],
+        "Component_Name": [ { "value": "bacon_SER7_IBUFDS_GTE2_1_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "MODE": [ { "value": "Always On", "resolve_type": "generated", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "kintex7" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7k410t" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "3" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_1_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "I": [ { "direction": "in" } ],
+        "IB": [ { "direction": "in" } ],
+        "O": [ { "direction": "out" } ],
+        "ODIV2": [ { "direction": "out" } ]
+      }
+    }
+  }
+}

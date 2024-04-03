@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x88DADBC4E06CCF20",
+      "boundary_crc": "0xCF5FB1E2B92F1F9E",
       "device": "xc7k410tffg900-2",
       "gen_directory": "../../../../bacon_fw.gen/sources_1/bd/bacon",
       "name": "bacon",
@@ -56,10 +56,8 @@
         "axi_uart16550_0": "",
         "SERIAL_BUF_CONFIG_5": "",
         "clk_wiz_2": "",
-        "axi_uart16550_2": "",
         "SERIAL_BUF_CONFIG_6": "",
         "axi_uart16550_3": "",
-        "util_vector_logic_0": "",
         "util_vector_logic_1": "",
         "util_vector_logic_2": "",
         "SERIAL_BUF_CONFIG_7": "",
@@ -67,66 +65,68 @@
         "SERIAL_BUF_CONFIG_9": "",
         "SERIAL_BUF_CONFIG_10": "",
         "SERIAL_BUF_CONFIG_11": ""
-      }
+      },
+      "SER7_IBUFDS_GTE2_0": "",
+      "SER7_IBUFDS_GTE2_1": ""
     },
     "interface_ports": {
-      "dds_ad9915": {
+      "DDS_AD9915": {
         "mode": "Master",
         "vlnv_bus_definition": "eliars:user:DDS_AD9915_CTRL:1.0",
         "vlnv": "eliars:user:DDS_AD9915_CTRL_rtl:1.0",
         "port_maps": {
           "drhold": {
-            "physical_name": "dds_ad9915_drhold",
+            "physical_name": "DDS_AD9915_drhold",
             "direction": "O"
           },
           "rst": {
-            "physical_name": "dds_ad9915_rst",
+            "physical_name": "DDS_AD9915_rst",
             "direction": "O"
           },
           "PS": {
-            "physical_name": "dds_ad9915_ps",
+            "physical_name": "DDS_AD9915_ps",
             "direction": "O",
             "left": "2",
             "right": "0"
           },
           "D": {
-            "physical_name": "dds_ad9915_d",
+            "physical_name": "DDS_AD9915_d",
             "direction": "O",
             "left": "31",
             "right": "0"
           },
           "F": {
-            "physical_name": "dds_ad9915_f",
+            "physical_name": "DDS_AD9915_f",
             "direction": "O",
             "left": "3",
             "right": "0"
           },
           "io_update": {
-            "physical_name": "dds_ad9915_io_update",
+            "physical_name": "DDS_AD9915_io_update",
             "direction": "O"
           },
           "osk": {
-            "physical_name": "dds_ad9915_osk",
+            "physical_name": "DDS_AD9915_osk",
             "direction": "O"
           },
           "pwr_dwn": {
-            "physical_name": "dds_ad9915_pwr_dwn",
+            "physical_name": "DDS_AD9915_pwr_dwn",
             "direction": "O"
           },
           "drctl": {
-            "physical_name": "dds_ad9915_drctl",
+            "physical_name": "DDS_AD9915_drctl",
             "direction": "O"
           },
           "drover": {
-            "physical_name": "dds_ad9915_drover",
+            "physical_name": "DDS_AD9915_drover",
             "direction": "I"
           },
           "sync": {
-            "physical_name": "dds_ad9915_sync",
+            "physical_name": "DDS_AD9915_sync",
             "direction": "O"
           },
           "dir": {
-            "physical_name": "dds_ad9915_dir",
+            "physical_name": "DDS_AD9915_dir",
             "direction": "O"
           }
         }
@@ -464,6 +464,18 @@
         "direction": "O"
       },
       "SIN_USB1": {
+        "direction": "I"
+      },
+      "CLK0_JESD_P": {
+        "direction": "I"
+      },
+      "CLK0_JESD_N": {
+        "direction": "I"
+      },
+      "CLK1_JESD_P": {
+        "direction": "I"
+      },
+      "CLK1_JESD_N": {
         "direction": "I"
       }
     },
@@ -2052,11 +2064,6 @@
             "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
             "vlnv": "eliars:user:SER_TRANS_rtl:1.0"
           },
-          "S_AXI2": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-          },
           "RS485_3": {
             "mode": "Master",
             "vlnv_bus_definition": "eliars:user:SER_TRANS:1.0",
@@ -2124,9 +2131,6 @@
             "direction": "I"
           },
           "intr_uart_usb1": {
-            "direction": "O"
-          },
-          "intr_uart_rs485_3": {
             "direction": "O"
           }
         },
@@ -2270,30 +2274,17 @@
               }
             }
           },
-          "axi_uart16550_2": {
-            "vlnv": "xilinx.com:ip:axi_uart16550:2.0",
-            "ip_revision": "32",
-            "xci_name": "bacon_axi_uart16550_2_0",
-            "xci_path": "ip\\bacon_axi_uart16550_2_0\\bacon_axi_uart16550_2_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/axi_uart16550_2",
-            "parameters": {
-              "C_EXTERNAL_XIN_CLK_HZ": {
-                "value": "25000000"
-              },
-              "C_EXTERNAL_XIN_CLK_HZ_d": {
-                "value": "25"
-              },
-              "C_HAS_EXTERNAL_XIN": {
-                "value": "0"
-              }
-            }
-          },
           "SERIAL_BUF_CONFIG_6": {
             "vlnv": "eliars:user:SERIAL_BUF_CONFIG:1.0",
             "ip_revision": "10",
             "xci_name": "bacon_SERIAL_BUF_CONFIG_6_0",
             "xci_path": "ip\\bacon_SERIAL_BUF_CONFIG_6_0\\bacon_SERIAL_BUF_CONFIG_6_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_6"
+            "inst_hier_path": "UARTS_AND_STROBES/SERIAL_BUF_CONFIG_6",
+            "parameters": {
+              "MODE": {
+                "value": "Unused"
+              }
+            }
           },
           "axi_uart16550_3": {
             "vlnv": "xilinx.com:ip:axi_uart16550:2.0",
@@ -2309,21 +2300,6 @@
                 "value": "29.4912"
               },
               "C_HAS_EXTERNAL_XIN": {
-                "value": "1"
-              }
-            }
-          },
-          "util_vector_logic_0": {
-            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
-            "ip_revision": "3",
-            "xci_name": "bacon_util_vector_logic_0_0",
-            "xci_path": "ip\\bacon_util_vector_logic_0_0\\bacon_util_vector_logic_0_0.xci",
-            "inst_hier_path": "UARTS_AND_STROBES/util_vector_logic_0",
-            "parameters": {
-              "C_OPERATION": {
-                "value": "not"
-              },
-              "C_SIZE": {
                 "value": "1"
               }
             }
@@ -2417,12 +2393,6 @@
           }
         },
         "interface_nets": {
-          "Conn1": {
-            "interface_ports": [
-              "axi_uart16550_2/S_AXI",
-              "S_AXI2"
-            ]
-          },
           "Conn2": {
             "interface_ports": [
               "axi_uart16550_3/S_AXI",
@@ -2534,13 +2504,6 @@
               "SERIAL_BUF_CONFIG_3/in_DI"
             ]
           },
-          "INVERTER_0_dout": {
-            "ports": [
-              "util_vector_logic_0/Res",
-              "SERIAL_BUF_CONFIG_6/in_DE",
-              "SERIAL_BUF_CONFIG_6/in_RE"
-            ]
-          },
           "INVERTER_1_dout": {
             "ports": [
               "util_vector_logic_1/Res",
@@ -2565,12 +2528,6 @@
             "ports": [
               "SERIAL_BUF_CONFIG_5/out_RO",
               "axi_uart16550_1/sin"
-            ]
-          },
-          "SERIAL_BUF_CONFIG_6_out_RO": {
-            "ports": [
-              "SERIAL_BUF_CONFIG_6/out_RO",
-              "axi_uart16550_2/sin"
             ]
           },
           "axi_uart16550_0_dtrn": {
@@ -2609,24 +2566,6 @@
               "SERIAL_BUF_CONFIG_5/in_DI"
             ]
           },
-          "axi_uart16550_2_dtrn": {
-            "ports": [
-              "axi_uart16550_2/dtrn",
-              "util_vector_logic_0/Op1"
-            ]
-          },
-          "axi_uart16550_2_ip2intc_irpt": {
-            "ports": [
-              "axi_uart16550_2/ip2intc_irpt",
-              "intr_uart_rs485_3"
-            ]
-          },
-          "axi_uart16550_2_sout": {
-            "ports": [
-              "axi_uart16550_2/sout",
-              "SERIAL_BUF_CONFIG_6/in_DI"
-            ]
-          },
           "axi_uart16550_3_ip2intc_irpt": {
             "ports": [
               "axi_uart16550_3/ip2intc_irpt",
@@ -2644,9 +2583,8 @@
               "s_axi_aclk",
               "axi_uart16550_0/s_axi_aclk",
               "axi_uart16550_1/s_axi_aclk",
-              "clk_wiz_2/clk_in1",
-              "axi_uart16550_2/s_axi_aclk",
-              "axi_uart16550_3/s_axi_aclk"
+              "axi_uart16550_3/s_axi_aclk",
+              "clk_wiz_2/clk_in1"
             ]
           },
           "clk_wiz_2_clk_out_29M4912": {
@@ -2662,7 +2600,6 @@
               "s_axi_aresetn",
               "axi_uart16550_0/s_axi_aresetn",
               "axi_uart16550_1/s_axi_aresetn",
-              "axi_uart16550_2/s_axi_aresetn",
               "axi_uart16550_3/s_axi_aresetn"
             ]
           },
@@ -2673,12 +2610,26 @@
             ]
           }
         }
+      },
+      "SER7_IBUFDS_GTE2_0": {
+        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
+        "ip_revision": "3",
+        "xci_name": "bacon_SER7_IBUFDS_GTE2_0_0",
+        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_0_0\\bacon_SER7_IBUFDS_GTE2_0_0.xci",
+        "inst_hier_path": "SER7_IBUFDS_GTE2_0"
+      },
+      "SER7_IBUFDS_GTE2_1": {
+        "vlnv": "xilinx.com:user:SER7_IBUFDS_GTE2:1.0",
+        "ip_revision": "3",
+        "xci_name": "bacon_SER7_IBUFDS_GTE2_1_0",
+        "xci_path": "ip\\bacon_SER7_IBUFDS_GTE2_1_0\\bacon_SER7_IBUFDS_GTE2_1_0.xci",
+        "inst_hier_path": "SER7_IBUFDS_GTE2_1"
       }
     },
     "interface_nets": {
       "DDS_CTRL_0_AD9915": {
         "interface_ports": [
-          "dds_ad9915",
+          "DDS_AD9915",
           "DDS_CTRL_0/AD9915"
         ]
       },
@@ -2796,12 +2747,6 @@
           "UARTS_AND_STROBES/S_AXI"
         ]
       },
-      "microblaze_0_axi_periph_M07_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M07_AXI",
-          "UARTS_AND_STROBES/S_AXI2"
-        ]
-      },
       "microblaze_0_axi_periph_M08_AXI": {
         "interface_ports": [
           "microblaze_0_axi_periph/M08_AXI",
@@ -2888,16 +2833,34 @@
           "UARTS_AND_STROBES/STR_PRM"
         ]
       },
+      "CLK0_JESD_N_1": {
+        "ports": [
+          "CLK0_JESD_N",
+          "SER7_IBUFDS_GTE2_0/IB"
+        ]
+      },
+      "CLK0_JESD_P_1": {
+        "ports": [
+          "CLK0_JESD_P",
+          "SER7_IBUFDS_GTE2_0/I"
+        ]
+      },
+      "CLK1_JESD_N_1": {
+        "ports": [
+          "CLK1_JESD_N",
+          "SER7_IBUFDS_GTE2_1/IB"
+        ]
+      },
+      "CLK1_JESD_P_1": {
+        "ports": [
+          "CLK1_JESD_P",
+          "SER7_IBUFDS_GTE2_1/I"
+        ]
+      },
       "SIN_USB1_1": {
         "ports": [
           "SIN_USB1",
           "UARTS_AND_STROBES/sin_usb1"
-        ]
-      },
-      "UARTS_AND_STROBES_intr_uart_rs485_3": {
-        "ports": [
-          "UARTS_AND_STROBES/intr_uart_rs485_3",
-          "microblaze_0_xlconcat/In11"
         ]
       },
       "UARTS_AND_STROBES_intr_uart_rs485_afar": {
@@ -2964,9 +2927,9 @@
           "microblaze_0_axi_periph/M08_ACLK"
         ]
       },
-      "clk_wiz_0_clk_out_200M": {
+      "clk_wiz_0_clk_out_125M": {
         "ports": [
-          "clk_wiz_0/clk_out_200M",
+          "clk_wiz_0/clk_out_125M",
           "BCO_PROFILE_0/clk_prof"
         ]
       },
@@ -3048,7 +3011,8 @@
           "microblaze_0_xlconcat/In9",
           "microblaze_0_xlconcat/In10",
           "microblaze_0_xlconcat/In13",
-          "microblaze_0_xlconcat/In14"
+          "microblaze_0_xlconcat/In14",
+          "microblaze_0_xlconcat/In11"
         ]
       },
       "xlconstant_2_dout": {
@@ -3105,11 +3069,6 @@
               "SEG_axi_uart16550_1_Reg": {
                 "address_block": "/UARTS_AND_STROBES/axi_uart16550_1/S_AXI/Reg",
                 "offset": "0x44A30000",
-                "range": "64K"
-              },
-              "SEG_axi_uart16550_2_Reg": {
-                "address_block": "/UARTS_AND_STROBES/axi_uart16550_2/S_AXI/Reg",
-                "offset": "0x44A40000",
                 "range": "64K"
               },
               "SEG_axi_uart16550_3_Reg": {
