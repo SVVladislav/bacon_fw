@@ -1,0 +1,18 @@
+{
+  "name": "bacon_v9",
+  "type": "HOST",
+  "platform": "D:\\Xilinx\\Projects\\bacon_fw_v9\\SW\\bacon_v9_platform\\export\\bacon_v9_platform\\bacon_v9_platform.xpfm",
+  "domain": "standalone_microblaze_0",
+  "cpuInstance": "microblaze_0",
+  "cpuType": "microblaze",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_microblaze_0",
+  "applicationFlow": "EMBEDDED",
+  "previousBuildStatusMap": {
+    "hw": "SUCCESS"
+  }
+}

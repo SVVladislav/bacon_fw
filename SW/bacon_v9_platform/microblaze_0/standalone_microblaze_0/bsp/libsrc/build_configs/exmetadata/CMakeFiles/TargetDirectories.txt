@@ -1,0 +1,5 @@
+D:/Xilinx/Projects/bacon_fw_v9/SW/bacon_v9_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartns550_example.dir
+D:/Xilinx/Projects/bacon_fw_v9/SW/bacon_v9_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/uartlite_example.dir
+D:/Xilinx/Projects/bacon_fw_v9/SW/bacon_v9_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/intc_example.dir
+D:/Xilinx/Projects/bacon_fw_v9/SW/bacon_v9_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/edit_cache.dir
+D:/Xilinx/Projects/bacon_fw_v9/SW/bacon_v9_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/exmetadata/CMakeFiles/rebuild_cache.dir

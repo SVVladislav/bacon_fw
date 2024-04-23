@@ -64,4 +64,4 @@ set_property -dict {PACKAGE_PIN M20 IOSTANDARD LVCMOS33} [get_ports RS485_4_ro]
 # UART <-> USB - FT232
 set_property -dict {PACKAGE_PIN H25 IOSTANDARD LVCMOS33} [get_ports SIN_USB1]
 set_property -dict {PACKAGE_PIN C26 IOSTANDARD LVCMOS33} [get_ports SOUT_USB1]
-
+set_property -dict {PACKAGE_PIN E26 IOSTANDARD LVCMOS33} [get_ports RESET_USB1]

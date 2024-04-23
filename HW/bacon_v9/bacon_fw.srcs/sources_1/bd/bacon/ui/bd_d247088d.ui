@@ -6,8 +6,8 @@
    "Color Coded_ScaleFactor":"0.588332",
    "Color Coded_TopLeft":"-1061,0",
    "Default View_Layers":"/UARTS_AND_STROBES/clk_wiz_0_clk_out_100M:true|/UARTS_AND_STROBES/axi_uart16550_0_ip2intc_irpt:true|/UARTS_AND_STROBES/axi_uart16550_1_ip2intc_irpt:true|/UARTS_AND_STROBES/axi_uart16550_2_ip2intc_irpt:true|/UARTS_AND_STROBES/clk_wiz_2_clk_out_29M4912:true|/UARTS_AND_STROBES/rst_clk_in1_100M_peripheral_aresetn:true|/UARTS_AND_STROBES/axi_uart16550_3_ip2intc_irpt:true|",
-   "Default View_ScaleFactor":"0.272047",
-   "Default View_TopLeft":"-879,-757",
+   "Default View_ScaleFactor":"0.883876",
+   "Default View_TopLeft":"-414,-665",
    "Display-PortTypeClock":"true",
    "Display-PortTypeInterrupt":"true",
    "Display-PortTypeOthers":"true",
@@ -281,21 +281,21 @@ pagesize -pg 1 -db -bbox -sgen -130 0 1260 1430
    "Reduced Jogs_TopLeft":"-1161,4",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port STR4_PN -pg 1 -lvl 4 -x 1680 -y 610 -defaultsOSRD
+preplace port STR4_PN -pg 1 -lvl 5 -x 1120 -y 610 -defaultsOSRD
 preplace port S_AXI -pg 1 -lvl 0 -x -130 -y 70 -defaultsOSRD
-preplace port STR1_PN -pg 1 -lvl 4 -x 1680 -y 510 -defaultsOSRD
-preplace port STR2_PRD -pg 1 -lvl 4 -x 1680 -y 720 -defaultsOSRD
-preplace port STR3_PRM -pg 1 -lvl 4 -x 1680 -y 830 -defaultsOSRD
-preplace port RS485_2_PC -pg 1 -lvl 4 -x 1680 -y 260 -defaultsOSRD
+preplace port STR1_PN -pg 1 -lvl 5 -x 1120 -y 510 -defaultsOSRD
+preplace port STR2_PRD -pg 1 -lvl 5 -x 1120 -y 720 -defaultsOSRD
+preplace port STR3_PRM -pg 1 -lvl 5 -x 1120 -y 830 -defaultsOSRD
+preplace port RS485_2_PC -pg 1 -lvl 5 -x 1120 -y 260 -defaultsOSRD
 preplace port S_AXI1 -pg 1 -lvl 0 -x -130 -y 310 -defaultsOSRD
-preplace port RS485_1_AFAR -pg 1 -lvl 4 -x 1680 -y 80 -defaultsOSRD
-preplace port RS485_3 -pg 1 -lvl 4 -x 1680 -y -70 -defaultsOSRD
+preplace port RS485_1_AFAR -pg 1 -lvl 5 -x 1120 -y 80 -defaultsOSRD
+preplace port RS485_3 -pg 1 -lvl 5 -x 1120 -y -70 -defaultsOSRD
 preplace port S_AXI3 -pg 1 -lvl 0 -x -130 -y -240 -defaultsOSRD
-preplace port RS485_4 -pg 1 -lvl 4 -x 1680 -y 410 -defaultsOSRD
-preplace port STR5 -pg 1 -lvl 4 -x 1680 -y 960 -defaultsOSRD
-preplace port STR6 -pg 1 -lvl 4 -x 1680 -y 1080 -defaultsOSRD
-preplace port STR7 -pg 1 -lvl 4 -x 1680 -y 1190 -defaultsOSRD
-preplace port STR8 -pg 1 -lvl 4 -x 1680 -y 1290 -defaultsOSRD
+preplace port RS485_4 -pg 1 -lvl 5 -x 1120 -y 410 -defaultsOSRD
+preplace port STR5 -pg 1 -lvl 5 -x 1120 -y 960 -defaultsOSRD
+preplace port STR6 -pg 1 -lvl 5 -x 1120 -y 1080 -defaultsOSRD
+preplace port STR7 -pg 1 -lvl 5 -x 1120 -y 1190 -defaultsOSRD
+preplace port STR8 -pg 1 -lvl 5 -x 1120 -y 1290 -defaultsOSRD
 preplace port port-id_STR_PN -pg 1 -lvl 0 -x -130 -y 610 -defaultsOSRD
 preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -130 -y -200 -defaultsOSRD
 preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -130 -y 100 -defaultsOSRD
@@ -303,63 +303,65 @@ preplace port port-id_STR_PRD -pg 1 -lvl 0 -x -130 -y 720 -defaultsOSRD
 preplace port port-id_STR_PRM -pg 1 -lvl 0 -x -130 -y 830 -defaultsOSRD
 preplace port port-id_intr_uart_rs485_pc -pg 1 -lvl 0 -x -130 -y 550 -defaultsOSRD -left
 preplace port port-id_intr_uart_rs485_afar -pg 1 -lvl 0 -x -130 -y 180 -defaultsOSRD -left
-preplace port port-id_sout_usb1 -pg 1 -lvl 4 -x 1680 -y -210 -defaultsOSRD
-preplace port port-id_sin_usb1 -pg 1 -lvl 4 -x 1680 -y -240 -defaultsOSRD -right
+preplace port port-id_sout_usb1 -pg 1 -lvl 5 -x 1120 -y -210 -defaultsOSRD
+preplace port port-id_sin_usb1 -pg 1 -lvl 5 -x 1120 -y -240 -defaultsOSRD -right
 preplace port port-id_intr_uart_usb1 -pg 1 -lvl 0 -x -130 -y -110 -defaultsOSRD -left
-preplace inst SERIAL_BUF_CONFIG_0 -pg 1 -lvl 3 -x 860 -y 610 -defaultsOSRD
-preplace inst axi_uart16550_1 -pg 1 -lvl 1 -x 100 -y 100 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 36 38 37 35} -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_1 -pg 1 -lvl 3 -x 860 -y 510 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_2 -pg 1 -lvl 3 -x 860 -y 720 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_3 -pg 1 -lvl 3 -x 860 -y 830 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_4 -pg 1 -lvl 3 -x 860 -y 270 -swap {0 1 2 3 4 7 5 6 8} -defaultsOSRD
-preplace inst axi_uart16550_0 -pg 1 -lvl 1 -x 100 -y 340 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_5 -pg 1 -lvl 3 -x 860 -y 90 -swap {0 1 2 3 4 7 5 6 8} -defaultsOSRD
-preplace inst clk_wiz_2 -pg 1 -lvl 1 -x 100 -y 490 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_6 -pg 1 -lvl 3 -x 860 -y -70 -defaultsOSRD
-preplace inst axi_uart16550_3 -pg 1 -lvl 1 -x 100 -y -210 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 36 38 37 35} -defaultsOSRD
-preplace inst util_vector_logic_1 -pg 1 -lvl 2 -x 600 -y 70 -defaultsOSRD
-preplace inst util_vector_logic_2 -pg 1 -lvl 2 -x 600 -y 290 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_7 -pg 1 -lvl 3 -x 860 -y 410 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_8 -pg 1 -lvl 3 -x 860 -y 960 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_9 -pg 1 -lvl 3 -x 860 -y 1080 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_10 -pg 1 -lvl 3 -x 860 -y 1190 -defaultsOSRD
-preplace inst SERIAL_BUF_CONFIG_11 -pg 1 -lvl 3 -x 860 -y 1290 -defaultsOSRD
-preplace netloc BCO_PROFILE_0_str_pn_out 1 0 3 NJ 610 N 610 750
-preplace netloc BCO_PROFILE_0_str_prd 1 0 3 NJ 720 N 720 N
-preplace netloc BCO_PROFILE_0_str_prm 1 0 3 NJ 830 N 830 N
-preplace netloc INVERTER_1_dout 1 2 1 750 70n
-preplace netloc INVERTER_2_dout 1 2 1 740 250n
-preplace netloc SERIAL_BUF_CONFIG_4_out_RO 1 1 3 240 190 N 190 970
-preplace netloc SERIAL_BUF_CONFIG_5_out_RO 1 1 3 260 170 N 170 970
-preplace netloc axi_uart16550_0_dtrn 1 1 1 250 290n
-preplace netloc axi_uart16550_0_ip2intc_irpt 1 0 2 N 550 220
-preplace netloc axi_uart16550_0_sout 1 1 2 260 230 750
-preplace netloc axi_uart16550_1_dtrn 1 1 1 N 70
-preplace netloc axi_uart16550_1_ip2intc_irpt 1 0 2 -30J 210 220
-preplace netloc axi_uart16550_1_sout 1 1 2 240 130 750
-preplace netloc axi_uart16550_3_ip2intc_irpt 1 0 2 NJ -110 220
-preplace netloc axi_uart16550_3_sout 1 1 3 NJ -210 N -210 N
-preplace netloc clk_wiz_0_clk_out_100M 1 0 1 -40 -200n
-preplace netloc clk_wiz_2_clk_out_29M4912 1 1 1 230 -190n
-preplace netloc rst_clk_in1_100M_peripheral_aresetn 1 0 1 -20 -180n
-preplace netloc sin_usb1_1 1 1 3 220 -240 N -240 NJ
-preplace netloc Conn2 1 0 1 N -240
-preplace netloc SERIAL_BUF_CONFIG_0_SER_TRANS 1 3 1 N 610
-preplace netloc SERIAL_BUF_CONFIG_10_SER_TRANS 1 3 1 N 1190
-preplace netloc SERIAL_BUF_CONFIG_11_SER_TRANS 1 3 1 N 1290
-preplace netloc SERIAL_BUF_CONFIG_1_SER_TRANS 1 3 1 N 510
-preplace netloc SERIAL_BUF_CONFIG_2_SER_TRANS 1 3 1 N 720
-preplace netloc SERIAL_BUF_CONFIG_3_SER_TRANS 1 3 1 N 830
-preplace netloc SERIAL_BUF_CONFIG_4_SER_TRANS 1 3 1 N 260
-preplace netloc SERIAL_BUF_CONFIG_5_SER_TRANS 1 3 1 N 80
-preplace netloc SERIAL_BUF_CONFIG_6_SER_TRANS 1 3 1 N -70
-preplace netloc SERIAL_BUF_CONFIG_7_SER_TRANS 1 3 1 N 410
-preplace netloc SERIAL_BUF_CONFIG_8_SER_TRANS 1 3 1 N 960
-preplace netloc SERIAL_BUF_CONFIG_9_SER_TRANS 1 3 1 N 1080
-preplace netloc microblaze_0_axi_periph_M05_AXI 1 0 1 NJ 310
-preplace netloc microblaze_0_axi_periph_M06_AXI 1 0 1 NJ 70
-levelinfo -pg 1 -130 100 600 860 1680
-pagesize -pg 1 -db -bbox -sgen -330 -710 1830 1380
+preplace portBus RESET_USB1 -pg 1 -lvl 5 -x 1120 -y -300 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_0 -pg 1 -lvl 4 -x 990 -y 610 -defaultsOSRD
+preplace inst axi_uart16550_1 -pg 1 -lvl 1 -x 100 -y 120 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 36 38 37 35} -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_1 -pg 1 -lvl 4 -x 990 -y 510 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_2 -pg 1 -lvl 4 -x 990 -y 720 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_3 -pg 1 -lvl 4 -x 990 -y 830 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_4 -pg 1 -lvl 4 -x 990 -y 270 -swap {0 1 2 3 4 7 5 6 8} -defaultsOSRD
+preplace inst axi_uart16550_0 -pg 1 -lvl 1 -x 100 -y 360 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_5 -pg 1 -lvl 4 -x 990 -y 90 -swap {0 1 2 3 4 7 5 6 8} -defaultsOSRD
+preplace inst clk_wiz_2 -pg 1 -lvl 1 -x 100 -y 510 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_6 -pg 1 -lvl 4 -x 990 -y -70 -defaultsOSRD
+preplace inst axi_uart16550_3 -pg 1 -lvl 1 -x 100 -y -200 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 36 38 37 35} -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 3 -x 730 -y 70 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 3 -x 730 -y 290 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_7 -pg 1 -lvl 4 -x 990 -y 410 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_8 -pg 1 -lvl 4 -x 990 -y 960 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_9 -pg 1 -lvl 4 -x 990 -y 1080 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_10 -pg 1 -lvl 4 -x 990 -y 1190 -defaultsOSRD
+preplace inst SERIAL_BUF_CONFIG_11 -pg 1 -lvl 4 -x 990 -y 1290 -defaultsOSRD
+preplace netloc BCO_PROFILE_0_str_pn_out 1 0 4 NJ 610 NJ 610 NJ 610 890
+preplace netloc BCO_PROFILE_0_str_prd 1 0 4 NJ 720 NJ 720 NJ 720 N
+preplace netloc BCO_PROFILE_0_str_prm 1 0 4 NJ 830 NJ 830 NJ 830 N
+preplace netloc INVERTER_1_dout 1 3 1 890 70n
+preplace netloc INVERTER_2_dout 1 3 1 880 250n
+preplace netloc SERIAL_BUF_CONFIG_4_out_RO 1 1 4 NJ 350 NJ 350 NJ 350 1090
+preplace netloc SERIAL_BUF_CONFIG_5_out_RO 1 1 4 NJ 110 450 170 NJ 170 1090
+preplace netloc axi_uart16550_0_dtrn 1 1 2 260 290 NJ
+preplace netloc axi_uart16550_0_ip2intc_irpt 1 0 2 -70 570 230
+preplace netloc axi_uart16550_0_sout 1 1 3 250 230 NJ 230 890J
+preplace netloc axi_uart16550_1_dtrn 1 1 2 250 70 NJ
+preplace netloc axi_uart16550_1_ip2intc_irpt 1 0 2 -110J 230 230
+preplace netloc axi_uart16550_1_sout 1 1 3 NJ 130 NJ 130 890
+preplace netloc axi_uart16550_3_ip2intc_irpt 1 0 2 -30J -90 230
+preplace netloc axi_uart16550_3_sout 1 1 4 NJ -190 NJ -190 NJ -190 1090J
+preplace netloc clk_wiz_0_clk_out_100M 1 0 1 -60 -200n
+preplace netloc clk_wiz_2_clk_out_29M4912 1 1 1 240 -170n
+preplace netloc rst_clk_in1_100M_peripheral_aresetn 1 0 1 -40 -170n
+preplace netloc sin_usb1_1 1 1 4 240 -240 NJ -240 NJ -240 NJ
+preplace netloc axi_uart16550_3_out1n 1 1 4 230 -300 NJ -300 NJ -300 NJ
+preplace netloc Conn2 1 0 1 -100 -240n
+preplace netloc SERIAL_BUF_CONFIG_0_SER_TRANS 1 4 1 N 610
+preplace netloc SERIAL_BUF_CONFIG_10_SER_TRANS 1 4 1 N 1190
+preplace netloc SERIAL_BUF_CONFIG_11_SER_TRANS 1 4 1 N 1290
+preplace netloc SERIAL_BUF_CONFIG_1_SER_TRANS 1 4 1 N 510
+preplace netloc SERIAL_BUF_CONFIG_2_SER_TRANS 1 4 1 N 720
+preplace netloc SERIAL_BUF_CONFIG_3_SER_TRANS 1 4 1 N 830
+preplace netloc SERIAL_BUF_CONFIG_4_SER_TRANS 1 4 1 N 260
+preplace netloc SERIAL_BUF_CONFIG_5_SER_TRANS 1 4 1 N 80
+preplace netloc SERIAL_BUF_CONFIG_6_SER_TRANS 1 4 1 N -70
+preplace netloc SERIAL_BUF_CONFIG_7_SER_TRANS 1 4 1 N 410
+preplace netloc SERIAL_BUF_CONFIG_8_SER_TRANS 1 4 1 N 960
+preplace netloc SERIAL_BUF_CONFIG_9_SER_TRANS 1 4 1 N 1080
+preplace netloc microblaze_0_axi_periph_M05_AXI 1 0 1 -110J 310n
+preplace netloc microblaze_0_axi_periph_M06_AXI 1 0 1 -50J 70n
+levelinfo -pg 1 -130 100 430 730 990 1120
+pagesize -pg 1 -db -bbox -sgen -330 -710 1840 1380
 "
 }
 0

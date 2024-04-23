@@ -1,0 +1,36 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "tcf-debug",
+			"request": "launch",
+			"name": "bacon_v9_app_hw_1",
+			"debugType": "baremetal-fpga",
+			"attachToRunningTargetOptions": {
+				"targetSetupMode": "standalone",
+				"executeScript": true,
+				"scriptPath": ""
+			},
+			"autoAttachProcessChildren": false,
+			"target": {
+				"targetConnectionId": "Local",
+				"peersIniPath": "../../../.peers.ini",
+				"context": "fpga"
+			},
+			"targetSetup": {
+				"resetSystem": false,
+				"programDevice": false,
+				"bitstreamFile": "${workspaceFolder}\\bacon_v9\\_ide\\bitstream\\bacon_v9.bit",
+				"downloadElf": [
+					{
+						"core": "microblaze_0",
+						"resetProcessor": true,
+						"elfFile": "${workspaceFolder}\\bacon_v9\\build\\bacon_v9.elf",
+						"stopAtEntry": true
+					}
+				]
+			},
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}

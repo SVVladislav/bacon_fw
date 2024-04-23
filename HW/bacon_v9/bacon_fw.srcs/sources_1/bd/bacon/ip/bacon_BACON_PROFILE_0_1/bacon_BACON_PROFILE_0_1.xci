@@ -1,0 +1,83 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "bacon_BACON_PROFILE_0_1",
+    "cell_name": "PROFILES_AND_STROBES/BACON_PROFILE_0",
+    "component_reference": "xilinx.com:user:BACON_PROFILE:2.0",
+    "ip_revision": "15",
+    "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_BACON_PROFILE_0_1",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "bacon_BACON_PROFILE_0_1", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "kintex7" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7k410t" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "15" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_BACON_PROFILE_0_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "cur_prof": [ { "direction": "out", "size_left": "511", "size_right": "0" } ],
+        "next_prof": [ { "direction": "out", "size_left": "511", "size_right": "0" } ],
+        "en_zond": [ { "direction": "in" } ],
+        "clk_prof": [ { "direction": "in" } ],
+        "en_zond_snc": [ { "direction": "out" } ],
+        "str_pn": [ { "direction": "out" } ],
+        "str_pn_out": [ { "direction": "out" } ],
+        "str_dds": [ { "direction": "out" } ],
+        "str_prd": [ { "direction": "out" } ],
+        "str_prm": [ { "direction": "out" } ],
+        "str_adc": [ { "direction": "out" } ],
+        "clk_adc_div_16": [ { "direction": "out" } ],
+        "bram_addr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "bram_clk": [ { "direction": "out" } ],
+        "bram_dout": [ { "direction": "in", "size_left": "511", "size_right": "0" } ],
+        "bram_en": [ { "direction": "out" } ],
+        "bram_rst": [ { "direction": "out" } ],
+        "bram_web": [ { "direction": "out", "size_left": "63", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "BRAM": {
+          "vlnv": "xilinx.com:interface:bram:1.0",
+          "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "MEM_SIZE": [ { "value": "4096", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_WIDTH": [ { "value": "512", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MASTER_TYPE": [ { "value": "BRAM_CTRL", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "READ_LATENCY": [ { "value": "1", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MEM_ECC": [ { "value": "NONE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ]
+          },
+          "port_maps": {
+            "EN": [ { "physical_name": "bram_en" } ],
+            "DOUT": [ { "physical_name": "bram_dout" } ],
+            "RST": [ { "physical_name": "bram_rst" } ],
+            "CLK": [ { "physical_name": "bram_clk" } ],
+            "WE": [ { "physical_name": "bram_web" } ],
+            "ADDR": [ { "physical_name": "bram_addr" } ]
+          }
+        }
+      }
+    }
+  }
+}

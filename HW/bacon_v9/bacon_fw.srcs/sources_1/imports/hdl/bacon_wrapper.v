@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Wed Apr  3 17:33:11 2024
+//Date        : Tue Apr 23 17:35:13 2024
 //Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
@@ -27,6 +27,12 @@ module bacon_wrapper
     DDS_AD9915_pwr_dwn,
     DDS_AD9915_rst,
     DDS_AD9915_sync,
+    LMK04828_ncs,
+    LMK04828_reset,
+    LMK04828_sclk,
+    LMK04828_sdio,
+    LMK04828_sync,
+    RESET_USB1,
     RS485_1_AFAR_de,
     RS485_1_AFAR_di,
     RS485_1_AFAR_re,
@@ -77,8 +83,7 @@ module bacon_wrapper
     STR8_di,
     STR8_re,
     STR8_ro,
-    clk_in1,
-    clk_out_156M25);
+    clk_in1);
   input CLK0_JESD_N;
   input CLK0_JESD_P;
   input CLK1_JESD_N;
@@ -95,6 +100,12 @@ module bacon_wrapper
   output DDS_AD9915_pwr_dwn;
   output DDS_AD9915_rst;
   output DDS_AD9915_sync;
+  output LMK04828_ncs;
+  output LMK04828_reset;
+  output LMK04828_sclk;
+  inout LMK04828_sdio;
+  output LMK04828_sync;
+  output RESET_USB1;
   output RS485_1_AFAR_de;
   output RS485_1_AFAR_di;
   output RS485_1_AFAR_re;
@@ -146,7 +157,6 @@ module bacon_wrapper
   output STR8_re;
   input STR8_ro;
   input clk_in1;
-  output clk_out_156M25;
 
   wire CLK0_JESD_N;
   wire CLK0_JESD_P;
@@ -164,6 +174,12 @@ module bacon_wrapper
   wire DDS_AD9915_pwr_dwn;
   wire DDS_AD9915_rst;
   wire DDS_AD9915_sync;
+  wire LMK04828_ncs;
+  wire LMK04828_reset;
+  wire LMK04828_sclk;
+  wire LMK04828_sdio;
+  wire LMK04828_sync;
+  wire RESET_USB1;
   wire RS485_1_AFAR_de;
   wire RS485_1_AFAR_di;
   wire RS485_1_AFAR_re;
@@ -215,7 +231,6 @@ module bacon_wrapper
   wire STR8_re;
   wire STR8_ro;
   wire clk_in1;
-  wire clk_out_156M25;
 
   bacon bacon_i
        (.CLK0_JESD_N(CLK0_JESD_N),
@@ -234,6 +249,12 @@ module bacon_wrapper
         .DDS_AD9915_pwr_dwn(DDS_AD9915_pwr_dwn),
         .DDS_AD9915_rst(DDS_AD9915_rst),
         .DDS_AD9915_sync(DDS_AD9915_sync),
+        .LMK04828_ncs(LMK04828_ncs),
+        .LMK04828_reset(LMK04828_reset),
+        .LMK04828_sclk(LMK04828_sclk),
+        .LMK04828_sdio(LMK04828_sdio),
+        .LMK04828_sync(LMK04828_sync),
+        .RESET_USB1(RESET_USB1),
         .RS485_1_AFAR_de(RS485_1_AFAR_de),
         .RS485_1_AFAR_di(RS485_1_AFAR_di),
         .RS485_1_AFAR_re(RS485_1_AFAR_re),
@@ -284,6 +305,5 @@ module bacon_wrapper
         .STR8_di(STR8_di),
         .STR8_re(STR8_re),
         .STR8_ro(STR8_ro),
-        .clk_in1(clk_in1),
-        .clk_out_156M25(clk_out_156M25));
+        .clk_in1(clk_in1));
 endmodule
