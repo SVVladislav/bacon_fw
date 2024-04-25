@@ -68,13 +68,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="13"/>
-    <Option Name="WTModelSimExportSim" Val="13"/>
-    <Option Name="WTQuestaExportSim" Val="13"/>
+    <Option Name="WTXSimExportSim" Val="20"/>
+    <Option Name="WTModelSimExportSim" Val="20"/>
+    <Option Name="WTQuestaExportSim" Val="20"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="13"/>
-    <Option Name="WTRivieraExportSim" Val="13"/>
-    <Option Name="WTActivehdlExportSim" Val="13"/>
+    <Option Name="WTVcsExportSim" Val="20"/>
+    <Option Name="WTRivieraExportSim" Val="20"/>
+    <Option Name="WTActivehdlExportSim" Val="20"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -98,11 +98,134 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_BACON_PROFILE_0_1/bacon_BACON_PROFILE_0_1.xci">
+          <Proxy FileSetName="bacon_BACON_PROFILE_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_BCO_PROFILE_0_2/bacon_BCO_PROFILE_0_2.xci">
+          <Proxy FileSetName="bacon_BCO_PROFILE_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_DDS_CTRL_0_0/bacon_DDS_CTRL_0_0.xci">
+          <Proxy FileSetName="bacon_DDS_CTRL_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SER7_IBUFDS_GTE2_v1_0_0_0/bacon_SER7_IBUFDS_GTE2_v1_0_0_0.xci">
+          <Proxy FileSetName="bacon_SER7_IBUFDS_GTE2_v1_0_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SER7_IBUFDS_GTE2_v1_0_1_0/bacon_SER7_IBUFDS_GTE2_v1_0_1_0.xci">
+          <Proxy FileSetName="bacon_SER7_IBUFDS_GTE2_v1_0_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_0_1/bacon_SERIAL_BUF_CONFIG_0_1.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_10_0/bacon_SERIAL_BUF_CONFIG_10_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_11_0/bacon_SERIAL_BUF_CONFIG_11_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_11_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_1_0/bacon_SERIAL_BUF_CONFIG_1_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_2_0/bacon_SERIAL_BUF_CONFIG_2_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_3_0/bacon_SERIAL_BUF_CONFIG_3_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_4_0/bacon_SERIAL_BUF_CONFIG_4_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_5_0/bacon_SERIAL_BUF_CONFIG_5_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_5_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_6_0/bacon_SERIAL_BUF_CONFIG_6_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_6_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_7_0/bacon_SERIAL_BUF_CONFIG_7_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_7_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_8_0/bacon_SERIAL_BUF_CONFIG_8_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_8_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SERIAL_BUF_CONFIG_9_0/bacon_SERIAL_BUF_CONFIG_9_0.xci">
+          <Proxy FileSetName="bacon_SERIAL_BUF_CONFIG_9_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SVV_AXI_CYCCNT_0_0/bacon_SVV_AXI_CYCCNT_0_0.xci">
+          <Proxy FileSetName="bacon_SVV_AXI_CYCCNT_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SVV_LMB_GPIO_0_0/bacon_SVV_LMB_GPIO_0_0.xci">
+          <Proxy FileSetName="bacon_SVV_LMB_GPIO_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_SVV_LMB_LMK04828_SPI_0_0/bacon_SVV_LMB_LMK04828_SPI_0_0.xci">
+          <Proxy FileSetName="bacon_SVV_LMB_LMK04828_SPI_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_axi_bram_ctrl_0_1/bacon_axi_bram_ctrl_0_1.xci">
+          <Proxy FileSetName="bacon_axi_bram_ctrl_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_axi_uart16550_0_0/bacon_axi_uart16550_0_0.xci">
+          <Proxy FileSetName="bacon_axi_uart16550_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_axi_uart16550_1_0/bacon_axi_uart16550_1_0.xci">
+          <Proxy FileSetName="bacon_axi_uart16550_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_axi_uart16550_3_0/bacon_axi_uart16550_3_0.xci">
+          <Proxy FileSetName="bacon_axi_uart16550_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_blk_mem_gen_0_2/bacon_blk_mem_gen_0_2.xci">
+          <Proxy FileSetName="bacon_blk_mem_gen_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_clk_wiz_0_0/bacon_clk_wiz_0_0.xci">
+          <Proxy FileSetName="bacon_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_clk_wiz_2_0/bacon_clk_wiz_2_0.xci">
+          <Proxy FileSetName="bacon_clk_wiz_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_dlmb_bram_if_cntlr_0/bacon_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="bacon_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_dlmb_v10_0/bacon_dlmb_v10_0.xci">
+          <Proxy FileSetName="bacon_dlmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_fit_timer_0_0/bacon_fit_timer_0_0.xci">
+          <Proxy FileSetName="bacon_fit_timer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_ilmb_bram_if_cntlr_0/bacon_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="bacon_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_ilmb_v10_0/bacon_ilmb_v10_0.xci">
+          <Proxy FileSetName="bacon_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_lmb_bram_0/bacon_lmb_bram_0.xci">
+          <Proxy FileSetName="bacon_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_mdm_1_0/bacon_mdm_1_0.xci">
+          <Proxy FileSetName="bacon_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_microblaze_0_0/bacon_microblaze_0_0.xci">
+          <Proxy FileSetName="bacon_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_microblaze_0_axi_intc_0/bacon_microblaze_0_axi_intc_0.xci">
+          <Proxy FileSetName="bacon_microblaze_0_axi_intc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_rst_clk_in1_100M_0/bacon_rst_clk_in1_100M_0.xci">
+          <Proxy FileSetName="bacon_rst_clk_in1_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_rst_clk_wiz_0_200M_0/bacon_rst_clk_wiz_0_200M_0.xci">
+          <Proxy FileSetName="bacon_rst_clk_wiz_0_200M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_util_vector_logic_1_0/bacon_util_vector_logic_1_0.xci">
+          <Proxy FileSetName="bacon_util_vector_logic_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_util_vector_logic_2_0/bacon_util_vector_logic_2_0.xci">
+          <Proxy FileSetName="bacon_util_vector_logic_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="bacon.bd" FileRelPathName="ip/bacon_xbar_0/bacon_xbar_0.xci">
+          <Proxy FileSetName="bacon_xbar_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/bacon_wrapper.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/bacon/hdl/bacon_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1713882913"/>
+          <Attr Name="ImportTime" Val="1713938845"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -178,6 +301,252 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
+    <FileSet Name="bacon_axi_bram_ctrl_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_axi_bram_ctrl_0_1" RelGenDir="$PGENDIR/bacon_axi_bram_ctrl_0_1">
+      <Config>
+        <Option Name="TopModule" Val="bacon_axi_bram_ctrl_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_10_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_10_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_10_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_11_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_11_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_11_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_11_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SER7_IBUFDS_GTE2_v1_0_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SER7_IBUFDS_GTE2_v1_0_1_0" RelGenDir="$PGENDIR/bacon_SER7_IBUFDS_GTE2_v1_0_1_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SER7_IBUFDS_GTE2_v1_0_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SER7_IBUFDS_GTE2_v1_0_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SER7_IBUFDS_GTE2_v1_0_0_0" RelGenDir="$PGENDIR/bacon_SER7_IBUFDS_GTE2_v1_0_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SER7_IBUFDS_GTE2_v1_0_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SVV_AXI_CYCCNT_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SVV_AXI_CYCCNT_0_0" RelGenDir="$PGENDIR/bacon_SVV_AXI_CYCCNT_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SVV_AXI_CYCCNT_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SVV_LMB_GPIO_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SVV_LMB_GPIO_0_0" RelGenDir="$PGENDIR/bacon_SVV_LMB_GPIO_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SVV_LMB_GPIO_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_clk_wiz_0_0" RelGenDir="$PGENDIR/bacon_clk_wiz_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_clk_wiz_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_rst_clk_wiz_0_200M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_rst_clk_wiz_0_200M_0" RelGenDir="$PGENDIR/bacon_rst_clk_wiz_0_200M_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_rst_clk_wiz_0_200M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_BCO_PROFILE_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_BCO_PROFILE_0_2" RelGenDir="$PGENDIR/bacon_BCO_PROFILE_0_2">
+      <Config>
+        <Option Name="TopModule" Val="bacon_BCO_PROFILE_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_DDS_CTRL_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_DDS_CTRL_0_0" RelGenDir="$PGENDIR/bacon_DDS_CTRL_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_DDS_CTRL_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_mdm_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_mdm_1_0" RelGenDir="$PGENDIR/bacon_mdm_1_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_mdm_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_rst_clk_in1_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_rst_clk_in1_100M_0" RelGenDir="$PGENDIR/bacon_rst_clk_in1_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_rst_clk_in1_100M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_microblaze_0_axi_intc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_microblaze_0_axi_intc_0" RelGenDir="$PGENDIR/bacon_microblaze_0_axi_intc_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_microblaze_0_axi_intc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_blk_mem_gen_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_blk_mem_gen_0_2" RelGenDir="$PGENDIR/bacon_blk_mem_gen_0_2">
+      <Config>
+        <Option Name="TopModule" Val="bacon_blk_mem_gen_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_fit_timer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_fit_timer_0_0" RelGenDir="$PGENDIR/bacon_fit_timer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_fit_timer_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_BACON_PROFILE_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_BACON_PROFILE_0_1" RelGenDir="$PGENDIR/bacon_BACON_PROFILE_0_1">
+      <Config>
+        <Option Name="TopModule" Val="bacon_BACON_PROFILE_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_dlmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_dlmb_v10_0" RelGenDir="$PGENDIR/bacon_dlmb_v10_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_dlmb_v10_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_lmb_bram_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_lmb_bram_0" RelGenDir="$PGENDIR/bacon_lmb_bram_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_lmb_bram_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_dlmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_dlmb_bram_if_cntlr_0" RelGenDir="$PGENDIR/bacon_dlmb_bram_if_cntlr_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_dlmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_ilmb_bram_if_cntlr_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_ilmb_bram_if_cntlr_0" RelGenDir="$PGENDIR/bacon_ilmb_bram_if_cntlr_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_ilmb_bram_if_cntlr_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_xbar_0" RelGenDir="$PGENDIR/bacon_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_ilmb_v10_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_ilmb_v10_0" RelGenDir="$PGENDIR/bacon_ilmb_v10_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_ilmb_v10_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_microblaze_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_microblaze_0_0" RelGenDir="$PGENDIR/bacon_microblaze_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_microblaze_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_2_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_2_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_3_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_3_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_axi_uart16550_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_axi_uart16550_0_0" RelGenDir="$PGENDIR/bacon_axi_uart16550_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_axi_uart16550_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_5_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_5_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_5_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_5_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_4_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_4_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_axi_uart16550_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_axi_uart16550_1_0" RelGenDir="$PGENDIR/bacon_axi_uart16550_1_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_axi_uart16550_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_0_1" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_0_1">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_1_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_1_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_util_vector_logic_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_util_vector_logic_2_0" RelGenDir="$PGENDIR/bacon_util_vector_logic_2_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_util_vector_logic_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_7_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_7_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_7_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_8_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_8_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_8_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_8_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_clk_wiz_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_clk_wiz_2_0" RelGenDir="$PGENDIR/bacon_clk_wiz_2_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_clk_wiz_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_9_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_9_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_9_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_9_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_axi_uart16550_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_axi_uart16550_3_0" RelGenDir="$PGENDIR/bacon_axi_uart16550_3_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_axi_uart16550_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SERIAL_BUF_CONFIG_6_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SERIAL_BUF_CONFIG_6_0" RelGenDir="$PGENDIR/bacon_SERIAL_BUF_CONFIG_6_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SERIAL_BUF_CONFIG_6_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_util_vector_logic_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_util_vector_logic_1_0" RelGenDir="$PGENDIR/bacon_util_vector_logic_1_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_util_vector_logic_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="bacon_SVV_LMB_LMK04828_SPI_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bacon_SVV_LMB_LMK04828_SPI_0_0" RelGenDir="$PGENDIR/bacon_SVV_LMB_LMK04828_SPI_0_0">
+      <Config>
+        <Option Name="TopModule" Val="bacon_SVV_LMB_LMK04828_SPI_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -208,6 +577,416 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="bacon_axi_bram_ctrl_0_1_synth_1" Type="Ft3:Synth" SrcSet="bacon_axi_bram_ctrl_0_1" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_bram_ctrl_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_axi_bram_ctrl_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_bram_ctrl_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_bram_ctrl_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_10_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_10_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_10_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_10_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_11_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_11_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_11_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_11_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_11_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_11_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SER7_IBUFDS_GTE2_v1_0_1_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SER7_IBUFDS_GTE2_v1_0_1_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SER7_IBUFDS_GTE2_v1_0_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SER7_IBUFDS_GTE2_v1_0_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SER7_IBUFDS_GTE2_v1_0_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SER7_IBUFDS_GTE2_v1_0_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SER7_IBUFDS_GTE2_v1_0_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SER7_IBUFDS_GTE2_v1_0_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_AXI_CYCCNT_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SVV_AXI_CYCCNT_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_AXI_CYCCNT_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SVV_AXI_CYCCNT_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_AXI_CYCCNT_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_AXI_CYCCNT_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_LMB_GPIO_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SVV_LMB_GPIO_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_LMB_GPIO_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SVV_LMB_GPIO_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_GPIO_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_GPIO_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_clk_wiz_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_clk_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_rst_clk_wiz_0_200M_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_rst_clk_wiz_0_200M_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_rst_clk_wiz_0_200M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_rst_clk_wiz_0_200M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_wiz_0_200M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_wiz_0_200M_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_BCO_PROFILE_0_2_synth_1" Type="Ft3:Synth" SrcSet="bacon_BCO_PROFILE_0_2" Part="xc7k410tffg900-2" ConstrsSet="bacon_BCO_PROFILE_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_BCO_PROFILE_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_BCO_PROFILE_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_BCO_PROFILE_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_DDS_CTRL_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_DDS_CTRL_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_DDS_CTRL_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_DDS_CTRL_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_DDS_CTRL_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_DDS_CTRL_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_mdm_1_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_mdm_1_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_mdm_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_mdm_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_mdm_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_mdm_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_rst_clk_in1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_rst_clk_in1_100M_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_rst_clk_in1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_rst_clk_in1_100M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_in1_100M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_in1_100M_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_microblaze_0_axi_intc_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_microblaze_0_axi_intc_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_microblaze_0_axi_intc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_axi_intc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_axi_intc_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_blk_mem_gen_0_2_synth_1" Type="Ft3:Synth" SrcSet="bacon_blk_mem_gen_0_2" Part="xc7k410tffg900-2" ConstrsSet="bacon_blk_mem_gen_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_blk_mem_gen_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_blk_mem_gen_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_blk_mem_gen_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_fit_timer_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_fit_timer_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_fit_timer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_fit_timer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_fit_timer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_fit_timer_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_BACON_PROFILE_0_1_synth_1" Type="Ft3:Synth" SrcSet="bacon_BACON_PROFILE_0_1" Part="xc7k410tffg900-2" ConstrsSet="bacon_BACON_PROFILE_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_BACON_PROFILE_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_BACON_PROFILE_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_BACON_PROFILE_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_dlmb_v10_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_dlmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_dlmb_v10_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_dlmb_v10_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_lmb_bram_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_lmb_bram_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_lmb_bram_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_lmb_bram_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_dlmb_bram_if_cntlr_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_dlmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_dlmb_bram_if_cntlr_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_ilmb_bram_if_cntlr_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_ilmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_ilmb_bram_if_cntlr_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_xbar_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_xbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_xbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_ilmb_v10_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_ilmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_ilmb_v10_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_ilmb_v10_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_microblaze_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_2_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_2_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_3_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_3_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_3_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_3_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_3_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_axi_uart16550_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_axi_uart16550_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_5_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_5_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_5_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_5_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_5_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_4_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_4_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_4_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_4_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_4_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_1_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_axi_uart16550_1_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_axi_uart16550_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_0_1_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_0_1" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_1_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_1_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_util_vector_logic_2_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_util_vector_logic_2_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_util_vector_logic_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_util_vector_logic_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_7_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_7_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_7_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_7_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_7_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_7_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_8_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_8_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_8_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_8_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_8_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_8_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_clk_wiz_2_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_clk_wiz_2_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_clk_wiz_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_clk_wiz_2_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_2_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_9_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_9_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_9_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_9_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_9_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_9_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_3_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_axi_uart16550_3_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_axi_uart16550_3_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_3_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_3_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_6_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SERIAL_BUF_CONFIG_6_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_6_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SERIAL_BUF_CONFIG_6_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_6_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_6_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_util_vector_logic_1_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_util_vector_logic_1_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_util_vector_logic_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_util_vector_logic_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_LMB_LMK04828_SPI_0_0_synth_1" Type="Ft3:Synth" SrcSet="bacon_SVV_LMB_LMK04828_SPI_0_0" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_LMB_LMK04828_SPI_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bacon_SVV_LMB_LMK04828_SPI_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_LMK04828_SPI_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_LMK04828_SPI_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" LaunchOptions="-jobs 16 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
@@ -222,6 +1001,703 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_bram_ctrl_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_bram_ctrl_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_axi_bram_ctrl_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_bram_ctrl_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_bram_ctrl_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_10_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_10_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_10_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_11_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_11_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_11_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_11_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_11_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SER7_IBUFDS_GTE2_v1_0_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SER7_IBUFDS_GTE2_v1_0_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SER7_IBUFDS_GTE2_v1_0_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SER7_IBUFDS_GTE2_v1_0_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SER7_IBUFDS_GTE2_v1_0_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SER7_IBUFDS_GTE2_v1_0_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SER7_IBUFDS_GTE2_v1_0_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_AXI_CYCCNT_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_AXI_CYCCNT_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SVV_AXI_CYCCNT_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_AXI_CYCCNT_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_AXI_CYCCNT_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_LMB_GPIO_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_LMB_GPIO_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SVV_LMB_GPIO_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_GPIO_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_GPIO_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_clk_wiz_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_rst_clk_wiz_0_200M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_rst_clk_wiz_0_200M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_rst_clk_wiz_0_200M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_wiz_0_200M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_wiz_0_200M_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_BCO_PROFILE_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_BCO_PROFILE_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_BCO_PROFILE_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_BCO_PROFILE_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_BCO_PROFILE_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_DDS_CTRL_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_DDS_CTRL_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_DDS_CTRL_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_DDS_CTRL_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_DDS_CTRL_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_mdm_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_mdm_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_mdm_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_mdm_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_mdm_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_rst_clk_in1_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_rst_clk_in1_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_rst_clk_in1_100M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_in1_100M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_rst_clk_in1_100M_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_microblaze_0_axi_intc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_microblaze_0_axi_intc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_microblaze_0_axi_intc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_axi_intc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_axi_intc_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_blk_mem_gen_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_blk_mem_gen_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_blk_mem_gen_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_blk_mem_gen_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_blk_mem_gen_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_fit_timer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_fit_timer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_fit_timer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_fit_timer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_fit_timer_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_BACON_PROFILE_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_BACON_PROFILE_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_BACON_PROFILE_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_BACON_PROFILE_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_BACON_PROFILE_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_dlmb_v10_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_dlmb_v10_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_dlmb_v10_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_lmb_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_lmb_bram_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_lmb_bram_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_lmb_bram_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_dlmb_bram_if_cntlr_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_dlmb_bram_if_cntlr_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_ilmb_bram_if_cntlr_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_ilmb_bram_if_cntlr_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_xbar_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_xbar_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_xbar_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_ilmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_ilmb_v10_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_ilmb_v10_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_ilmb_v10_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_microblaze_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_microblaze_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_3_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_3_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_3_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_axi_uart16550_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_5_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_5_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_5_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_5_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_5_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_4_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_4_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_4_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_axi_uart16550_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_util_vector_logic_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_util_vector_logic_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_util_vector_logic_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_7_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_7_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_7_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_7_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_7_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_8_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_8_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_8_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_8_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_8_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_clk_wiz_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_clk_wiz_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_clk_wiz_2_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_2_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_clk_wiz_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_9_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_9_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_9_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_9_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_9_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_axi_uart16550_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_axi_uart16550_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_axi_uart16550_3_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_3_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_axi_uart16550_3_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SERIAL_BUF_CONFIG_6_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SERIAL_BUF_CONFIG_6_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SERIAL_BUF_CONFIG_6_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_6_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SERIAL_BUF_CONFIG_6_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_util_vector_logic_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_util_vector_logic_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_util_vector_logic_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_util_vector_logic_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="bacon_SVV_LMB_LMK04828_SPI_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k410tffg900-2" ConstrsSet="bacon_SVV_LMB_LMK04828_SPI_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="bacon_SVV_LMB_LMK04828_SPI_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_LMK04828_SPI_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bacon_SVV_LMB_LMK04828_SPI_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>

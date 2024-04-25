@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1067072BECB36540",
+      "boundary_crc": "0x1307618064993699",
       "device": "xc7k410tffg900-2",
       "gen_directory": "../../../../bacon_fw.gen/sources_1/bd/bacon",
       "name": "bacon",
@@ -509,17 +509,23 @@
         "direction": "I"
       },
       "RESET_USB1": {
+        "direction": "O"
+      },
+      "P76": {
         "direction": "O",
-        "parameters": {
-          "PortType": {
-            "value": "undef",
-            "value_src": "ip_prop"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "ip_prop"
-          }
-        }
+        "left": "0",
+        "right": "0"
+      },
+      "P77": {
+        "direction": "O"
+      },
+      "P74": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "P78": {
+        "direction": "O"
       }
     },
     "components": {
@@ -3193,7 +3199,7 @@
       },
       "SVV_LMB_LMK04828_SPI_0": {
         "vlnv": "xilinx.com:user:SVV_LMB_LMK04828_SPI:1.0",
-        "ip_revision": "11",
+        "ip_revision": "14",
         "xci_name": "bacon_SVV_LMB_LMK04828_SPI_0_0",
         "xci_path": "ip\\bacon_SVV_LMB_LMK04828_SPI_0_0\\bacon_SVV_LMB_LMK04828_SPI_0_0.xci",
         "inst_hier_path": "SVV_LMB_LMK04828_SPI_0",
@@ -3222,11 +3228,35 @@
             "type": "rst",
             "direction": "I"
           },
-          "en_zond": {
+          "en_zond_in": {
             "direction": "I"
           },
           "clk_prof": {
             "direction": "I"
+          },
+          "str_pn": {
+            "direction": "O"
+          },
+          "str_pn_out": {
+            "direction": "O"
+          },
+          "str_dds": {
+            "direction": "O"
+          },
+          "str_prd": {
+            "direction": "O"
+          },
+          "str_prm": {
+            "direction": "O"
+          },
+          "str_adc": {
+            "direction": "O"
+          },
+          "clk_adc_div16": {
+            "direction": "O"
+          },
+          "en_zond": {
+            "direction": "O"
           }
         },
         "components": {
@@ -3296,6 +3326,54 @@
           }
         },
         "nets": {
+          "BACON_PROFILE_0_clk_adc_div_16": {
+            "ports": [
+              "BACON_PROFILE_0/clk_adc_div_16",
+              "clk_adc_div16"
+            ]
+          },
+          "BACON_PROFILE_0_en_zond_snc": {
+            "ports": [
+              "BACON_PROFILE_0/en_zond_snc",
+              "en_zond"
+            ]
+          },
+          "BACON_PROFILE_0_str_adc": {
+            "ports": [
+              "BACON_PROFILE_0/str_adc",
+              "str_adc"
+            ]
+          },
+          "BACON_PROFILE_0_str_dds": {
+            "ports": [
+              "BACON_PROFILE_0/str_dds",
+              "str_dds"
+            ]
+          },
+          "BACON_PROFILE_0_str_pn": {
+            "ports": [
+              "BACON_PROFILE_0/str_pn",
+              "str_pn"
+            ]
+          },
+          "BACON_PROFILE_0_str_pn_out": {
+            "ports": [
+              "BACON_PROFILE_0/str_pn_out",
+              "str_pn_out"
+            ]
+          },
+          "BACON_PROFILE_0_str_prd": {
+            "ports": [
+              "BACON_PROFILE_0/str_prd",
+              "str_prd"
+            ]
+          },
+          "BACON_PROFILE_0_str_prm": {
+            "ports": [
+              "BACON_PROFILE_0/str_prm",
+              "str_prm"
+            ]
+          },
           "clk_wiz_0_clk_out_100M": {
             "ports": [
               "s_axi_aclk",
@@ -3316,7 +3394,7 @@
           },
           "xlslice_0_Dout": {
             "ports": [
-              "en_zond",
+              "en_zond_in",
               "BACON_PROFILE_0/en_zond"
             ]
           }
@@ -3602,6 +3680,30 @@
           "SER7_IBUFDS_GTE2_v1_0_1/I"
         ]
       },
+      "PROFILES_AND_STROBES_en_zond": {
+        "ports": [
+          "PROFILES_AND_STROBES/en_zond",
+          "P74"
+        ]
+      },
+      "PROFILES_AND_STROBES_str_pn": {
+        "ports": [
+          "PROFILES_AND_STROBES/str_pn",
+          "P76"
+        ]
+      },
+      "PROFILES_AND_STROBES_str_prd": {
+        "ports": [
+          "PROFILES_AND_STROBES/str_prd",
+          "P77"
+        ]
+      },
+      "PROFILES_AND_STROBES_str_prm": {
+        "ports": [
+          "PROFILES_AND_STROBES/str_prm",
+          "P78"
+        ]
+      },
       "SIN_USB1_1": {
         "ports": [
           "SIN_USB1",
@@ -3682,9 +3784,9 @@
           "microblaze_0_axi_periph/M08_ACLK",
           "SVV_AXI_CYCCNT_0/s_axi_aclk",
           "SVV_LMB_GPIO_0/slmb_aclk",
-          "SVV_LMB_LMK04828_SPI_0/slmb_aclk",
           "PROFILES_AND_STROBES/s_axi_aclk",
-          "fit_timer_0/Clk"
+          "fit_timer_0/Clk",
+          "SVV_LMB_LMK04828_SPI_0/slmb_aclk"
         ]
       },
       "clk_wiz_0_clk_out_125M": {
@@ -3764,8 +3866,8 @@
         "ports": [
           "rst_clk_wiz_0_200M/peripheral_aresetn",
           "SVV_LMB_GPIO_0/slmb_aresetn",
-          "SVV_LMB_LMK04828_SPI_0/slmb_aresetn",
-          "PROFILES_AND_STROBES/s_axi_aresetn"
+          "PROFILES_AND_STROBES/s_axi_aresetn",
+          "SVV_LMB_LMK04828_SPI_0/slmb_aresetn"
         ]
       },
       "rst_clk_wiz_0_200M_peripheral_reset": {
@@ -3817,7 +3919,7 @@
           "xlslice_0/Dout",
           "BCO_PROFILE_0/en_zond",
           "DDS_CTRL_0/en_zond",
-          "PROFILES_AND_STROBES/en_zond"
+          "PROFILES_AND_STROBES/en_zond_in"
         ]
       }
     },

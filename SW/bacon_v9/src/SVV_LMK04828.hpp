@@ -41,10 +41,11 @@ struct TLMK04828
     base()->TDR = (reg << 8) | value;
   }
 
-  static inline uint8_t ReadReg(uint32_t reg)
+  static inline uint32_t ReadReg(uint32_t reg)
   {
     while(base()->SR);
-    base()->TDR = (reg << 8) | 0x80000;
+    base()->TDR = (reg << 8) | 0x80'0000;
+    while(base()->SR);
     return base()->RDR;      
   }
 
@@ -64,7 +65,7 @@ private:
 
   static constexpr std::array regs = {
     // Reset
-    0x000090, 0x000010,
+    0x000090, //0x000010,
 	// Power down off
     0x000200,
 	

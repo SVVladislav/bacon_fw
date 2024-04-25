@@ -1,3 +1,3 @@
 #include "Main.hpp"
 
-TBACON bacon;
+TBACON<EN_ZOND> bacon;

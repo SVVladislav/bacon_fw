@@ -2,9 +2,11 @@
 
 #include <type_traits>
 
+// Функции обработки прерываний от управляющих интерфейсов
 void __attribute__((fast_interrupt)) UartRS485PC_InterruptHandler();
 void __attribute__((fast_interrupt)) UartUSB_InterruptHandler();
 void __attribute__((fast_interrupt)) UartRS485AFAR_InterruptHandler();
+//void __attribute__((fast_interrupt)) AXIS_FIFO_RX_InterruptHandler();
 
 namespace CONTROL_IF
 {
@@ -45,6 +47,7 @@ struct TCONTROL_IF
   // Приём из пословных интерфейсов
   void ProcessWord(uint32_t rw)
   {
+    if(cmd_received) return;
     switch(rcv_counter)
     {
       case 0:

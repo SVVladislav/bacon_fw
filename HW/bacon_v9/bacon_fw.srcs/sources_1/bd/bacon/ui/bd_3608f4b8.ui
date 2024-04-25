@@ -1,27 +1,43 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.25",
-   "Default View_TopLeft":"-470,-51",
+   "Default View_TopLeft":"-394,-65",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
 preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 30 -defaultsOSRD
 preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
 preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
-preplace port port-id_en_zond -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace port port-id_en_zond_in -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
 preplace port port-id_clk_prof -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_str_pn -pg 1 -lvl 3 -x 570 -y 250 -defaultsOSRD
+preplace port port-id_str_pn_out -pg 1 -lvl 3 -x 570 -y 280 -defaultsOSRD
+preplace port port-id_str_dds -pg 1 -lvl 3 -x 570 -y 310 -defaultsOSRD
+preplace port port-id_str_prd -pg 1 -lvl 3 -x 570 -y 340 -defaultsOSRD
+preplace port port-id_str_prm -pg 1 -lvl 3 -x 570 -y 370 -defaultsOSRD
+preplace port port-id_str_adc -pg 1 -lvl 3 -x 570 -y 400 -defaultsOSRD
+preplace port port-id_clk_adc_div16 -pg 1 -lvl 3 -x 570 -y 430 -defaultsOSRD
+preplace port port-id_en_zond -pg 1 -lvl 3 -x 570 -y 190 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x 150 -y 70 -defaultsOSRD
 preplace inst BACON_PROFILE_0 -pg 1 -lvl 1 -x 150 -y 290 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 400 -y 80 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 420 -y 80 -defaultsOSRD
 preplace netloc clk_wiz_0_clk_out_100M 1 0 1 20J 60n
 preplace netloc clk_wiz_0_clk_out_125M 1 0 1 NJ 300
 preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 0 1 NJ 90
 preplace netloc xlslice_0_Dout 1 0 1 20J 270n
-preplace netloc BACON_PROFILE_0_BRAM 1 1 1 280 90n
+preplace netloc BACON_PROFILE_0_str_pn 1 1 2 NJ 270 540
+preplace netloc BACON_PROFILE_0_str_pn_out 1 1 2 290 280 NJ
+preplace netloc BACON_PROFILE_0_str_dds 1 1 2 N 310 NJ
+preplace netloc BACON_PROFILE_0_str_prd 1 1 2 300 340 NJ
+preplace netloc BACON_PROFILE_0_str_prm 1 1 2 300 370 NJ
+preplace netloc BACON_PROFILE_0_str_adc 1 1 2 290 400 NJ
+preplace netloc BACON_PROFILE_0_clk_adc_div_16 1 1 2 280J 430 N
+preplace netloc BACON_PROFILE_0_en_zond_snc 1 1 2 300 190 NJ
+preplace netloc BACON_PROFILE_0_BRAM 1 1 1 290 90n
 preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 N 70
 preplace netloc microblaze_0_axi_periph_M04_AXI 1 0 1 20J 30n
-levelinfo -pg 1 0 150 400 520
-pagesize -pg 1 -db -bbox -sgen -150 -30 520 450
+levelinfo -pg 1 0 150 420 570
+pagesize -pg 1 -db -bbox -sgen -150 -30 720 450
 "
 }
 0

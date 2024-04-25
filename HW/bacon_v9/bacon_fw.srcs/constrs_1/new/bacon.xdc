@@ -10,11 +10,11 @@ set_property PACKAGE_PIN T26 [get_ports clk_in1]
 #set_property IOSTANDARD LVCMOS33 [get_ports clk_out_156M25]
 set_property IOSTANDARD LVCMOS33 [get_ports clk_in1]
 
-// Test points
-#set_property -dict {PACKAGE_PIN N24 IOSTANDARD LVCMOS33} [get_ports P74]
-#set_property -dict {PACKAGE_PIN N25 IOSTANDARD LVCMOS33} [get_ports P76]
-#set_property -dict {PACKAGE_PIN N26 IOSTANDARD LVCMOS33} [get_ports P77]
-#set_property -dict {PACKAGE_PIN N27 IOSTANDARD LVCMOS33} [get_ports P78]
+# Test points
+set_property -dict {PACKAGE_PIN N24 IOSTANDARD LVCMOS33} [get_ports P74]
+set_property -dict {PACKAGE_PIN N25 IOSTANDARD LVCMOS33} [get_ports P76]
+set_property -dict {PACKAGE_PIN N26 IOSTANDARD LVCMOS33} [get_ports P77]
+set_property -dict {PACKAGE_PIN N27 IOSTANDARD LVCMOS33} [get_ports P78]
 #set_property -dict {PACKAGE_PIN N29 IOSTANDARD LVCMOS33} [get_ports P79]
 #set_property -dict {PACKAGE_PIN N30 IOSTANDARD LVCMOS33} [get_ports P80]
 #set_property -dict {PACKAGE_PIN P19 IOSTANDARD LVCMOS33} [get_ports P81]

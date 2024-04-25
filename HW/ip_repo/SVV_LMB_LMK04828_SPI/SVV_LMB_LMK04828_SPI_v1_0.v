@@ -137,8 +137,7 @@ module SVV_LMB_LMK04828_SPI_v1_0 #
         sclk <= 0; 
       end
   end // always F_CLK
-  
-  
+
   // Двунаправленный буфер SDIO
   IOBUF i_iobuf_sdio (
     .T (sdio_dir),

@@ -52,9 +52,16 @@ constexpr uint8_t test_profile[64] =
 //========================================================================
 // Класс управления блоком BACON
 //========================================================================
+template <typename TEN_ZOND> // Вывод управления включением заондирования
 struct TBACON
 {
-  TBACON() =default; //{ ClearProfiles(); } 
+  TBACON() = default;
+
+  // Функция включения зондирования
+  static inline void EnableZond() { TEN_ZOND::set(); }
+  
+  // Функция выключения зондирования
+  static inline void DisableZond() { TEN_ZOND::clear(); }
 
   // Функция разбора команды записи регистров(памяти) через интерфес управления
   auto Process_Write_Control_CMD(uint32_t adr, uint32_t len, uint8_t *rx_buf)
@@ -63,6 +70,7 @@ struct TBACON
 
     while( (adr<1024) && (len>0))
     { // Диапазон регистров управления bacon
+      if(adr==0x4c) { if(*rx_buf) EnableZond(); else DisableZond(); }
       bacon_regs[adr++] = *rx_buf++;
       len--;
     }
@@ -160,35 +168,6 @@ struct TBACON
     }
   }
 
-  template <uint32_t BASE_ADR = PROFILE_BRAM_BASE>
-  void PrintProfile(uint32_t num)
-  {
-    if constexpr(BASE_ADR == PROFILE_BRAM_BASE)
-    { // Для железа bacon
-/*    
-      volatile uint8_t *pbuf = (uint8_t *)(BACON_PROFILE_BASE);
-      volatile uint32_t *preg = (uint32_t *)(BACON_PROFILE_BASE);
-      *(preg+16)=num;
-      DEBUG_Print("\r\nBACON Profile(%d): ", *(preg+16));
-      for(auto i=0u; i<64; i++)
-      {          
-        DEBUG_Print("%02x ", *pbuf++);
-      }
-*/      
-    }
-    else
-    { // Для железа БАЦО
-      volatile uint8_t *pbuf = (uint8_t *)(BCO_PROFILE_BASE);
-      volatile uint32_t *preg = (uint32_t *)(BCO_PROFILE_BASE);
-      *(preg+63) = num;
-      DEBUG_Print("\r\nBCO Profile(%d): ", *(preg+63));
-      for(auto i=0u; i<128; i++)
-      {  
-        DEBUG_Print("%02x ", *pbuf++);
-      }
-    }
-  }
-
 private:
 
   // Очистить все профили
@@ -229,5 +208,4 @@ private:
 
 };
 
-extern TBACON bacon;
 

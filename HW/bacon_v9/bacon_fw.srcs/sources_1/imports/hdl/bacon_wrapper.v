@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Tue Apr 23 17:35:13 2024
+//Date        : Wed Apr 24 09:07:25 2024
 //Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
@@ -32,6 +32,10 @@ module bacon_wrapper
     LMK04828_sclk,
     LMK04828_sdio,
     LMK04828_sync,
+    P74,
+    P76,
+    P77,
+    P78,
     RESET_USB1,
     RS485_1_AFAR_de,
     RS485_1_AFAR_di,
@@ -105,6 +109,10 @@ module bacon_wrapper
   output LMK04828_sclk;
   inout LMK04828_sdio;
   output LMK04828_sync;
+  output P74;
+  output P76;
+  output P77;
+  output P78;
   output RESET_USB1;
   output RS485_1_AFAR_de;
   output RS485_1_AFAR_di;
@@ -179,6 +187,10 @@ module bacon_wrapper
   wire LMK04828_sclk;
   wire LMK04828_sdio;
   wire LMK04828_sync;
+  wire P74;
+  wire P76;
+  wire P77;
+  wire P78;
   wire RESET_USB1;
   wire RS485_1_AFAR_de;
   wire RS485_1_AFAR_di;
@@ -254,6 +266,10 @@ module bacon_wrapper
         .LMK04828_sclk(LMK04828_sclk),
         .LMK04828_sdio(LMK04828_sdio),
         .LMK04828_sync(LMK04828_sync),
+        .P74(P74),
+        .P76(P76),
+        .P77(P77),
+        .P78(P78),
         .RESET_USB1(RESET_USB1),
         .RS485_1_AFAR_de(RS485_1_AFAR_de),
         .RS485_1_AFAR_di(RS485_1_AFAR_di),
