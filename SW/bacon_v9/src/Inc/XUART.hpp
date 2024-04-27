@@ -126,9 +126,9 @@ public:
 		base()->LCR = uint32_t(db) | uint32_t(sb) | uint32_t(par);
 	}
 
-	static inline void EnableInterrupt(UIER ei)	{ base()->IER |= (uint32_t)ei; }
+	static inline void EnableInterrupt(UIER ei)	{ base()->IER = base()->IER | (uint32_t)ei; }
 
-	static inline void DisableInterrupt(UIER ei) { base()->IER &= ~(uint32_t)ei; }
+	static inline void DisableInterrupt(UIER ei) { base()->IER = base()->IER & ~(uint32_t)ei; }
 
 	static inline uint8_t ReadByte() { return *(uint8_t *)&base()->RBR; }
 

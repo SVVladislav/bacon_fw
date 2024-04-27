@@ -57,3 +57,7 @@ set_property -dict {PACKAGE_PIN K19 IOSTANDARD LVCMOS18} [get_ports LMK04828_scl
 set_property -dict {PACKAGE_PIN B17 IOSTANDARD LVCMOS18} [get_ports LMK04828_ncs]
 set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS18} [get_ports LMK04828_sdio]
 set_property -dict {PACKAGE_PIN J17 IOSTANDARD LVCMOS18} [get_ports LMK04828_sync]
+
+#ADC ad9695
+set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS18} [get_ports PDN_ADC1]
+set_property -dict {PACKAGE_PIN J18 IOSTANDARD LVCMOS18} [get_ports PDN_ADC2]
