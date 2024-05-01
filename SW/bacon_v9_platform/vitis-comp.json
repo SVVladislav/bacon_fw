@@ -3,8 +3,8 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "D:\\Xilinx\\Projects\\bacon_fw_v9\\SW\\bacon_v9.xsa",
-    "xsaPathInPlatform": "bacon_v9_platform\\hw\\bacon_v9.xsa",
+    "xsa": "D:\\Xilinx\\Projects\\bacon_fw_v9\\SW\\bacon_wrapper.xsa",
+    "xsaPathInPlatform": "bacon_v9_platform\\hw\\bacon_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",
     "isCustomFSBL": false,

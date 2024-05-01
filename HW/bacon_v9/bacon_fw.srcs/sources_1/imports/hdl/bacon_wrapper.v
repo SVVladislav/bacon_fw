@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Wed Apr 24 09:07:25 2024
-//Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
+//Date        : Tue Apr 30 17:12:16 2024
+//Host        : DESKTOP-BA273GU running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
 //Purpose     : IP block netlist
@@ -11,7 +11,10 @@
 `timescale 1 ps / 1 ps
 
 module bacon_wrapper
-   (CLK0_JESD_N,
+   (ADC_nCS,
+    ADC_sclk,
+    ADC_sdio,
+    CLK0_JESD_N,
     CLK0_JESD_P,
     CLK1_JESD_N,
     CLK1_JESD_P,
@@ -36,6 +39,8 @@ module bacon_wrapper
     P76,
     P77,
     P78,
+    PDN_ADC1,
+    PDN_ADC2,
     RESET_USB1,
     RS485_1_AFAR_de,
     RS485_1_AFAR_di,
@@ -87,7 +92,28 @@ module bacon_wrapper
     STR8_di,
     STR8_re,
     STR8_ro,
-    clk_in1);
+    clk_in1,
+    rx_1_0_n,
+    rx_1_0_p,
+    rx_1_1_n,
+    rx_1_1_p,
+    rx_1_2_n,
+    rx_1_2_p,
+    rx_1_3_n,
+    rx_1_3_p,
+    rx_2_0_n,
+    rx_2_0_p,
+    rx_2_1_n,
+    rx_2_1_p,
+    rx_2_2_n,
+    rx_2_2_p,
+    rx_2_3_n,
+    rx_2_3_p,
+    rx_sync_1,
+    rx_sync_2);
+  output [1:0]ADC_nCS;
+  output ADC_sclk;
+  inout ADC_sdio;
   input CLK0_JESD_N;
   input CLK0_JESD_P;
   input CLK1_JESD_N;
@@ -104,15 +130,17 @@ module bacon_wrapper
   output DDS_AD9915_pwr_dwn;
   output DDS_AD9915_rst;
   output DDS_AD9915_sync;
-  output LMK04828_ncs;
-  output LMK04828_reset;
+  output [0:0]LMK04828_ncs;
+  output [0:0]LMK04828_reset;
   output LMK04828_sclk;
   inout LMK04828_sdio;
-  output LMK04828_sync;
-  output P74;
-  output P76;
+  output [0:0]LMK04828_sync;
+  output [0:0]P74;
+  output [0:0]P76;
   output P77;
   output P78;
+  output [0:0]PDN_ADC1;
+  output [0:0]PDN_ADC2;
   output RESET_USB1;
   output RS485_1_AFAR_de;
   output RS485_1_AFAR_di;
@@ -165,7 +193,28 @@ module bacon_wrapper
   output STR8_re;
   input STR8_ro;
   input clk_in1;
+  input rx_1_0_n;
+  input rx_1_0_p;
+  input rx_1_1_n;
+  input rx_1_1_p;
+  input rx_1_2_n;
+  input rx_1_2_p;
+  input rx_1_3_n;
+  input rx_1_3_p;
+  input rx_2_0_n;
+  input rx_2_0_p;
+  input rx_2_1_n;
+  input rx_2_1_p;
+  input rx_2_2_n;
+  input rx_2_2_p;
+  input rx_2_3_n;
+  input rx_2_3_p;
+  output [0:0]rx_sync_1;
+  output [0:0]rx_sync_2;
 
+  wire [1:0]ADC_nCS;
+  wire ADC_sclk;
+  wire ADC_sdio;
   wire CLK0_JESD_N;
   wire CLK0_JESD_P;
   wire CLK1_JESD_N;
@@ -182,15 +231,17 @@ module bacon_wrapper
   wire DDS_AD9915_pwr_dwn;
   wire DDS_AD9915_rst;
   wire DDS_AD9915_sync;
-  wire LMK04828_ncs;
-  wire LMK04828_reset;
+  wire [0:0]LMK04828_ncs;
+  wire [0:0]LMK04828_reset;
   wire LMK04828_sclk;
   wire LMK04828_sdio;
-  wire LMK04828_sync;
-  wire P74;
-  wire P76;
+  wire [0:0]LMK04828_sync;
+  wire [0:0]P74;
+  wire [0:0]P76;
   wire P77;
   wire P78;
+  wire [0:0]PDN_ADC1;
+  wire [0:0]PDN_ADC2;
   wire RESET_USB1;
   wire RS485_1_AFAR_de;
   wire RS485_1_AFAR_di;
@@ -243,9 +294,30 @@ module bacon_wrapper
   wire STR8_re;
   wire STR8_ro;
   wire clk_in1;
+  wire rx_1_0_n;
+  wire rx_1_0_p;
+  wire rx_1_1_n;
+  wire rx_1_1_p;
+  wire rx_1_2_n;
+  wire rx_1_2_p;
+  wire rx_1_3_n;
+  wire rx_1_3_p;
+  wire rx_2_0_n;
+  wire rx_2_0_p;
+  wire rx_2_1_n;
+  wire rx_2_1_p;
+  wire rx_2_2_n;
+  wire rx_2_2_p;
+  wire rx_2_3_n;
+  wire rx_2_3_p;
+  wire [0:0]rx_sync_1;
+  wire [0:0]rx_sync_2;
 
   bacon bacon_i
-       (.CLK0_JESD_N(CLK0_JESD_N),
+       (.ADC_nCS(ADC_nCS),
+        .ADC_sclk(ADC_sclk),
+        .ADC_sdio(ADC_sdio),
+        .CLK0_JESD_N(CLK0_JESD_N),
         .CLK0_JESD_P(CLK0_JESD_P),
         .CLK1_JESD_N(CLK1_JESD_N),
         .CLK1_JESD_P(CLK1_JESD_P),
@@ -270,6 +342,8 @@ module bacon_wrapper
         .P76(P76),
         .P77(P77),
         .P78(P78),
+        .PDN_ADC1(PDN_ADC1),
+        .PDN_ADC2(PDN_ADC2),
         .RESET_USB1(RESET_USB1),
         .RS485_1_AFAR_de(RS485_1_AFAR_de),
         .RS485_1_AFAR_di(RS485_1_AFAR_di),
@@ -321,5 +395,23 @@ module bacon_wrapper
         .STR8_di(STR8_di),
         .STR8_re(STR8_re),
         .STR8_ro(STR8_ro),
-        .clk_in1(clk_in1));
+        .clk_in1(clk_in1),
+        .rx_1_0_n(rx_1_0_n),
+        .rx_1_0_p(rx_1_0_p),
+        .rx_1_1_n(rx_1_1_n),
+        .rx_1_1_p(rx_1_1_p),
+        .rx_1_2_n(rx_1_2_n),
+        .rx_1_2_p(rx_1_2_p),
+        .rx_1_3_n(rx_1_3_n),
+        .rx_1_3_p(rx_1_3_p),
+        .rx_2_0_n(rx_2_0_n),
+        .rx_2_0_p(rx_2_0_p),
+        .rx_2_1_n(rx_2_1_n),
+        .rx_2_1_p(rx_2_1_p),
+        .rx_2_2_n(rx_2_2_n),
+        .rx_2_2_p(rx_2_2_p),
+        .rx_2_3_n(rx_2_3_n),
+        .rx_2_3_p(rx_2_3_p),
+        .rx_sync_1(rx_sync_1),
+        .rx_sync_2(rx_sync_2));
 endmodule

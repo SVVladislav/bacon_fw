@@ -37,6 +37,8 @@ using UART_RS485_PC   = TAURT16550<PC_UART_BASE, 14'745'600, MODE::HALF_DUPLEX>;
 #include "Inc\SVVTL\template_lib.hpp"
 #include "Inc\Hardware\GPIO\Gpio.hpp"
 using EN_ZOND = GPIO::PA_0;
+using PDN_ADC1 = GPIO::PA_16;
+using PDN_ADC2 = GPIO::PA_17;
 
 // Счётчик тактов процессора и мкс
 #include "Inc\cycle_counter.hpp"
@@ -65,6 +67,11 @@ extern CTRL_IF_USB control_if_usb;
 extern CTRL_IF_USB control_if_rs485;
 //extern CTRL_IF_ETH control_if_eth;
 
+// SPI-интерфейсы
+#include "SVV_ADI_SPI.hpp"
+using ADI_SPI_LMK = TADI_SPI<SPI_LMK_BASE>;
+using ADI_SPI_ADC = TADI_SPI<SPI_ADC_BASE>;
+
 // Синтезатор частот LMK04828 на СВЧ-плате
 #include "SVV_LMK04828.hpp"
-using LMK = TLMK04828<SVV_LMB_LMK04828_SPI_BASE>;
+using LMK = TLMK04828<ADI_SPI_LMK>;

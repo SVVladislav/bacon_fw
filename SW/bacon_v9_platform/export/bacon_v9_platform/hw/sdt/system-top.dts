@@ -20,7 +20,7 @@
 	aliases {
 		serial0 = &UARTS_AND_STROBES_axi_uart16550_0;
 		serial1 = &UARTS_AND_STROBES_axi_uart16550_1;
-		serial2 = &UARTS_AND_STROBES_axi_uart16550_3;
+		serial2 = &UARTS_AND_STROBES_axi_uart16550_2;
 		serial3 = &mdm_0;
 	};
 	amba_pl: amba_pl {
@@ -34,9 +34,16 @@
 			      <0x44a20000 &UARTS_AND_STROBES_axi_uart16550_0 0x44a20000 0x10000>, 
 			      <0x44a30000 &UARTS_AND_STROBES_axi_uart16550_1 0x44a30000 0x10000>, 
 			      <0x44a40000 &SVV_AXI_CYCCNT_0 0x44a40000 0x1000>, 
-			      <0x44a50000 &UARTS_AND_STROBES_axi_uart16550_3 0x44a50000 0x10000>, 
-			      <0xc0000000 &SVV_LMB_GPIO_0 0xc0000000 0x1000>, 
-			      <0xc4000000 &SVV_LMB_LMK04828_SPI_0 0xc4000000 0x1000>;
+			      <0x44a50000 &UARTS_AND_STROBES_axi_uart16550_2 0x44a50000 0x10000>, 
+			      <0x44a60000 &JESD204B_RX_CHAIN_1_axi_adxcvr_0 0x44a60000 0x10000>, 
+			      <0x44a70000 &SVV_AXI_GPIO_0 0x44a70000 0x10000>, 
+			      <0x44a80000 &SVV_AXI_ADI_SPI_LMK 0x44a80000 0x10000>, 
+			      <0x44a90000 &SVV_AXI_ADI_SPI_ADC 0x44a90000 0x10000>, 
+			      <0x44aa0000 &JESD204B_RX_CHAIN_1_axi_jesd204_rx_0 0x44aa0000 0x10000>, 
+			      <0x44ab0000 &JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0 0x44ab0000 0x10000>, 
+			      <0x44ac0000 &JESD204B_RX_CHAIN_2_axi_adxcvr_1 0x44ac0000 0x10000>, 
+			      <0x44ad0000 &JESD204B_RX_CHAIN_2_axi_jesd204_rx_1 0x44ad0000 0x10000>, 
+			      <0x44ae0000 &JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1 0x44ae0000 0x10000>;
 			#ranges-address-cells = <0x1>;
 			#ranges-size-cells = <0x1>;
 		};

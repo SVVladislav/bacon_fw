@@ -8,7 +8,7 @@
         clock: clocks {
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
-                phandle = <0xf>;
+                phandle = <0x16>;
 
                 clk_cpu: clk_cpu@0 {
                         compatible = "fixed-clock";
@@ -16,7 +16,7 @@
                         clock-frequency = <0x5f5e100>;
                         clock-output-names = "clk_cpu";
                         #clock-cells = <0x0>;
-                        phandle = <0x10>;
+                        phandle = <0x17>;
                 };
 
                 clk_bus_0: clk_bus_0@1 {
@@ -25,7 +25,7 @@
                         clock-frequency = <0x5f5e100>;
                         clock-output-names = "clk_bus_0";
                         #clock-cells = <0x0>;
-                        phandle = <0xe>;
+                        phandle = <0x15>;
                 };
         };
 
@@ -34,7 +34,7 @@
                 compatible = "simple-bus";
                 #address-cells = <0x1>;
                 #size-cells = <0x1>;
-                phandle = <0xd>;
+                phandle = <0x14>;
 
                 cpus_microblaze_0: cpus_microblaze@0 {
                         #cpu-mask-cells = <0x1>;
@@ -48,12 +48,19 @@
                          <0x44a20000 &UARTS_AND_STROBES_axi_uart16550_0 0x44a20000 0x10000>,
                          <0x44a30000 &UARTS_AND_STROBES_axi_uart16550_1 0x44a30000 0x10000>,
                          <0x44a40000 &SVV_AXI_CYCCNT_0 0x44a40000 0x1000>,
-                         <0x44a50000 &UARTS_AND_STROBES_axi_uart16550_3 0x44a50000 0x10000>,
-                         <0xc0000000 &SVV_LMB_GPIO_0 0xc0000000 0x1000>,
-                         <0xc4000000 &SVV_LMB_LMK04828_SPI_0 0xc4000000 0x1000>;
+                         <0x44a50000 &UARTS_AND_STROBES_axi_uart16550_2 0x44a50000 0x10000>,
+                         <0x44a60000 &JESD204B_RX_CHAIN_1_axi_adxcvr_0 0x44a60000 0x10000>,
+                         <0x44a70000 &SVV_AXI_GPIO_0 0x44a70000 0x10000>,
+                         <0x44a80000 &SVV_AXI_ADI_SPI_LMK 0x44a80000 0x10000>,
+                         <0x44a90000 &SVV_AXI_ADI_SPI_ADC 0x44a90000 0x10000>,
+                         <0x44aa0000 &JESD204B_RX_CHAIN_1_axi_jesd204_rx_0 0x44aa0000 0x10000>,
+                         <0x44ab0000 &JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0 0x44ab0000 0x10000>,
+                         <0x44ac0000 &JESD204B_RX_CHAIN_2_axi_adxcvr_1 0x44ac0000 0x10000>,
+                         <0x44ad0000 &JESD204B_RX_CHAIN_2_axi_jesd204_rx_1 0x44ad0000 0x10000>,
+                         <0x44ae0000 &JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1 0x44ae0000 0x10000>;
                         #ranges-address-cells = <0x1>;
                         #ranges-size-cells = <0x1>;
-                        phandle = <0x11>;
+                        phandle = <0x18>;
 
                         microblaze_0: cpu@0 {
                                 xlnx,reset-msr-dce = <0x0>;
@@ -124,7 +131,7 @@
                                 xlnx,dcache-use-writeback = <0x0>;
                                 xlnx,div-zero-exception = <0x0>;
                                 xlnx,mmu-tlb-access = <0x3>;
-                                bus-handle = <0xd>;
+                                bus-handle = <0x14>;
                                 xlnx,cache-byte-size = <0x2000>;
                                 xlnx,pvr-user2 = <0x0>;
                                 xlnx,opcode-0x0-illegal = <0x0>;
@@ -197,7 +204,7 @@
                                 xlnx,use-msr-instr = <0x1>;
                                 xlnx,icache-data-width = <0x0>;
                                 xlnx,debug-counter-width = <0x20>;
-                                phandle = <0x12>;
+                                phandle = <0x19>;
                         };
                 };
 
@@ -225,6 +232,176 @@
                         reg = <0x44a10000 0x10000>;
                         xlnx,name = "DDS_CTRL_0";
                         phandle = <0x6>;
+                };
+
+                JESD204B_RX_CHAIN_1_SVV_AXI_VOID_0: SVV_AXI_VOID@44c00000 {
+                        xlnx,rable = <0x0>;
+                        compatible = "xlnx,SVV-AXI-VOID-1.0";
+                        status = "okay";
+                        xlnx,ip-name = "SVV_AXI_VOID";
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        reg = <0x44c00000 0x10000>;
+                        xlnx,name = "JESD204B_RX_CHAIN_1_SVV_AXI_VOID_0";
+                        phandle = <0x1a>;
+                };
+
+                JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0: ad_ip_jesd204_tpl_adc@44ab0000 {
+                        compatible = "xlnx,ad-ip-jesd204-tpl-adc-1.0";
+                        xlnx,en-frame-align = <0x1>;
+                        xlnx,ext-sync = <0x0>;
+                        xlnx,fpga-family = <0x2>;
+                        xlnx,rable = <0x0>;
+                        xlnx,octets-per-beat = <0x4>;
+                        xlnx,fpga-technology = <0x1>;
+                        xlnx,ip-name = "ad_ip_jesd204_tpl_adc";
+                        xlnx,pn15-enable = <0x1>;
+                        xlnx,num-lanes = <0x4>;
+                        reg = <0x44ab0000 0x10000>;
+                        xlnx,dev-package = <0x3>;
+                        xlnx,speed-grade = <0x14>;
+                        xlnx,samples-per-frame = <0x1>;
+                        xlnx,pn7-enable = <0x1>;
+                        xlnx,num-channels = <0x2>;
+                        xlnx,dma-bits-per-sample = <0x10>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,id = <0x0>;
+                        xlnx,bits-per-sample = <0x10>;
+                        xlnx,twos-complement = <0x1>;
+                        status = "okay";
+                        xlnx,name = "JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0";
+                        xlnx,converter-resolution = <0xe>;
+                        phandle = <0x10>;
+                };
+
+                JESD204B_RX_CHAIN_1_axi_adxcvr_0: axi_adxcvr@44a60000 {
+                        xlnx,xcvr-type = <0x2>;
+                        xlnx,num-of-lanes = <0x4>;
+                        compatible = "xlnx,axi-adxcvr-1.0";
+                        xlnx,tx-or-rx-n = <0x0>;
+                        xlnx,rate = "000";
+                        xlnx,qpll-enable = <0x1>;
+                        xlnx,fpga-family = <0x2>;
+                        xlnx,fpga-voltage = <0x3ca>;
+                        xlnx,rable = <0x0>;
+                        xlnx,lpm-or-dfe-n = <0x1>;
+                        xlnx,tx-diffctrl = "01000";
+                        xlnx,ip-name = "axi_adxcvr";
+                        xlnx,fpga-technology = <0x1>;
+                        xlnx,out-clk-sel = "100";
+                        reg = <0x44a60000 0x10000>;
+                        xlnx,dev-package = <0x3>;
+                        xlnx,speed-grade = <0x14>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,tx-postcursor = "00000";
+                        xlnx,id = <0x0>;
+                        xlnx,tx-precursor = "00000";
+                        status = "okay";
+                        xlnx,sys-clk-sel = "11";
+                        xlnx,link-mode = <0x1>;
+                        xlnx,name = "JESD204B_RX_CHAIN_1_axi_adxcvr_0";
+                        phandle = <0xb>;
+                };
+
+                JESD204B_RX_CHAIN_1_axi_jesd204_rx_0: axi_jesd204_rx@44aa0000 {
+                        compatible = "xlnx,axi-jesd204-rx-1.0";
+                        xlnx,rable = <0x0>;
+                        xlnx,enable-link-stats = <0x0>;
+                        xlnx,num-links = <0x1>;
+                        xlnx,ip-name = "axi_jesd204_rx";
+                        reg = <0x44aa0000 0x10000>;
+                        xlnx,num-lanes = <0x4>;
+                        xlnx,data-path-width = <0x4>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,id = <0x0>;
+                        status = "okay";
+                        xlnx,link-mode = <0x1>;
+                        xlnx,name = "JESD204B_RX_CHAIN_1_axi_jesd204_rx_0";
+                        phandle = <0xf>;
+                };
+
+                JESD204B_RX_CHAIN_2_SVV_AXI_VOID_1: SVV_AXI_VOID@44d00000 {
+                        xlnx,rable = <0x0>;
+                        compatible = "xlnx,SVV-AXI-VOID-1.0";
+                        status = "okay";
+                        xlnx,ip-name = "SVV_AXI_VOID";
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        reg = <0x44d00000 0x10000>;
+                        xlnx,name = "JESD204B_RX_CHAIN_2_SVV_AXI_VOID_1";
+                        phandle = <0x1b>;
+                };
+
+                JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1: ad_ip_jesd204_tpl_adc@44ae0000 {
+                        compatible = "xlnx,ad-ip-jesd204-tpl-adc-1.0";
+                        xlnx,en-frame-align = <0x1>;
+                        xlnx,ext-sync = <0x0>;
+                        xlnx,fpga-family = <0x2>;
+                        xlnx,rable = <0x0>;
+                        xlnx,octets-per-beat = <0x4>;
+                        xlnx,fpga-technology = <0x1>;
+                        xlnx,ip-name = "ad_ip_jesd204_tpl_adc";
+                        xlnx,pn15-enable = <0x1>;
+                        xlnx,num-lanes = <0x4>;
+                        reg = <0x44ae0000 0x10000>;
+                        xlnx,dev-package = <0x3>;
+                        xlnx,speed-grade = <0x14>;
+                        xlnx,samples-per-frame = <0x1>;
+                        xlnx,pn7-enable = <0x1>;
+                        xlnx,num-channels = <0x2>;
+                        xlnx,dma-bits-per-sample = <0x10>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,id = <0x0>;
+                        xlnx,bits-per-sample = <0x10>;
+                        xlnx,twos-complement = <0x1>;
+                        status = "okay";
+                        xlnx,name = "JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1";
+                        xlnx,converter-resolution = <0xe>;
+                        phandle = <0x13>;
+                };
+
+                JESD204B_RX_CHAIN_2_axi_adxcvr_1: axi_adxcvr@44ac0000 {
+                        xlnx,xcvr-type = <0x2>;
+                        xlnx,num-of-lanes = <0x4>;
+                        compatible = "xlnx,axi-adxcvr-1.0";
+                        xlnx,tx-or-rx-n = <0x0>;
+                        xlnx,rate = "000";
+                        xlnx,qpll-enable = <0x1>;
+                        xlnx,fpga-family = <0x2>;
+                        xlnx,fpga-voltage = <0x3ca>;
+                        xlnx,rable = <0x0>;
+                        xlnx,lpm-or-dfe-n = <0x1>;
+                        xlnx,tx-diffctrl = "01000";
+                        xlnx,ip-name = "axi_adxcvr";
+                        xlnx,fpga-technology = <0x1>;
+                        xlnx,out-clk-sel = "100";
+                        reg = <0x44ac0000 0x10000>;
+                        xlnx,dev-package = <0x3>;
+                        xlnx,speed-grade = <0x14>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,tx-postcursor = "00000";
+                        xlnx,id = <0x0>;
+                        xlnx,tx-precursor = "00000";
+                        status = "okay";
+                        xlnx,sys-clk-sel = "11";
+                        xlnx,link-mode = <0x1>;
+                        xlnx,name = "JESD204B_RX_CHAIN_2_axi_adxcvr_1";
+                        phandle = <0x11>;
+                };
+
+                JESD204B_RX_CHAIN_2_axi_jesd204_rx_1: axi_jesd204_rx@44ad0000 {
+                        compatible = "xlnx,axi-jesd204-rx-1.0";
+                        xlnx,rable = <0x0>;
+                        xlnx,enable-link-stats = <0x0>;
+                        xlnx,num-links = <0x1>;
+                        xlnx,ip-name = "axi_jesd204_rx";
+                        reg = <0x44ad0000 0x10000>;
+                        xlnx,num-lanes = <0x1>;
+                        xlnx,data-path-width = <0x4>;
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        xlnx,id = <0x0>;
+                        status = "okay";
+                        xlnx,link-mode = <0x1>;
+                        xlnx,name = "JESD204B_RX_CHAIN_2_axi_jesd204_rx_1";
+                        phandle = <0x12>;
                 };
 
                 PROFILES_AND_STROBES_axi_bram_ctrl_0: axi_bram_ctrl@c2000000 {
@@ -257,7 +434,31 @@
                         xlnx,s-axi-id-width = <0x1>;
                         xlnx,mem-depth = <0x200>;
                         xlnx,name = "PROFILES_AND_STROBES_axi_bram_ctrl_0";
-                        phandle = <0x13>;
+                        phandle = <0x1c>;
+                };
+
+                SVV_AXI_ADI_SPI_ADC: SVV_AXI_ADI_SPI@44a90000 {
+                        xlnx,slaves = <0x2>;
+                        xlnx,rable = <0x0>;
+                        compatible = "xlnx,SVV-AXI-ADI-SPI-1.0";
+                        status = "okay";
+                        xlnx,ip-name = "SVV_AXI_ADI_SPI";
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        reg = <0x44a90000 0x10000>;
+                        xlnx,name = "SVV_AXI_ADI_SPI_ADC";
+                        phandle = <0xe>;
+                };
+
+                SVV_AXI_ADI_SPI_LMK: SVV_AXI_ADI_SPI@44a80000 {
+                        xlnx,slaves = <0x1>;
+                        xlnx,rable = <0x0>;
+                        compatible = "xlnx,SVV-AXI-ADI-SPI-1.0";
+                        status = "okay";
+                        xlnx,ip-name = "SVV_AXI_ADI_SPI";
+                        xlnx,edk-iptype = "PERIPHERAL";
+                        reg = <0x44a80000 0x10000>;
+                        xlnx,name = "SVV_AXI_ADI_SPI_LMK";
+                        phandle = <0xd>;
                 };
 
                 SVV_AXI_CYCCNT_0: SVV_AXI_CYCCNT@44a40000 {
@@ -272,39 +473,28 @@
                         phandle = <0x9>;
                 };
 
-                SVV_LMB_GPIO_0: SVV_LMB_GPIO@c0000000 {
-                        xlnx,rable = <0x0>;
-                        xlnx,odr-init = <0x0>;
-                        compatible = "xlnx,SVV-LMB-GPIO-2.0";
-                        status = "okay";
-                        xlnx,addres = <0xc0000000>;
-                        xlnx,ip-name = "SVV_LMB_GPIO";
+                SVV_AXI_GPIO_0: SVV_AXI_GPIO@44a70000 {
+                        compatible = "xlnx,SVV-AXI-GPIO-1.0";
                         xlnx,gpio-width = <0x20>;
-                        xlnx,edk-iptype = "PERIPHERAL";
-                        xlnx,dir-init = <0x0>;
-                        reg = <0xc0000000 0x1000>;
-                        xlnx,name = "SVV_LMB_GPIO_0";
-                        phandle = <0xb>;
-                };
-
-                SVV_LMB_LMK04828_SPI_0: SVV_LMB_LMK04828_SPI@c4000000 {
+                        xlnx,odr-init = <0x0>;
                         xlnx,rable = <0x0>;
-                        compatible = "xlnx,SVV-LMB-LMK04828-SPI-1.0";
-                        status = "okay";
-                        xlnx,addres = <0xc4000000>;
-                        xlnx,ip-name = "SVV_LMB_LMK04828_SPI";
+                        xlnx,s00-axi-data-width = <0x20>;
+                        xlnx,ip-name = "SVV_AXI_GPIO";
+                        reg = <0x44a70000 0x10000>;
+                        xlnx,dir-init = <0x0>;
                         xlnx,edk-iptype = "PERIPHERAL";
-                        reg = <0xc4000000 0x1000>;
-                        xlnx,name = "SVV_LMB_LMK04828_SPI_0";
+                        status = "okay";
+                        xlnx,s00-axi-addr-width = <0x5>;
+                        xlnx,name = "SVV_AXI_GPIO_0";
                         phandle = <0xc>;
                 };
 
                 UARTS_AND_STROBES_axi_uart16550_0: axi_uart16550@44a20000 {
                         interrupts = <0x8 0x2>;
                         compatible = "xlnx,axi-uart16550-2.0";
-                        clock-frequency = <0x1c20000 0x5f5e100>;
+                        clock-frequency = <0xe10000 0x5f5e100>;
                         xlnx,s-axi-aclk-freq-hz-d = <0x64>;
-                        xlnx,external-xin-clk-hz = <0x1c20000>;
+                        xlnx,external-xin-clk-hz = <0xe10000>;
                         xlnx,has-external-rclk = <0x0>;
                         interrupt-parent = <&microblaze_0_axi_intc>;
                         xlnx,use-user-ports = <0x1>;
@@ -318,7 +508,7 @@
                         xlnx,use-modem-ports = <0x1>;
                         xlnx,edk-iptype = "PERIPHERAL";
                         status = "okay";
-                        xlnx,external-xin-clk-hz-d = <0x1c20000>;
+                        xlnx,external-xin-clk-hz-d = <0xe10000>;
                         xlnx,base-user = <0x1>;
                         interrupt-names = "ip2intc_irpt";
                         xlnx,is-a-16550 = <0x1>;
@@ -329,9 +519,9 @@
                 UARTS_AND_STROBES_axi_uart16550_1: axi_uart16550@44a30000 {
                         interrupts = <0x3 0x2>;
                         compatible = "xlnx,axi-uart16550-2.0";
-                        clock-frequency = <0x1c20000 0x5f5e100>;
+                        clock-frequency = <0xe10000 0x5f5e100>;
                         xlnx,s-axi-aclk-freq-hz-d = <0x64>;
-                        xlnx,external-xin-clk-hz = <0x1c20000>;
+                        xlnx,external-xin-clk-hz = <0xe10000>;
                         xlnx,has-external-rclk = <0x0>;
                         interrupt-parent = <&microblaze_0_axi_intc>;
                         xlnx,use-user-ports = <0x1>;
@@ -345,7 +535,7 @@
                         xlnx,use-modem-ports = <0x1>;
                         xlnx,edk-iptype = "PERIPHERAL";
                         status = "okay";
-                        xlnx,external-xin-clk-hz-d = <0x1c20000>;
+                        xlnx,external-xin-clk-hz-d = <0xe10000>;
                         xlnx,base-user = <0x1>;
                         interrupt-names = "ip2intc_irpt";
                         xlnx,is-a-16550 = <0x1>;
@@ -353,12 +543,12 @@
                         phandle = <0x8>;
                 };
 
-                UARTS_AND_STROBES_axi_uart16550_3: axi_uart16550@44a50000 {
+                UARTS_AND_STROBES_axi_uart16550_2: axi_uart16550@44a50000 {
                         interrupts = <0x2 0x2>;
                         compatible = "xlnx,axi-uart16550-2.0";
-                        clock-frequency = <0x1c20000 0x5f5e100>;
+                        clock-frequency = <0xe10000 0x5f5e100>;
                         xlnx,s-axi-aclk-freq-hz-d = <0x64>;
-                        xlnx,external-xin-clk-hz = <0x1c20000>;
+                        xlnx,external-xin-clk-hz = <0xe10000>;
                         xlnx,has-external-rclk = <0x0>;
                         interrupt-parent = <&microblaze_0_axi_intc>;
                         xlnx,use-user-ports = <0x1>;
@@ -372,11 +562,11 @@
                         xlnx,use-modem-ports = <0x1>;
                         xlnx,edk-iptype = "PERIPHERAL";
                         status = "okay";
-                        xlnx,external-xin-clk-hz-d = <0x1c20000>;
+                        xlnx,external-xin-clk-hz-d = <0xe10000>;
                         xlnx,base-user = <0x1>;
                         interrupt-names = "ip2intc_irpt";
                         xlnx,is-a-16550 = <0x1>;
-                        xlnx,name = "UARTS_AND_STROBES_axi_uart16550_3";
+                        xlnx,name = "UARTS_AND_STROBES_axi_uart16550_2";
                         phandle = <0xa>;
                 };
 
@@ -426,7 +616,7 @@
                 microblaze_0_axi_intc: axi_intc@41200000 {
                         #interrupt-cells = <0x2>;
                         xlnx,sense-of-irq-edge-type = "Rising";
-                        xlnx,kind-of-intr = <0x76f3>;
+                        xlnx,kind-of-intr = <0x36f3>;
                         xlnx,kind-of-edge = <0xffffffff>;
                         xlnx,irq-is-level = <0x0>;
                         xlnx,has-ivr = <0x1>;
@@ -461,7 +651,7 @@
                         xlnx,has-fast = <0x1>;
                         xlnx,ivar-rst-val = <0x10>;
                         interrupt-controller;
-                        xlnx,async-intr = <0xfffffef3>;
+                        xlnx,async-intr = <0xffffbef3>;
                         xlnx,name = "microblaze_0_axi_intc";
                         phandle = <0x3>;
                 };
@@ -499,7 +689,7 @@
                         xlnx,s-axi-ctrl-data-width = <0x20>;
                         xlnx,bram-awidth = <0x20>;
                         xlnx,lmb-awidth = <0x20>;
-                        phandle = <0x14>;
+                        phandle = <0x1d>;
                 };
 
                 microblaze_0_local_memory_ilmb_bram_if_cntlr: lmb_bram_if_cntlr@1 {
@@ -535,7 +725,7 @@
                         xlnx,s-axi-ctrl-data-width = <0x20>;
                         xlnx,bram-awidth = <0x20>;
                         xlnx,lmb-awidth = <0x20>;
-                        phandle = <0x15>;
+                        phandle = <0x1e>;
                 };
         };
 
@@ -573,13 +763,22 @@
                 microblaze_0 = "/amba_pl/cpus_microblaze@0/cpu@0";
                 BCO_PROFILE_0 = "/amba_pl/BCO_PROFILE@44a00000";
                 DDS_CTRL_0 = "/amba_pl/DDS_CTRL@44a10000";
+                JESD204B_RX_CHAIN_1_SVV_AXI_VOID_0 = "/amba_pl/SVV_AXI_VOID@44c00000";
+                JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0 = "/amba_pl/ad_ip_jesd204_tpl_adc@44ab0000";
+                JESD204B_RX_CHAIN_1_axi_adxcvr_0 = "/amba_pl/axi_adxcvr@44a60000";
+                JESD204B_RX_CHAIN_1_axi_jesd204_rx_0 = "/amba_pl/axi_jesd204_rx@44aa0000";
+                JESD204B_RX_CHAIN_2_SVV_AXI_VOID_1 = "/amba_pl/SVV_AXI_VOID@44d00000";
+                JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1 = "/amba_pl/ad_ip_jesd204_tpl_adc@44ae0000";
+                JESD204B_RX_CHAIN_2_axi_adxcvr_1 = "/amba_pl/axi_adxcvr@44ac0000";
+                JESD204B_RX_CHAIN_2_axi_jesd204_rx_1 = "/amba_pl/axi_jesd204_rx@44ad0000";
                 PROFILES_AND_STROBES_axi_bram_ctrl_0 = "/amba_pl/axi_bram_ctrl@c2000000";
+                SVV_AXI_ADI_SPI_ADC = "/amba_pl/SVV_AXI_ADI_SPI@44a90000";
+                SVV_AXI_ADI_SPI_LMK = "/amba_pl/SVV_AXI_ADI_SPI@44a80000";
                 SVV_AXI_CYCCNT_0 = "/amba_pl/SVV_AXI_CYCCNT@44a40000";
-                SVV_LMB_GPIO_0 = "/amba_pl/SVV_LMB_GPIO@c0000000";
-                SVV_LMB_LMK04828_SPI_0 = "/amba_pl/SVV_LMB_LMK04828_SPI@c4000000";
+                SVV_AXI_GPIO_0 = "/amba_pl/SVV_AXI_GPIO@44a70000";
                 UARTS_AND_STROBES_axi_uart16550_0 = "/amba_pl/axi_uart16550@44a20000";
                 UARTS_AND_STROBES_axi_uart16550_1 = "/amba_pl/axi_uart16550@44a30000";
-                UARTS_AND_STROBES_axi_uart16550_3 = "/amba_pl/axi_uart16550@44a50000";
+                UARTS_AND_STROBES_axi_uart16550_2 = "/amba_pl/axi_uart16550@44a50000";
                 mdm_0 = "/amba_pl/mdm@41400000";
                 microblaze_0_axi_intc = "/amba_pl/axi_intc@41200000";
                 microblaze_0_local_memory_dlmb_bram_if_cntlr = "/amba_pl/lmb_bram_if_cntlr@0";

@@ -4,14 +4,35 @@ BCO_PROFILE_0:
 DDS_CTRL_0:
 - DDS_CTRL
 - None
+JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0:
+- ad_ip_jesd204_tpl_adc
+- None
+JESD204B_RX_CHAIN_1_axi_adxcvr_0:
+- axi_adxcvr
+- None
+JESD204B_RX_CHAIN_1_axi_jesd204_rx_0:
+- axi_jesd204_rx
+- None
+JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1:
+- ad_ip_jesd204_tpl_adc
+- None
+JESD204B_RX_CHAIN_2_axi_adxcvr_1:
+- axi_adxcvr
+- None
+JESD204B_RX_CHAIN_2_axi_jesd204_rx_1:
+- axi_jesd204_rx
+- None
+SVV_AXI_ADI_SPI_ADC:
+- SVV_AXI_ADI_SPI
+- None
+SVV_AXI_ADI_SPI_LMK:
+- SVV_AXI_ADI_SPI
+- None
 SVV_AXI_CYCCNT_0:
 - SVV_AXI_CYCCNT
 - None
-SVV_LMB_GPIO_0:
-- SVV_LMB_GPIO
-- None
-SVV_LMB_LMK04828_SPI_0:
-- SVV_LMB_LMK04828_SPI
+SVV_AXI_GPIO_0:
+- SVV_AXI_GPIO
 - None
 UARTS_AND_STROBES_axi_uart16550_0:
 - axi_uart16550
@@ -19,7 +40,7 @@ UARTS_AND_STROBES_axi_uart16550_0:
 UARTS_AND_STROBES_axi_uart16550_1:
 - axi_uart16550
 - uartns550
-UARTS_AND_STROBES_axi_uart16550_3:
+UARTS_AND_STROBES_axi_uart16550_2:
 - axi_uart16550
 - uartns550
 mdm_0:

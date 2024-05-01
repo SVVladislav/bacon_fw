@@ -3,63 +3,22 @@
 #include <cstdint>
 #include <array>
 
-struct SVV_LMK04828_REGS
-{
-  volatile uint32_t TDR;          // Transmit Data Register
-                                  // Write register operation: 
-						          // TDR[23:21] = 0b000
-								  // TDR[20:8]  = Rergister Address
-								  // TDR[7:0]   = Data
-								  // Read register operation:  
-								  // TDR[23:21] = 0b100
-								  // TDR[20:8]  = Rergister Address
-								  // TDR[7:0]   = XXX
-  volatile uint32_t RDR;          // Receive Data Register
-                                  // RDR[20:8]  = Rergister Address
-								  // RDR[7:0]   = Data                                  
-  volatile uint32_t SR;          // Status register
-                                 // SR[0] - Operaton in progress
-};
-
-template<uint32_t PSPI>
+template<typename TADI_SPI>
 struct TLMK04828
 {    
   TLMK04828() = delete;
   
   // Полная загрузка
   static inline void Init() { WriteInit(regs); }
-
-  static inline void Write(uint32_t x)
-  {
-    while(base()->SR);
-    base()->TDR = x;  
-  }
-
-  static inline void WriteReg(uint32_t reg, uint8_t value)
-  {
-	while(base()->SR);
-    base()->TDR = (reg << 8) | value;
-  }
-
-  static inline uint32_t ReadReg(uint32_t reg)
-  {
-    while(base()->SR);
-    base()->TDR = (reg << 8) | 0x80'0000;
-    while(base()->SR);
-    return base()->RDR;      
-  }
-
+  
 private:
-  static inline auto base() { return (SVV_LMK04828_REGS *)PSPI; }
-
   // Загрузить массив инициализации синтезатора
   template <typename T>
   static inline void WriteInit(const T &regs)
   {
     for(auto &x : regs) 
 	{ 
-      while(base()->SR);
-      base()->TDR = x;
+      TADI_SPI::Write(x);
 	}
   }
 

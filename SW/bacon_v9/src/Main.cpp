@@ -37,12 +37,18 @@ int main()
   // Загрузить синтезатор частот LMK04828  
   LMK::Init();
 
+  //PDN_ADC1::clear();
+
   // Установить тестовые профили
   for(auto i=0u; i<32; bacon.WriteTestProfile(i++));
   
   for(auto i=0u; i<32; bacon.WriteTestProfile<BCO_PROFILE_BASE>(i++));
 
   microblaze_enable_interrupts();
+
+  //ADI_SPI_ADC::SlaveSelect(1);
+  //auto x = ADI_SPI_LMK::ReadReg(4);
+  //DEBUG_Print("VOID = %X\r\n", x);
 
   for(;;) 
   {

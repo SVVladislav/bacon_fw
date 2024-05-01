@@ -58,6 +58,32 @@ set_property -dict {PACKAGE_PIN B17 IOSTANDARD LVCMOS18} [get_ports LMK04828_ncs
 set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS18} [get_ports LMK04828_sdio]
 set_property -dict {PACKAGE_PIN J17 IOSTANDARD LVCMOS18} [get_ports LMK04828_sync]
 
-#ADC ad9695
+#ADC AD9695
+#ADC1 JESD
+set_property -dict {PACKAGE_PIN D6} [get_ports rx_1_0_p]
+set_property -dict {PACKAGE_PIN D5} [get_ports rx_1_0_n]
+set_property -dict {PACKAGE_PIN E4} [get_ports rx_1_1_p]
+set_property -dict {PACKAGE_PIN E3} [get_ports rx_1_1_n]
+set_property -dict {PACKAGE_PIN B6} [get_ports rx_1_2_p]
+set_property -dict {PACKAGE_PIN B5} [get_ports rx_1_2_n]
+set_property -dict {PACKAGE_PIN A8} [get_ports rx_1_3_p]
+set_property -dict {PACKAGE_PIN A7} [get_ports rx_1_3_n]
+set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS18} [get_ports rx_sync_1]
+#ADC2 JESD
+set_property -dict {PACKAGE_PIN H6} [get_ports rx_2_0_p]
+set_property -dict {PACKAGE_PIN H5} [get_ports rx_2_0_n]
+set_property -dict {PACKAGE_PIN K6} [get_ports rx_2_1_p]
+set_property -dict {PACKAGE_PIN K5} [get_ports rx_2_1_n]
+set_property -dict {PACKAGE_PIN G4} [get_ports rx_2_2_p]
+set_property -dict {PACKAGE_PIN G3} [get_ports rx_2_2_n]
+set_property -dict {PACKAGE_PIN F6} [get_ports rx_2_3_p]
+set_property -dict {PACKAGE_PIN F5} [get_ports rx_2_3_n]
+set_property -dict {PACKAGE_PIN K18 IOSTANDARD LVCMOS18} [get_ports rx_sync_2]
+#ADC1,2 Power Down
 set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS18} [get_ports PDN_ADC1]
 set_property -dict {PACKAGE_PIN J18 IOSTANDARD LVCMOS18} [get_ports PDN_ADC2]
+#ADC1,2 SPI
+set_property -dict {PACKAGE_PIN H21 IOSTANDARD LVCMOS18} [get_ports ADC_sclk]
+set_property -dict {PACKAGE_PIN H22 IOSTANDARD LVCMOS18} [get_ports ADC_sdio]
+set_property -dict {PACKAGE_PIN F18 IOSTANDARD LVCMOS18} [get_ports {ADC_nCS[0]}]
+set_property -dict {PACKAGE_PIN A17 IOSTANDARD LVCMOS18} [get_ports {ADC_nCS[1]}]

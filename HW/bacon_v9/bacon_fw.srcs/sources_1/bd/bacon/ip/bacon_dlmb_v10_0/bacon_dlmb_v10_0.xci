@@ -12,11 +12,11 @@
         "C_LMB_AWIDTH": [ { "value": "32", "value_src": "propagated", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_LMB_PROTOCOL": [ { "value": "0", "value_src": "propagated", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_EXT_RESET_HIGH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "C_LMB_NUM_SLAVES": [ { "value": "3", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_LMB_NUM_SLAVES": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "bacon_dlmb_v10_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "C_LMB_NUM_SLAVES": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_LMB_NUM_SLAVES": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_LMB_DWIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_LMB_AWIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_LMB_PROTOCOL": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -57,11 +57,11 @@
         "M_AddrStrobe": [ { "direction": "in" } ],
         "M_DBus": [ { "direction": "in", "size_left": "0", "size_right": "31", "driver_value": "0" } ],
         "M_BE": [ { "direction": "in", "size_left": "0", "size_right": "3", "driver_value": "0" } ],
-        "Sl_DBus": [ { "direction": "in", "size_left": "0", "size_right": "95" } ],
-        "Sl_Ready": [ { "direction": "in", "size_left": "0", "size_right": "2" } ],
-        "Sl_Wait": [ { "direction": "in", "size_left": "0", "size_right": "2", "driver_value": "0" } ],
-        "Sl_UE": [ { "direction": "in", "size_left": "0", "size_right": "2", "driver_value": "0" } ],
-        "Sl_CE": [ { "direction": "in", "size_left": "0", "size_right": "2", "driver_value": "0" } ],
+        "Sl_DBus": [ { "direction": "in", "size_left": "0", "size_right": "31" } ],
+        "Sl_Ready": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
+        "Sl_Wait": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
+        "Sl_UE": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
+        "Sl_CE": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "LMB_ABus": [ { "direction": "out", "size_left": "0", "size_right": "31" } ],
         "LMB_ReadStrobe": [ { "direction": "out" } ],
         "LMB_WriteStrobe": [ { "direction": "out" } ],
@@ -96,56 +96,6 @@
             "RST": [ { "physical_name": "LMB_Rst" } ],
             "UE": [ { "physical_name": "Sl_UE", "physical_left": "0", "physical_right": "0" } ],
             "WAIT": [ { "physical_name": "Sl_Wait", "physical_left": "0", "physical_right": "0" } ],
-            "WRITEDBUS": [ { "physical_name": "LMB_WriteDBus" } ],
-            "WRITESTROBE": [ { "physical_name": "LMB_WriteStrobe" } ]
-          }
-        },
-        "LMB_Sl_1": {
-          "vlnv": "xilinx.com:interface:lmb:1.0",
-          "abstraction_type": "xilinx.com:interface:lmb_rtl:1.0",
-          "mode": "mirroredSlave",
-          "parameters": {
-            "ADDR_WIDTH": [ { "value": "32", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "DATA_WIDTH": [ { "value": "32", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "PROTOCOL": [ { "value": "STANDARD", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "ABUS": [ { "physical_name": "LMB_ABus" } ],
-            "ADDRSTROBE": [ { "physical_name": "LMB_AddrStrobe" } ],
-            "BE": [ { "physical_name": "LMB_BE" } ],
-            "CE": [ { "physical_name": "Sl_CE", "physical_left": "1", "physical_right": "1" } ],
-            "READDBUS": [ { "physical_name": "Sl_DBus", "physical_left": "32", "physical_right": "63" } ],
-            "READSTROBE": [ { "physical_name": "LMB_ReadStrobe" } ],
-            "READY": [ { "physical_name": "Sl_Ready", "physical_left": "1", "physical_right": "1" } ],
-            "RST": [ { "physical_name": "LMB_Rst" } ],
-            "UE": [ { "physical_name": "Sl_UE", "physical_left": "1", "physical_right": "1" } ],
-            "WAIT": [ { "physical_name": "Sl_Wait", "physical_left": "1", "physical_right": "1" } ],
-            "WRITEDBUS": [ { "physical_name": "LMB_WriteDBus" } ],
-            "WRITESTROBE": [ { "physical_name": "LMB_WriteStrobe" } ]
-          }
-        },
-        "LMB_Sl_2": {
-          "vlnv": "xilinx.com:interface:lmb:1.0",
-          "abstraction_type": "xilinx.com:interface:lmb_rtl:1.0",
-          "mode": "mirroredSlave",
-          "parameters": {
-            "ADDR_WIDTH": [ { "value": "32", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "DATA_WIDTH": [ { "value": "32", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "PROTOCOL": [ { "value": "STANDARD", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "ABUS": [ { "physical_name": "LMB_ABus" } ],
-            "ADDRSTROBE": [ { "physical_name": "LMB_AddrStrobe" } ],
-            "BE": [ { "physical_name": "LMB_BE" } ],
-            "CE": [ { "physical_name": "Sl_CE", "physical_left": "2", "physical_right": "2" } ],
-            "READDBUS": [ { "physical_name": "Sl_DBus", "physical_left": "64", "physical_right": "95" } ],
-            "READSTROBE": [ { "physical_name": "LMB_ReadStrobe" } ],
-            "READY": [ { "physical_name": "Sl_Ready", "physical_left": "2", "physical_right": "2" } ],
-            "RST": [ { "physical_name": "LMB_Rst" } ],
-            "UE": [ { "physical_name": "Sl_UE", "physical_left": "2", "physical_right": "2" } ],
-            "WAIT": [ { "physical_name": "Sl_Wait", "physical_left": "2", "physical_right": "2" } ],
             "WRITEDBUS": [ { "physical_name": "LMB_WriteDBus" } ],
             "WRITESTROBE": [ { "physical_name": "LMB_WriteStrobe" } ]
           }

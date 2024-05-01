@@ -1,0 +1,93 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.348502",
+   "Default View_TopLeft":"-396,-396",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -40 -y 140 -defaultsOSRD
+preplace port s_axi1 -pg 1 -lvl 0 -x -40 -y 360 -defaultsOSRD
+preplace port s_axi2 -pg 1 -lvl 0 -x -40 -y 1130 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -40 -y 170 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -40 -y 220 -defaultsOSRD
+preplace port port-id_CLK0_JESD_P -pg 1 -lvl 0 -x -40 -y 410 -defaultsOSRD
+preplace port port-id_CLK0_JESD_N -pg 1 -lvl 0 -x -40 -y 440 -defaultsOSRD
+preplace port port-id_rx_1_0_p -pg 1 -lvl 0 -x -40 -y 650 -defaultsOSRD
+preplace port port-id_rx_1_0_n -pg 1 -lvl 0 -x -40 -y 680 -defaultsOSRD
+preplace port port-id_rx_1_1_p -pg 1 -lvl 0 -x -40 -y 770 -defaultsOSRD
+preplace port port-id_rx_1_1_n -pg 1 -lvl 0 -x -40 -y 800 -defaultsOSRD
+preplace port port-id_rx_1_2_p -pg 1 -lvl 0 -x -40 -y 890 -defaultsOSRD
+preplace port port-id_rx_1_2_n -pg 1 -lvl 0 -x -40 -y 920 -defaultsOSRD
+preplace port port-id_rx_1_3_p -pg 1 -lvl 0 -x -40 -y 1010 -defaultsOSRD
+preplace port port-id_rx_1_3_n -pg 1 -lvl 0 -x -40 -y 1040 -defaultsOSRD
+preplace port port-id_s_axi_aresetn1 -pg 1 -lvl 0 -x -40 -y 1170 -defaultsOSRD
+preplace portBus rx_sync_1 -pg 1 -lvl 10 -x 3520 -y 690 -defaultsOSRD
+preplace portBus ADC_DATA_0 -pg 1 -lvl 10 -x 3520 -y 830 -defaultsOSRD
+preplace portBus ADC_DATA_1 -pg 1 -lvl 10 -x 3520 -y 930 -defaultsOSRD
+preplace inst axi_jesd204_rx_0 -pg 1 -lvl 5 -x 1970 -y 420 -defaultsOSRD
+preplace inst axi_adxcvr_0 -pg 1 -lvl 2 -x 370 -y 200 -defaultsOSRD
+preplace inst SER7_IBUFDS_GTE2_v1_0_0 -pg 1 -lvl 1 -x 110 -y 430 -defaultsOSRD
+preplace inst util_adxcvr_0 -pg 1 -lvl 3 -x 1160 -y 710 -defaultsOSRD
+preplace inst jesd204_rx_0 -pg 1 -lvl 6 -x 2430 -y 710 -defaultsOSRD
+preplace inst ad_sysref_gen_0 -pg 1 -lvl 5 -x 1970 -y 810 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1610 -y 810 -defaultsOSRD
+preplace inst SVV_AXI_VOID_0 -pg 1 -lvl 3 -x 1160 -y 90 -defaultsOSRD
+preplace inst ad_ip_jesd204_tpl_adc_0 -pg 1 -lvl 8 -x 2930 -y 840 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2670 -y 850 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 9 -x 3390 -y 830 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 9 -x 3390 -y 930 -defaultsOSRD
+preplace netloc CLK0_JESD_N_1 1 0 1 NJ 440
+preplace netloc CLK0_JESD_P_1 1 0 1 -20J 410n
+preplace netloc SER7_IBUFDS_GTE2_v1_0_0_O 1 1 2 NJ 420 910
+preplace netloc ad_ip_jesd204_tpl_adc_0_adc_data 1 8 1 3270 830n
+preplace netloc ad_sysref_gen_0_sysref_out 1 5 1 2140 800n
+preplace netloc axi_adxcvr_0_up_pll_rst 1 2 1 920 310n
+preplace netloc axi_jesd204_rx_0_core_reset 1 5 1 2120 430n
+preplace netloc axi_jesd204_rx_0_device_reset 1 5 1 2100 450n
+preplace netloc clk_wiz_0_clk_out_100M 1 0 8 -20 200 250J 380 980 1140 N 1140 1800 910 N 910 N 910 2750
+preplace netloc jesd204_rx_0_phy_en_char_align 1 2 5 970 1160 NJ 1160 NJ 1160 NJ 1160 2560
+preplace netloc jesd204_rx_0_rx_data 1 6 3 NJ 730 2760 720 3080
+preplace netloc jesd204_rx_0_rx_sof 1 6 2 N 790 2750
+preplace netloc jesd204_rx_0_rx_valid 1 6 3 2570J 720 2750 710 3070
+preplace netloc jesd204_rx_0_sync 1 6 4 N 690 N 690 N 690 N
+preplace netloc rst_clk_wiz_0_200M_peripheral_aresetn 1 0 5 N 220 240J 390 1020 280 N 280 1810
+preplace netloc rx_1_0_n_1 1 0 3 NJ 680 NJ 680 940
+preplace netloc rx_1_0_p_1 1 0 3 NJ 650 NJ 650 N
+preplace netloc rx_1_1_n_1 1 0 3 NJ 800 NJ 800 1030
+preplace netloc rx_1_1_p_1 1 0 3 NJ 770 NJ 770 N
+preplace netloc rx_1_2_n_1 1 0 3 NJ 920 NJ 920 1030
+preplace netloc rx_1_2_p_1 1 0 3 NJ 890 NJ 890 N
+preplace netloc rx_1_3_n_1 1 0 3 NJ 1040 NJ 1040 1030
+preplace netloc rx_1_3_p_1 1 0 3 NJ 1010 NJ 1010 N
+preplace netloc s_axi_aresetn1_1 1 0 8 NJ 1170 NJ 1170 NJ 1170 1320J 1150 NJ 1150 NJ 1150 NJ 1150 2780
+preplace netloc util_adxcvr_0_rx_out_clk_0 1 2 6 1040 1150 1280 720 1840 570 2290 520 N 520 2780
+preplace netloc xlconstant_0_dout 1 4 1 N 810
+preplace netloc xlconstant_1_dout 1 7 1 N 850
+preplace netloc xlslice_0_Dout 1 9 1 NJ 830
+preplace netloc xlslice_1_Dout 1 9 1 NJ 930
+preplace netloc Conn1 1 0 5 NJ 360 220J 370 950J 290 NJ 290 1690J
+preplace netloc Conn2 1 0 8 NJ 1130 NJ 1130 NJ 1130 1300J 560 NJ 560 2110J 530 NJ 530 2770
+preplace netloc axi_adxcvr_0_m_axi 1 2 1 500 70n
+preplace netloc axi_adxcvr_0_up_ch_0 1 2 1 1030 150n
+preplace netloc axi_adxcvr_0_up_ch_1 1 2 1 1000 190n
+preplace netloc axi_adxcvr_0_up_ch_2 1 2 1 960 230n
+preplace netloc axi_adxcvr_0_up_ch_3 1 2 1 930 270n
+preplace netloc axi_adxcvr_0_up_cm_0 1 2 1 990 110n
+preplace netloc axi_adxcvr_0_up_es_0 1 2 1 1040 130n
+preplace netloc axi_adxcvr_0_up_es_1 1 2 1 1010 170n
+preplace netloc axi_adxcvr_0_up_es_2 1 2 1 970 210n
+preplace netloc axi_adxcvr_0_up_es_3 1 2 1 940 250n
+preplace netloc axi_jesd204_rx_0_rx_cfg 1 5 1 2300 390n
+preplace netloc jesd204_rx_0_rx_event 1 4 3 1840 280 N 280 2560
+preplace netloc jesd204_rx_0_rx_ilas_config 1 4 3 1820 260 N 260 2580
+preplace netloc jesd204_rx_0_rx_status 1 4 3 1830 270 N 270 2570
+preplace netloc microblaze_0_axi_periph_M09_AXI 1 0 2 NJ 140 240
+preplace netloc util_adxcvr_0_rx_0 1 3 3 1280 620 N 620 N
+preplace netloc util_adxcvr_0_rx_1 1 3 3 1290 640 N 640 N
+preplace netloc util_adxcvr_0_rx_2 1 3 3 1310 660 N 660 N
+preplace netloc util_adxcvr_0_rx_3 1 3 3 1320 680 N 680 N
+levelinfo -pg 1 -40 110 370 1160 1610 1970 2430 2670 2930 3390 3520
+pagesize -pg 1 -db -bbox -sgen -190 -220 3690 1200
+"
+}
+0

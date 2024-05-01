@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "bacon_SER7_IBUFDS_GTE2_v1_0_1_0",
-    "cell_name": "SER7_IBUFDS_GTE2_v1_0_1",
+    "cell_name": "JESD204B_RX_CHAIN_2/SER7_IBUFDS_GTE2_v1_0_1",
     "component_reference": "xilinx.com:user:SER7_IBUFDS_GTE2_v1_0:1.0",
     "ip_revision": "2",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_SER7_IBUFDS_GTE2_v1_0_1_0",

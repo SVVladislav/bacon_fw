@@ -191,6 +191,160 @@
 			reg = <0x44a10000 0x10000>;
 			xlnx,name = "DDS_CTRL_0";
 		};
+		JESD204B_RX_CHAIN_1_SVV_AXI_VOID_0: SVV_AXI_VOID@44c00000 {
+			xlnx,rable = <0>;
+			compatible = "xlnx,SVV-AXI-VOID-1.0";
+			status = "okay";
+			xlnx,ip-name = "SVV_AXI_VOID";
+			xlnx,edk-iptype = "PERIPHERAL";
+			reg = <0x44c00000 0x10000>;
+			xlnx,name = "JESD204B_RX_CHAIN_1_SVV_AXI_VOID_0";
+		};
+		JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0: ad_ip_jesd204_tpl_adc@44ab0000 {
+			compatible = "xlnx,ad-ip-jesd204-tpl-adc-1.0";
+			xlnx,en-frame-align = <1>;
+			xlnx,ext-sync = <0>;
+			xlnx,fpga-family = <2>;
+			xlnx,rable = <0>;
+			xlnx,octets-per-beat = <4>;
+			xlnx,fpga-technology = <1>;
+			xlnx,ip-name = "ad_ip_jesd204_tpl_adc";
+			xlnx,pn15-enable = <1>;
+			xlnx,num-lanes = <4>;
+			reg = <0x44ab0000 0x10000>;
+			xlnx,dev-package = <3>;
+			xlnx,speed-grade = <20>;
+			xlnx,samples-per-frame = <1>;
+			xlnx,pn7-enable = <1>;
+			xlnx,num-channels = <2>;
+			xlnx,dma-bits-per-sample = <16>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,id = <0>;
+			xlnx,bits-per-sample = <16>;
+			xlnx,twos-complement = <1>;
+			status = "okay";
+			xlnx,name = "JESD204B_RX_CHAIN_1_ad_ip_jesd204_tpl_adc_0";
+			xlnx,converter-resolution = <14>;
+		};
+		JESD204B_RX_CHAIN_1_axi_adxcvr_0: axi_adxcvr@44a60000 {
+			xlnx,xcvr-type = <2>;
+			xlnx,num-of-lanes = <4>;
+			compatible = "xlnx,axi-adxcvr-1.0";
+			xlnx,tx-or-rx-n = <0>;
+			xlnx,rate = "000";
+			xlnx,qpll-enable = <1>;
+			xlnx,fpga-family = <2>;
+			xlnx,fpga-voltage = <970>;
+			xlnx,rable = <0>;
+			xlnx,lpm-or-dfe-n = <1>;
+			xlnx,tx-diffctrl = "01000";
+			xlnx,ip-name = "axi_adxcvr";
+			xlnx,fpga-technology = <1>;
+			xlnx,out-clk-sel = "100";
+			reg = <0x44a60000 0x10000>;
+			xlnx,dev-package = <3>;
+			xlnx,speed-grade = <20>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,tx-postcursor = "00000";
+			xlnx,id = <0>;
+			xlnx,tx-precursor = "00000";
+			status = "okay";
+			xlnx,sys-clk-sel = "11";
+			xlnx,link-mode = <1>;
+			xlnx,name = "JESD204B_RX_CHAIN_1_axi_adxcvr_0";
+		};
+		JESD204B_RX_CHAIN_1_axi_jesd204_rx_0: axi_jesd204_rx@44aa0000 {
+			compatible = "xlnx,axi-jesd204-rx-1.0";
+			xlnx,rable = <0>;
+			xlnx,enable-link-stats = <0>;
+			xlnx,num-links = <1>;
+			xlnx,ip-name = "axi_jesd204_rx";
+			reg = <0x44aa0000 0x10000>;
+			xlnx,num-lanes = <4>;
+			xlnx,data-path-width = <4>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,id = <0>;
+			status = "okay";
+			xlnx,link-mode = <1>;
+			xlnx,name = "JESD204B_RX_CHAIN_1_axi_jesd204_rx_0";
+		};
+		JESD204B_RX_CHAIN_2_SVV_AXI_VOID_1: SVV_AXI_VOID@44d00000 {
+			xlnx,rable = <0>;
+			compatible = "xlnx,SVV-AXI-VOID-1.0";
+			status = "okay";
+			xlnx,ip-name = "SVV_AXI_VOID";
+			xlnx,edk-iptype = "PERIPHERAL";
+			reg = <0x44d00000 0x10000>;
+			xlnx,name = "JESD204B_RX_CHAIN_2_SVV_AXI_VOID_1";
+		};
+		JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1: ad_ip_jesd204_tpl_adc@44ae0000 {
+			compatible = "xlnx,ad-ip-jesd204-tpl-adc-1.0";
+			xlnx,en-frame-align = <1>;
+			xlnx,ext-sync = <0>;
+			xlnx,fpga-family = <2>;
+			xlnx,rable = <0>;
+			xlnx,octets-per-beat = <4>;
+			xlnx,fpga-technology = <1>;
+			xlnx,ip-name = "ad_ip_jesd204_tpl_adc";
+			xlnx,pn15-enable = <1>;
+			xlnx,num-lanes = <4>;
+			reg = <0x44ae0000 0x10000>;
+			xlnx,dev-package = <3>;
+			xlnx,speed-grade = <20>;
+			xlnx,samples-per-frame = <1>;
+			xlnx,pn7-enable = <1>;
+			xlnx,num-channels = <2>;
+			xlnx,dma-bits-per-sample = <16>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,id = <0>;
+			xlnx,bits-per-sample = <16>;
+			xlnx,twos-complement = <1>;
+			status = "okay";
+			xlnx,name = "JESD204B_RX_CHAIN_2_ad_ip_jesd204_tpl_adc_1";
+			xlnx,converter-resolution = <14>;
+		};
+		JESD204B_RX_CHAIN_2_axi_adxcvr_1: axi_adxcvr@44ac0000 {
+			xlnx,xcvr-type = <2>;
+			xlnx,num-of-lanes = <4>;
+			compatible = "xlnx,axi-adxcvr-1.0";
+			xlnx,tx-or-rx-n = <0>;
+			xlnx,rate = "000";
+			xlnx,qpll-enable = <1>;
+			xlnx,fpga-family = <2>;
+			xlnx,fpga-voltage = <970>;
+			xlnx,rable = <0>;
+			xlnx,lpm-or-dfe-n = <1>;
+			xlnx,tx-diffctrl = "01000";
+			xlnx,ip-name = "axi_adxcvr";
+			xlnx,fpga-technology = <1>;
+			xlnx,out-clk-sel = "100";
+			reg = <0x44ac0000 0x10000>;
+			xlnx,dev-package = <3>;
+			xlnx,speed-grade = <20>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,tx-postcursor = "00000";
+			xlnx,id = <0>;
+			xlnx,tx-precursor = "00000";
+			status = "okay";
+			xlnx,sys-clk-sel = "11";
+			xlnx,link-mode = <1>;
+			xlnx,name = "JESD204B_RX_CHAIN_2_axi_adxcvr_1";
+		};
+		JESD204B_RX_CHAIN_2_axi_jesd204_rx_1: axi_jesd204_rx@44ad0000 {
+			compatible = "xlnx,axi-jesd204-rx-1.0";
+			xlnx,rable = <0>;
+			xlnx,enable-link-stats = <0>;
+			xlnx,num-links = <1>;
+			xlnx,ip-name = "axi_jesd204_rx";
+			reg = <0x44ad0000 0x10000>;
+			xlnx,num-lanes = <1>;
+			xlnx,data-path-width = <4>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			xlnx,id = <0>;
+			status = "okay";
+			xlnx,link-mode = <1>;
+			xlnx,name = "JESD204B_RX_CHAIN_2_axi_jesd204_rx_1";
+		};
 		PROFILES_AND_STROBES_axi_bram_ctrl_0: axi_bram_ctrl@c2000000 {
 			xlnx,protocol = "AXI4";
 			xlnx,edk-special = "BRAM_CTRL";
@@ -222,6 +376,26 @@
 			xlnx,mem-depth = <512>;
 			xlnx,name = "PROFILES_AND_STROBES_axi_bram_ctrl_0";
 		};
+		SVV_AXI_ADI_SPI_ADC: SVV_AXI_ADI_SPI@44a90000 {
+			xlnx,slaves = <2>;
+			xlnx,rable = <0>;
+			compatible = "xlnx,SVV-AXI-ADI-SPI-1.0";
+			status = "okay";
+			xlnx,ip-name = "SVV_AXI_ADI_SPI";
+			xlnx,edk-iptype = "PERIPHERAL";
+			reg = <0x44a90000 0x10000>;
+			xlnx,name = "SVV_AXI_ADI_SPI_ADC";
+		};
+		SVV_AXI_ADI_SPI_LMK: SVV_AXI_ADI_SPI@44a80000 {
+			xlnx,slaves = <1>;
+			xlnx,rable = <0>;
+			compatible = "xlnx,SVV-AXI-ADI-SPI-1.0";
+			status = "okay";
+			xlnx,ip-name = "SVV_AXI_ADI_SPI";
+			xlnx,edk-iptype = "PERIPHERAL";
+			reg = <0x44a80000 0x10000>;
+			xlnx,name = "SVV_AXI_ADI_SPI_LMK";
+		};
 		SVV_AXI_CYCCNT_0: SVV_AXI_CYCCNT@44a40000 {
 			xlnx,rable = <0>;
 			compatible = "xlnx,SVV-AXI-CYCCNT-1.0";
@@ -232,35 +406,26 @@
 			reg = <0x44a40000 0x1000>;
 			xlnx,name = "SVV_AXI_CYCCNT_0";
 		};
-		SVV_LMB_GPIO_0: SVV_LMB_GPIO@c0000000 {
-			xlnx,rable = <0>;
-			xlnx,odr-init = <0x00000000>;
-			compatible = "xlnx,SVV-LMB-GPIO-2.0";
-			status = "okay";
-			xlnx,addres = <0xC0000000>;
-			xlnx,ip-name = "SVV_LMB_GPIO";
+		SVV_AXI_GPIO_0: SVV_AXI_GPIO@44a70000 {
+			compatible = "xlnx,SVV-AXI-GPIO-1.0";
 			xlnx,gpio-width = <32>;
-			xlnx,edk-iptype = "PERIPHERAL";
-			xlnx,dir-init = <0x00000000>;
-			reg = <0xc0000000 0x1000>;
-			xlnx,name = "SVV_LMB_GPIO_0";
-		};
-		SVV_LMB_LMK04828_SPI_0: SVV_LMB_LMK04828_SPI@c4000000 {
+			xlnx,odr-init = <0x00000000>;
 			xlnx,rable = <0>;
-			compatible = "xlnx,SVV-LMB-LMK04828-SPI-1.0";
-			status = "okay";
-			xlnx,addres = <0xC4000000>;
-			xlnx,ip-name = "SVV_LMB_LMK04828_SPI";
+			xlnx,s00-axi-data-width = <32>;
+			xlnx,ip-name = "SVV_AXI_GPIO";
+			reg = <0x44a70000 0x10000>;
+			xlnx,dir-init = <0x00000000>;
 			xlnx,edk-iptype = "PERIPHERAL";
-			reg = <0xc4000000 0x1000>;
-			xlnx,name = "SVV_LMB_LMK04828_SPI_0";
+			status = "okay";
+			xlnx,s00-axi-addr-width = <5>;
+			xlnx,name = "SVV_AXI_GPIO_0";
 		};
 		UARTS_AND_STROBES_axi_uart16550_0: axi_uart16550@44a20000 {
 			interrupts = < 8 2 >;
 			compatible = "xlnx,axi-uart16550-2.0";
-			clock-frequency = <0x1c20000> , <100000000>;
+			clock-frequency = <0xe10000> , <100000000>;
 			xlnx,s-axi-aclk-freq-hz-d = <100>;
-			xlnx,external-xin-clk-hz = <29491200>;
+			xlnx,external-xin-clk-hz = <14745600>;
 			xlnx,has-external-rclk = <0>;
 			interrupt-parent = <&microblaze_0_axi_intc>;
 			xlnx,use-user-ports = <1>;
@@ -274,7 +439,7 @@
 			xlnx,use-modem-ports = <1>;
 			xlnx,edk-iptype = "PERIPHERAL";
 			status = "okay";
-			xlnx,external-xin-clk-hz-d = <0x1c20000>;
+			xlnx,external-xin-clk-hz-d = <0xe10000>;
 			xlnx,base-user = <1>;
 			interrupt-names = "ip2intc_irpt";
 			xlnx,is-a-16550 = <1>;
@@ -283,9 +448,9 @@
 		UARTS_AND_STROBES_axi_uart16550_1: axi_uart16550@44a30000 {
 			interrupts = < 3 2 >;
 			compatible = "xlnx,axi-uart16550-2.0";
-			clock-frequency = <0x1c20000> , <100000000>;
+			clock-frequency = <0xe10000> , <100000000>;
 			xlnx,s-axi-aclk-freq-hz-d = <100>;
-			xlnx,external-xin-clk-hz = <29491200>;
+			xlnx,external-xin-clk-hz = <14745600>;
 			xlnx,has-external-rclk = <0>;
 			interrupt-parent = <&microblaze_0_axi_intc>;
 			xlnx,use-user-ports = <1>;
@@ -299,18 +464,18 @@
 			xlnx,use-modem-ports = <1>;
 			xlnx,edk-iptype = "PERIPHERAL";
 			status = "okay";
-			xlnx,external-xin-clk-hz-d = <0x1c20000>;
+			xlnx,external-xin-clk-hz-d = <0xe10000>;
 			xlnx,base-user = <1>;
 			interrupt-names = "ip2intc_irpt";
 			xlnx,is-a-16550 = <1>;
 			xlnx,name = "UARTS_AND_STROBES_axi_uart16550_1";
 		};
-		UARTS_AND_STROBES_axi_uart16550_3: axi_uart16550@44a50000 {
+		UARTS_AND_STROBES_axi_uart16550_2: axi_uart16550@44a50000 {
 			interrupts = < 2 2 >;
 			compatible = "xlnx,axi-uart16550-2.0";
-			clock-frequency = <0x1c20000> , <100000000>;
+			clock-frequency = <0xe10000> , <100000000>;
 			xlnx,s-axi-aclk-freq-hz-d = <100>;
-			xlnx,external-xin-clk-hz = <29491200>;
+			xlnx,external-xin-clk-hz = <14745600>;
 			xlnx,has-external-rclk = <0>;
 			interrupt-parent = <&microblaze_0_axi_intc>;
 			xlnx,use-user-ports = <1>;
@@ -324,11 +489,11 @@
 			xlnx,use-modem-ports = <1>;
 			xlnx,edk-iptype = "PERIPHERAL";
 			status = "okay";
-			xlnx,external-xin-clk-hz-d = <0x1c20000>;
+			xlnx,external-xin-clk-hz-d = <0xe10000>;
 			xlnx,base-user = <1>;
 			interrupt-names = "ip2intc_irpt";
 			xlnx,is-a-16550 = <1>;
-			xlnx,name = "UARTS_AND_STROBES_axi_uart16550_3";
+			xlnx,name = "UARTS_AND_STROBES_axi_uart16550_2";
 		};
 		mdm_0: mdm@41400000 {
 			interrupts = < 12 0 >;
@@ -374,7 +539,7 @@
 		microblaze_0_axi_intc: axi_intc@41200000 {
 			#interrupt-cells = <2>;
 			xlnx,sense-of-irq-edge-type = "Rising";
-			xlnx,kind-of-intr = <0x76f3>;
+			xlnx,kind-of-intr = <0x36f3>;
 			xlnx,kind-of-edge = <0xffffffff>;
 			xlnx,irq-is-level = <0>;
 			xlnx,has-ivr = <1>;
@@ -409,7 +574,7 @@
 			xlnx,has-fast = <1>;
 			xlnx,ivar-rst-val = <0x0000000000000010>;
 			interrupt-controller;
-			xlnx,async-intr = <0xFFFFFEF3>;
+			xlnx,async-intr = <0xFFFFBEF3>;
 			xlnx,name = "microblaze_0_axi_intc";
 		};
 		microblaze_0_local_memory_dlmb_bram_if_cntlr: lmb_bram_if_cntlr@0 {

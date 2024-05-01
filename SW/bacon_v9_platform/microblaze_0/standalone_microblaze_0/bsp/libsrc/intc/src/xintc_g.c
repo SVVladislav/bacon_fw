@@ -5,7 +5,7 @@ XIntc_Config XIntc_ConfigTable[] __attribute__ ((section (".drvcfg_sec"))) = {
 	{
 		"xlnx,axi-intc-4.1", /* compatible */
 		0x41200000, /* reg */
-		0x76f3, /* xlnx,kind-of-intr */
+		0x36f3, /* xlnx,kind-of-intr */
 		0x1, /* xlnx,is-fast */
 		0x10, /* xlnx,ivar-rst-val */
 		0xf, /* xlnx,num-intr-inputs */
