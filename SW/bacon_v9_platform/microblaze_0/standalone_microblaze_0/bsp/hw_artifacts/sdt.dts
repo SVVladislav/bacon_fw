@@ -476,7 +476,7 @@
                 SVV_AXI_GPIO_0: SVV_AXI_GPIO@44a70000 {
                         compatible = "xlnx,SVV-AXI-GPIO-1.0";
                         xlnx,gpio-width = <0x20>;
-                        xlnx,odr-init = <0x0>;
+                        xlnx,odr-init = <0x30000>;
                         xlnx,rable = <0x0>;
                         xlnx,s00-axi-data-width = <0x20>;
                         xlnx,ip-name = "SVV_AXI_GPIO";

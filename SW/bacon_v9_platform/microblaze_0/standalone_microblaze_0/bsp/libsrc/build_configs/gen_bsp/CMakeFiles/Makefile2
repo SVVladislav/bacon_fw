@@ -285,8 +285,8 @@ libsrc/xiltimer/src/core/default_timer/clean:
 # Target rules for target libsrc/CMakeFiles/combined.dir
 
 # All Build rule for target.
-libsrc/CMakeFiles/combined.dir/all: libsrc/intc/src/CMakeFiles/intc.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/uartlite/src/CMakeFiles/uartlite.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/intc/src/CMakeFiles/intc.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/uartns550/src/CMakeFiles/uartns550.dir/all
 	$(MAKE) $(MAKESILENT) -f libsrc/CMakeFiles/combined.dir/build.make libsrc/CMakeFiles/combined.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/CMakeFiles/combined.dir/build.make libsrc/CMakeFiles/combined.dir/build

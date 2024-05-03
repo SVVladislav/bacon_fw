@@ -4,15 +4,15 @@
     "xci_name": "bacon_ad_sysref_gen_0_0",
     "cell_name": "JESD204B_RX_CHAIN_1/ad_sysref_gen_0",
     "component_reference": "xilinx.com:module_ref:ad_sysref_gen:1.0",
-    "ip_revision": "1714494008",
+    "ip_revision": "1714627854",
     "gen_directory": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_ad_sysref_gen_0_0",
     "parameters": {
       "component_parameters": {
-        "SYSREF_PERIOD": [ { "value": "128", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "SYSREF_PERIOD": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "bacon_ad_sysref_gen_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "SYSREF_PERIOD": [ { "value": "128", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "SYSREF_PERIOD": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "kintex7" } ],
@@ -29,7 +29,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "1714494008" } ],
+        "IPREVISION": [ { "value": "1714627854" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../bacon_fw.gen/sources_1/bd/bacon/ip/bacon_ad_sysref_gen_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

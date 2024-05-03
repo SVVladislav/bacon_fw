@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.231914",
-   "Default View_TopLeft":"-1457,-1651",
+   "Default View_ScaleFactor":"0.532799",
+   "Default View_TopLeft":"449,-360",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
@@ -45,10 +45,10 @@ preplace netloc axi_adxcvr_0_up_pll_rst 1 2 1 900 40n
 preplace netloc axi_jesd204_rx_0_core_reset 1 5 1 1860 -50n
 preplace netloc axi_jesd204_rx_0_device_reset 1 5 1 1840 -30n
 preplace netloc jesd204_rx_0_phy_en_char_align 1 2 5 950 630 NJ 630 NJ 630 NJ 630 2190
-preplace netloc jesd204_rx_0_rx_data 1 6 3 2210 300 NJ 300 2840
-preplace netloc jesd204_rx_0_rx_sof 1 6 2 2240 260 2500J
-preplace netloc jesd204_rx_0_rx_valid 1 6 3 2200 310 N 310 2850
-preplace netloc jesd204_rx_0_sync 1 6 4 2240J 120 2460 40 NJ 40 N
+preplace netloc jesd204_rx_0_rx_data 1 6 3 2220 290 NJ 290 2840
+preplace netloc jesd204_rx_0_rx_sof 1 6 2 2200 260 2500J
+preplace netloc jesd204_rx_0_rx_valid 1 6 3 2210 300 N 300 2850
+preplace netloc jesd204_rx_0_sync 1 6 4 2240J 120 2460 50 NJ 50 3170
 preplace netloc rx_2_0_n_1 1 0 3 -50 160 N 160 N
 preplace netloc rx_2_0_p_1 1 0 3 N 200 N 200 920
 preplace netloc rx_2_1_n_1 1 0 3 NJ 290 N 290 940
@@ -58,9 +58,9 @@ preplace netloc rx_2_2_p_1 1 0 3 NJ 320 N 320 920
 preplace netloc rx_2_3_n_1 1 0 3 NJ 410 N 410 590
 preplace netloc rx_2_3_p_1 1 0 3 NJ 380 N 380 600
 preplace netloc s_axi_aclk_1 1 0 8 NJ 140 310 140 910 -230 N -230 1500 110 1810 0 N 0 2470
-preplace netloc s_axi_aresetn1_1 1 0 8 NJ 480 250J 570 590J 640 NJ 640 NJ 640 NJ 640 2220J 240 2490
+preplace netloc s_axi_aresetn1_1 1 0 8 NJ 480 250J 570 590J 640 NJ 640 NJ 640 NJ 640 2230J 240 2490
 preplace netloc s_axi_aresetn_1 1 0 5 -60J 130 330 130 920 -220 N -220 1460
-preplace netloc util_adxcvr_0_rx_out_clk_0 1 2 6 960 620 1200J 210 1510 220 1920 390 2230 250 2480
+preplace netloc util_adxcvr_0_rx_out_clk_0 1 2 6 960 620 1200J 210 1510 220 1920 390 2240 250 2480
 preplace netloc xlconstant_0_dout 1 4 1 N 350
 preplace netloc xlconstant_1_dout 1 7 1 N 180
 preplace netloc xlslice_0_Dout 1 9 1 N 120
@@ -80,7 +80,7 @@ preplace netloc axi_adxcvr_0_up_es_2 1 2 1 N -60
 preplace netloc axi_adxcvr_0_up_es_3 1 2 1 N -20
 preplace netloc axi_jesd204_rx_0_rx_cfg 1 5 1 1880 -90n
 preplace netloc jesd204_rx_0_rx_event 1 4 3 1540 80 1800J 10 2230
-preplace netloc jesd204_rx_0_rx_ilas_config 1 4 3 1520 100 1820J 20 2200
+preplace netloc jesd204_rx_0_rx_ilas_config 1 4 3 1520 100 1820J 20 2210
 preplace netloc jesd204_rx_0_rx_status 1 4 3 1530 90 1830J 30 2190
 preplace netloc util_adxcvr_0_rx_0 1 3 3 NJ 130 N 130 1870
 preplace netloc util_adxcvr_0_rx_1 1 3 3 NJ 150 N 150 1890

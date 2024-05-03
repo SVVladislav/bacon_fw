@@ -1,8 +1,8 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"/clk_wiz_0_clk_out_100M:true|/clk_in1_1:true|/clk_wiz_2_clk_out_29M4912:true|/mdm_0_Interrupt:true|/mdm_1_debug_sys_rst:true|/clk_wiz_1_clk_out_156M25:true|/rst_clk_in1_100M_peripheral_aresetn:true|/rst_clk_in1_100M_bus_struct_reset:true|/rst_clk_in1_100M_mb_reset:true|/clk_wiz_0_clk_out_200M:true|",
-   "Default View_ScaleFactor":"0.903925",
-   "Default View_TopLeft":"2468,1531",
+   "Default View_ScaleFactor":"0.441941",
+   "Default View_TopLeft":"-978,-1197",
    "Display-PortTypeClock":"true",
    "Display-PortTypeInterrupt":"true",
    "Display-PortTypeOthers":"true",

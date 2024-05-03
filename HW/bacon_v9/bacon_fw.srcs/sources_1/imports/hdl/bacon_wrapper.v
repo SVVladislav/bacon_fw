@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2.2 (win64) Build 4126759 Thu Feb  8 23:53:51 MST 2024
-//Date        : Tue Apr 30 17:12:16 2024
-//Host        : DESKTOP-BA273GU running 64-bit major release  (build 9200)
+//Date        : Thu May  2 08:31:25 2024
+//Host        : DESKTOP-1NIAINM running 64-bit major release  (build 9200)
 //Command     : generate_target bacon_wrapper.bd
 //Design      : bacon_wrapper
 //Purpose     : IP block netlist

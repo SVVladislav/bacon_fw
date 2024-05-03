@@ -87,3 +87,6 @@ set_property -dict {PACKAGE_PIN H21 IOSTANDARD LVCMOS18} [get_ports ADC_sclk]
 set_property -dict {PACKAGE_PIN H22 IOSTANDARD LVCMOS18} [get_ports ADC_sdio]
 set_property -dict {PACKAGE_PIN F18 IOSTANDARD LVCMOS18} [get_ports {ADC_nCS[0]}]
 set_property -dict {PACKAGE_PIN A17 IOSTANDARD LVCMOS18} [get_ports {ADC_nCS[1]}]
+
+#set_property -dict {PACKAGE_PIN B18 IOSTANDARD LVCMOS18} [get_ports GPIO_A0_ADC1]
+#set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS18} [get_ports GPIO_A0_ADC2]

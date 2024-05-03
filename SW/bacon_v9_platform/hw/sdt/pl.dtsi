@@ -409,7 +409,7 @@
 		SVV_AXI_GPIO_0: SVV_AXI_GPIO@44a70000 {
 			compatible = "xlnx,SVV-AXI-GPIO-1.0";
 			xlnx,gpio-width = <32>;
-			xlnx,odr-init = <0x00000000>;
+			xlnx,odr-init = <0x00030000>;
 			xlnx,rable = <0>;
 			xlnx,s00-axi-data-width = <32>;
 			xlnx,ip-name = "SVV_AXI_GPIO";
